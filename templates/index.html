@@ -1,0 +1,29 @@
+<section class="hero">
+<h1>${hero_title}</h1>
+<p class="lead">${hero_subtitle}</p>
+<div class="kv">
+<span class="badge">${offer_count} live listings</span>
+<span class="badge">${provider_count} providers tracked</span>
+<span class="badge">Updated ${updated_short}</span>
+</div>
+</section>
+
+<h2>Latest hosting and VPS offers</h2>
+<div class="grid">
+${deal_cards}
+</div>
+
+<h2>Providers we track</h2>
+<div class="grid">
+${provider_cards}
+</div>
+
+<h2>Where these numbers come from</h2>
+<p>Every line below is read by an automated job from the provider's own public page. When a page
+cannot be read, we say so instead of filling in a guess.</p>
+${coverage_table}
+
+<h2>FAQ</h2>
+<div class="faq">
+${faq}
+</div>

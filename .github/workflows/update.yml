@@ -1,0 +1,53 @@
+# ::ILANG
+# [TYPE:ci][PROJECT:hostingdeals][LANG:zh]
+# ::STATE{@SELF, role:ci, triggers:schedule+cron, runs:scraper.py build.py deploy}
+# ::RULE{每次只更新 data/offers.json 不动模板和站点规则}
+# ::RULE{部署若凭据未配就跑 commit 留活动记录 不许把站点删掉}
+
+name: refresh
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    env:
+      CF_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      CF_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+
+      - name: Read provider sources
+        run: python scraper.py
+
+      - name: Render static site
+        run: python build.py
+
+      - name: Commit refreshed data
+        run: |
+          git config user.email 'refresh@hostingdeals.local'
+          git config user.name 'refresh-bot'
+          git add data/offers.json
+          if git diff --staged --quiet; then
+            echo "no data changes this run"
+          else
+            git commit -m "refresh offers at $(date -u +%FT%TZ)"
+            git push
+          fi
+
+      - name: Deploy to Cloudflare Pages
+        if: ${{ env.CF_API_TOKEN != '' && env.CF_ACCOUNT_ID != '' }}
+        run: |
+          mkdir -p _w && cd _w
+          npm install wrangler@4 --no-audit --no-fund >/dev/null
+          ./node_modules/.bin/wrangler pages deploy ../site \
+            --project-name=hostingdeals-promo-radar --branch=main --commit-dirty=true

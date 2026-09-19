@@ -1,0 +1,45 @@
+ILANG
+[TYPE:config][PROJECT:hostingdeals][LANG:zh]
+
+::STATE{@SITE, brand:hostingdeals, niche:Cloud hosting and VPS deals, niche_zh:主机云 VPS 优惠, domain:hostingdeals-promo-radar.pages.dev, locale:en-US, language:en, currency:USD}
+
+::MODULE{PROVIDERS|title:抓哪几家 这里改了站就变}
+# 列顺序: 名称 | 官网 | 抓取入口 | 落地页(留空=入口本身) | 联盟链接(留空=裸链)
+# 入口前缀: page: 官方页面 / sitemap: 官方 sitemap(按关键词过滤) / api: 官方公开 JSON 接口
+DigitalOcean | https://www.digitalocean.com | page:https://www.digitalocean.com/pricing/ |  |
+DigitalOcean | https://www.digitalocean.com | sitemap:https://www.digitalocean.com/sitemaps/pricing-0.xml.gz |  |
+Cloudways | https://www.cloudways.com | page:https://www.cloudways.com/en/promo-code |  |
+Cloudways | https://www.cloudways.com | sitemap:https://www.cloudways.com/en/page-sitemap.xml |  |
+# a2hosting.com 已整体 301 到 hosting.com 下面直接抓跳转后的真实页面
+A2 Hosting | https://www.a2hosting.com | page:https://hosting.com/hosting/ |  |
+DreamHost | https://www.dreamhost.com | page:https://www.dreamhost.com/hosting/shared/ |  |
+DreamHost | https://www.dreamhost.com | page:https://www.dreamhost.com/hosting/vps/ |  |
+# Vultr: www 有 Cloudflare 人机验证 api.vultr.com/robots.txt 是 Disallow:/ 两条都抓不到时本站不编数据 只标注"源暂不可读"
+Vultr | https://www.vultr.com | api:https://api.vultr.com/v2/plans | https://www.vultr.com/pricing/ |
+Vultr | https://www.vultr.com | page:https://www.vultr.com/pricing/ |  |
+
+::MODULE{FIELDS|title:每条优惠提取什么}
+title price currency offer_url valid_until source_url fetched_at
+
+::MODULE{SCRAPE|title:抓取参数 scraper.py 读这里}
+timeout: 25
+delay: 1.0
+max_pages_per_sitemap: 4
+max_api_items: 6
+sitemap_keywords: promo,deal,coupon,discount,offer,pricing,save,special
+respect_robots: true
+user_agent: hostingdeals-promo-radar/1.0 (+https://hostingdeals-promo-radar.pages.dev; public data only)
+
+::MODULE{RENDER|title:渲染规则 build.py 读这里}
+per_page: 12
+hero_title: Cloud hosting and VPS deals, refreshed every 6 hours
+hero_subtitle: Prices and promo codes read straight from each provider's own public pricing or promo page. Every number on this site links back to where it came from.
+footer_note: Prices change without notice. Every listing links to the provider's own page, which is the only place the final number is guaranteed.
+og_bg: #f6f8fc
+og_accent: #0b5fff
+og_text: #101828
+
+::RULE{抓不到 price⇒这条不写 price 字段 也不写进结构化数据 不许拿估的填}
+::RULE{抓不到折扣或码⇒留空 不许猜}
+::RULE{valid_until 已过⇒这条下架 不许留着冒充有效}
+::BOUNDARY{never:编优惠 编价格 编折扣码 编佣金|scope:permanent}

@@ -1,0 +1,243 @@
+{
+  "brand": "hostingdeals",
+  "niche": "Cloud hosting and VPS deals",
+  "locale": "en-US",
+  "language": "en",
+  "currency": "USD",
+  "generated_at": "2026-09-19T04:30:08Z",
+  "fields": [
+    "title",
+    "price",
+    "currency",
+    "offer_url",
+    "valid_until",
+    "source_url",
+    "fetched_at"
+  ],
+  "providers": [
+    {
+      "name": "DigitalOcean",
+      "slug": "digitalocean",
+      "homepage": "https://www.digitalocean.com",
+      "affiliate": "",
+      "offer_count": 2,
+      "min_price": 3.0,
+      "max_price": 4.0,
+      "currency": "USD"
+    },
+    {
+      "name": "Cloudways",
+      "slug": "cloudways",
+      "homepage": "https://www.cloudways.com",
+      "affiliate": "",
+      "offer_count": 3,
+      "min_price": 6.6,
+      "max_price": 11.0,
+      "currency": "USD"
+    },
+    {
+      "name": "A2 Hosting",
+      "slug": "a2-hosting",
+      "homepage": "https://www.a2hosting.com",
+      "affiliate": "",
+      "offer_count": 0,
+      "min_price": null,
+      "max_price": null,
+      "currency": "USD"
+    },
+    {
+      "name": "DreamHost",
+      "slug": "dreamhost",
+      "homepage": "https://www.dreamhost.com",
+      "affiliate": "",
+      "offer_count": 2,
+      "min_price": 2.89,
+      "max_price": 8.99,
+      "currency": "USD"
+    },
+    {
+      "name": "Vultr",
+      "slug": "vultr",
+      "homepage": "https://www.vultr.com",
+      "affiliate": "",
+      "offer_count": 0,
+      "min_price": null,
+      "max_price": null,
+      "currency": "USD"
+    }
+  ],
+  "offers": [
+    {
+      "provider": "DigitalOcean",
+      "title": "Budget-Friendly Cloud Server Pricing",
+      "page_title": "Budget-Friendly Cloud Server Pricing",
+      "summary": "Need a powerful cloud server without the hefty price tag? DigitalOcean has got you covered. Enjoy exceptional performance and flexibility at unbeatable prices.",
+      "offer_url": "https://www.digitalocean.com/pricing",
+      "source_url": "https://www.digitalocean.com/pricing",
+      "fetched_at": "2026-09-19T04:30:08Z",
+      "price": 4.0,
+      "currency": "USD",
+      "price_period": "month",
+      "has_price": true
+    },
+    {
+      "provider": "DigitalOcean",
+      "title": "App Platform Pricing",
+      "page_title": "App Platform Pricing",
+      "summary": "App Platform: Free tier for static sites. Web hosting from $5.00/month. Only pay for the components you need with transparent, modular pricing.",
+      "offer_url": "https://www.digitalocean.com/pricing/app-platform",
+      "source_url": "https://www.digitalocean.com/pricing/app-platform",
+      "fetched_at": "2026-09-19T04:30:08Z",
+      "price": 3.0,
+      "currency": "USD",
+      "price_period": "month",
+      "has_price": true
+    },
+    {
+      "provider": "Cloudways",
+      "title": "Cloudways Promo Code 2026 - Get the Best Hosting Deals",
+      "page_title": "Cloudways Promo Code 2026 - Get the Best Hosting Deals",
+      "summary": "Avail Cloudways coupon code and enjoy a 40% discount on all the web hosting plans for 4 months. Don’t miss out on this exclusive discount offer, avail now!",
+      "offer_url": "https://www.cloudways.com/en/promo-code.php",
+      "source_url": "https://www.cloudways.com/en/promo-code.php",
+      "fetched_at": "2026-09-19T04:30:08Z",
+      "price": 6.6,
+      "currency": "USD",
+      "price_period": "month",
+      "discount_pct": 40,
+      "has_price": true
+    },
+    {
+      "provider": "Cloudways",
+      "title": "Cloudways Pricing & Plans: Simple Managed Cloud Hosting",
+      "page_title": "Cloudways Pricing & Plans: Simple Managed Cloud Hosting",
+      "summary": "Cloudways pricing starts at $11/month with affordable plans on DigitalOcean, Google Cloud, AWS, Linode & Vultr. Get 30% off on all plans & free migrations.",
+      "offer_url": "https://www.cloudways.com/en/pricing.php",
+      "source_url": "https://www.cloudways.com/en/pricing.php",
+      "fetched_at": "2026-09-19T04:30:08Z",
+      "price": 11.0,
+      "currency": "USD",
+      "price_period": "month",
+      "discount_pct": 30,
+      "has_price": true
+    },
+    {
+      "provider": "Cloudways",
+      "title": "Instant Savings with Cloudways Web Hosting Pricing Calculator",
+      "page_title": "Instant Savings with Cloudways Web Hosting Pricing Calculator",
+      "summary": "Save loads on hosting costs as our web hosting pricing calculator gives you a detailed comparison of the top hosting providers to help you pick the best one.",
+      "offer_url": "https://www.cloudways.com/en/web-hosting-pricing-calculator.php",
+      "source_url": "https://www.cloudways.com/en/web-hosting-pricing-calculator.php",
+      "fetched_at": "2026-09-19T04:30:08Z",
+      "price": 11.0,
+      "currency": "USD",
+      "price_period": "month",
+      "has_price": true
+    },
+    {
+      "provider": "DreamHost",
+      "title": "Web Hosting Plans — 100% Uptime, 24/7 Support",
+      "page_title": "Web Hosting Plans — 100% Uptime, 24/7 Support",
+      "summary": "Discover fast, secure, and reliable hosting at DreamHost. Choose Shared, VPS, or DreamPress plans with 24/7 support, 100% uptime, and a money-back guarantee!",
+      "offer_url": "https://www.dreamhost.com/hosting/",
+      "source_url": "https://www.dreamhost.com/hosting/",
+      "fetched_at": "2026-09-19T04:30:08Z",
+      "price": 2.89,
+      "currency": "USD",
+      "price_period": "month",
+      "discount_pct": 75,
+      "has_price": true
+    },
+    {
+      "provider": "DreamHost",
+      "title": "VPS Hosting with Full Root Access",
+      "page_title": "VPS Hosting with Full Root Access",
+      "summary": "VPS hosting with full root access and unmetered bandwidth — no overage bills. Install any OS and run any app on AMD EPYC + NVMe servers you control.",
+      "offer_url": "https://www.dreamhost.com/hosting/vps/",
+      "source_url": "https://www.dreamhost.com/hosting/vps/",
+      "fetched_at": "2026-09-19T04:30:08Z",
+      "price": 8.99,
+      "currency": "USD",
+      "price_period": "month",
+      "discount_pct": 43,
+      "has_price": true
+    }
+  ],
+  "status": [
+    {
+      "provider": "DigitalOcean",
+      "entry": "https://www.digitalocean.com/pricing/",
+      "status": "ok",
+      "count": 1
+    },
+    {
+      "provider": "DigitalOcean",
+      "entry": "https://www.digitalocean.com/pricing/backups",
+      "status": "no_price"
+    },
+    {
+      "provider": "DigitalOcean",
+      "entry": "https://www.digitalocean.com/pricing/calculator",
+      "status": "no_price"
+    },
+    {
+      "provider": "DigitalOcean",
+      "entry": "https://www.digitalocean.com/sitemaps/pricing-0.xml.gz",
+      "status": "ok",
+      "count": 1
+    },
+    {
+      "provider": "Cloudways",
+      "entry": "https://www.cloudways.com/en/promo-code",
+      "status": "ok",
+      "count": 1
+    },
+    {
+      "provider": "Cloudways",
+      "entry": "https://www.cloudways.com/en/page-sitemap.xml",
+      "status": "ok",
+      "count": 2
+    },
+    {
+      "provider": "A2 Hosting",
+      "entry": "https://hosting.com/hosting/",
+      "status": "no_price"
+    },
+    {
+      "provider": "A2 Hosting",
+      "entry": "https://hosting.com/hosting/",
+      "status": "empty",
+      "count": 0
+    },
+    {
+      "provider": "DreamHost",
+      "entry": "https://www.dreamhost.com/hosting/shared/",
+      "status": "ok",
+      "count": 1
+    },
+    {
+      "provider": "DreamHost",
+      "entry": "https://www.dreamhost.com/hosting/vps/",
+      "status": "ok",
+      "count": 1
+    },
+    {
+      "provider": "Vultr",
+      "entry": "https://api.vultr.com/v2/plans",
+      "status": "error",
+      "detail": "robots.txt disallows https://api.vultr.com/v2/plans"
+    },
+    {
+      "provider": "Vultr",
+      "entry": "https://www.vultr.com/pricing/",
+      "status": "error",
+      "detail": "HTTP Error 403: Forbidden"
+    },
+    {
+      "provider": "Vultr",
+      "entry": "https://www.vultr.com/pricing/",
+      "status": "empty",
+      "count": 0
+    }
+  ]
+}
