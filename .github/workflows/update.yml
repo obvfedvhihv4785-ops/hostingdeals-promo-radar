@@ -24,6 +24,12 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          # fetch-depth: 0 gives the runner the full history. The default
+          # (shallow) clone breaks `git push` when remote has any commits
+          # not present in the shallow window - it manifests as a confusing
+          # "remote contains work you do not have locally" / non-fast-forward.
+          fetch-depth: 0
 
       - name: Setup Python
         uses: actions/setup-python@v5
@@ -40,6 +46,11 @@ jobs:
         run: |
           git config user.email 'refresh@hostingdeals.local'
           git config user.name 'refresh-bot'
+          # If anyone (a manual push, a prior cron) moved main since the
+          # runner checked out, rebase local on top of origin/main first so
+          # the push is always a fast-forward. --autostash preserves the
+          # scraper's edits to data/offers.json across the rebase.
+          git pull --rebase --autostash origin main
           git add data/offers.json
           if git diff --staged --quiet; then
             echo "no data changes this run"
