@@ -6,6 +6,12 @@
 
 name: refresh
 
+# Never let two refresh jobs write main at the same time. A queued manual
+# dispatch plus the six-hour cron can otherwise race at git push.
+concurrency:
+  group: hostingdeals-refresh-main
+  cancel-in-progress: false
+
 on:
   schedule:
     - cron: '0 */6 * * *'
@@ -40,27 +46,41 @@ jobs:
         run: python scraper.py
 
       - name: Render static site
+        id: render
         run: python build.py
 
       - name: Commit refreshed data
+        # A git race must never prevent the freshly rendered site from deploying.
+        # The step retries the fast-forward several times; if GitHub still has a
+        # transient race, deploy below uses the current workspace anyway.
+        continue-on-error: true
         run: |
           git config user.email 'refresh@hostingdeals.local'
           git config user.name 'refresh-bot'
-          # If anyone (a manual push, a prior cron) moved main since the
-          # runner checked out, rebase local on top of origin/main first so
-          # the push is always a fast-forward. --autostash preserves the
-          # scraper's edits to data/offers.json across the rebase.
-          git pull --rebase --autostash origin main
           git add data/offers.json
           if git diff --staged --quiet; then
             echo "no data changes this run"
-          else
-            git commit -m "refresh offers at $(date -u +%FT%TZ)"
-            git push
+            exit 0
           fi
+          git commit -m "refresh offers at $(date -u +%FT%TZ)"
+          for attempt in 1 2 3; do
+            echo "push attempt $attempt"
+            git fetch origin main
+            if ! git rebase --autostash -X theirs origin/main; then
+              echo "rebase failed; aborting this push attempt"
+              git rebase --abort || true
+              continue
+            fi
+            if git push origin HEAD:main; then
+              echo "refresh commit pushed"
+              exit 0
+            fi
+          done
+          echo "warning: could not push refresh commit; deployment will continue"
+          exit 1
 
       - name: Deploy to Cloudflare Pages
-        if: ${{ env.CF_API_TOKEN != '' && env.CF_ACCOUNT_ID != '' }}
+        if: ${{ always() && steps.render.outcome == 'success' && env.CF_API_TOKEN != '' && env.CF_ACCOUNT_ID != '' }}
         run: |
           mkdir -p _w && cd _w
           npm install wrangler@4 --no-audit --no-fund >/dev/null
