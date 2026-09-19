@@ -1,6 +1,7 @@
 __pycache__/
 *.pyc
 site/
+.wrangler/
 _w/
 *.tmp
 .DS_Store

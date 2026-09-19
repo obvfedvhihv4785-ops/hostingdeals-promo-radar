@@ -1,7 +1,7 @@
 ILANG
 [TYPE:config][PROJECT:hostingdeals][LANG:zh]
 
-::STATE{@SITE, brand:hostingdeals, niche:Cloud hosting and VPS deals, niche_zh:主机云 VPS 优惠, domain:hostingdeals-promo-radar.pages.dev, locale:en-US, language:en, currency:USD}
+::STATE{@SITE, brand:hostingdeals, niche:Cloud hosting and VPS deals, niche_zh:主机云 VPS 优惠, domain:cloudhostdeals.com, locale:en-US, language:en, currency:USD}
 
 ::MODULE{PROVIDERS|title:抓哪几家 这里改了站就变}
 # 列顺序: 名称 | 官网 | 抓取入口 | 落地页(留空=入口本身) | 联盟链接(留空=裸链)
@@ -28,7 +28,7 @@ max_pages_per_sitemap: 4
 max_api_items: 6
 sitemap_keywords: promo,deal,coupon,discount,offer,pricing,save,special
 respect_robots: true
-user_agent: hostingdeals-promo-radar/1.0 (+https://hostingdeals-promo-radar.pages.dev; public data only)
+user_agent: hostingdeals-promo-radar/1.0 (+https://cloudhostdeals.com; public data only)
 
 ::MODULE{RENDER|title:渲染规则 build.py 读这里}
 per_page: 12

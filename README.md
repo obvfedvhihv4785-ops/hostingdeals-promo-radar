@@ -4,10 +4,11 @@ A self-updating, niche site for **cloud hosting and VPS deals**. Every number on
 the site is read automatically from each provider's own public pricing or
 promo page; nothing is invented.
 
-- **Live site:** <https://hostingdeals-promo-radar.pages.dev/>
+- **Live site:** <https://cloudhostdeals.com/> (also reachable at
+  <https://hostingdeals-promo-radar.pages.dev/>, the original Pages subdomain)
 - **Source pipeline:** `scraper.py` + `build.py`, both pure Python standard library
 - **Refresh schedule:** every 6 hours via GitHub Actions
-- **Hosting:** Cloudflare Pages (free tier, no custom domain required to start)
+- **Hosting:** Cloudflare Pages (free tier), domain registered 2026-09-19
 - **Monetisation:** outbound affiliate links to provider sites (see `MONETIZE`)
 
 ## What this repository contains
@@ -38,12 +39,19 @@ next GitHub Actions run does the same automatically.
 
 1. Register the domain (the longer it lives, the more domain age this asset
    accumulates, which is the whole point).
-2. In the Cloudflare Pages project, add the custom domain. Cloudflare
-   automatically adds the right DNS records if the zone is already on
-   Cloudflare, otherwise follow the instructions it shows.
-3. Change `domain:` in `.ilang/site.ilang` to the new host.
-4. Re-run the build (or wait for the next cron tick). All canonical tags,
-   the sitemap and the Open Graph image URL update automatically.
+2. In the Cloudflare Pages project, add the custom domain - and add `www.<domain>`
+   too, otherwise a `www` CNAME alone returns an error page.
+3. Check the domain's status in the Pages dashboard. If it says
+   `CNAME record not set`, Cloudflare did **not** create the record for you
+   (this happens when your API token or role lacks zone DNS write). Add it by
+   hand: `CNAME @ -> <project>.pages.dev`, proxy on, plus the same for `www`.
+4. **Only once the domain actually resolves**, change `domain:` in
+   `.ilang/site.ilang` to the new host (and the self-referencing URL inside
+   `user_agent:`). Pointing canonicals at a host that does not resolve yet is
+   worse than leaving the old one in place.
+5. Re-run the build (or wait for the next cron tick). All canonical tags,
+   the sitemap and the Open Graph image URL update automatically. Verify with
+   `grep -rl "pages.dev" site/` - it must return nothing.
 
 ## Site rules
 
