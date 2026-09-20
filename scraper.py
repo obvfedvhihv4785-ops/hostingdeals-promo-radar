@@ -564,7 +564,7 @@ def main():
         )
 
     data = {
-        "brand": cfg["site"].get("brand", "hostingdeals"),
+        "brand": cfg["site"].get("brand", "cloudhostdeals"),
         "niche": cfg["site"].get("niche", ""),
         "locale": cfg["site"].get("locale", "en-US"),
         "language": cfg["site"].get("language", "en"),

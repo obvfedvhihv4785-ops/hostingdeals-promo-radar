@@ -1,7 +1,7 @@
 ILANG
 [TYPE:config][PROJECT:hostingdeals][LANG:zh]
 
-::STATE{@SITE, brand:hostingdeals, niche:Cloud hosting and VPS deals, niche_zh:主机云 VPS 优惠, domain:cloudhostdeals.com, locale:en-US, language:en, currency:USD}
+::STATE{@SITE, brand:cloudhostdeals, niche:Cloud hosting and VPS deals, niche_zh:主机云 VPS 优惠, domain:cloudhostdeals.com, locale:en-US, language:en, currency:USD}
 
 ::MODULE{PROVIDERS|title:抓哪几家 这里改了站就变}
 # 列顺序: 名称 | 官网 | 抓取入口 | 落地页(留空=入口本身) | 联盟链接(留空=裸链)
@@ -38,8 +38,19 @@ footer_note: Prices change without notice. Every listing links to the provider's
 og_bg: #f6f8fc
 og_accent: #0b5fff
 og_text: #101828
+# 联系邮箱 留空=联系页与隐私页不渲染邮箱 而是如实写"尚未开通"
+# 只有这个地址真的能收信之后 才允许把值填进来 (RULE 见下方)
+# 2026-09-20 已配通并逐条实测：MX route1/2/3.mx.cloudflare.net + SPF TXT + DKIM TXT 都在，
+# 目标邮箱 status=verified，且路由规则 matcher 命中 contact@ 且 enabled=true
+contact_email: contact@cloudhostdeals.com
+# 隐私政策最后修改日期 只在政策真的改了的时候改这一行 不许跟着每次刷新变
+policy_updated: 2026-09-19
 
 ::RULE{抓不到 price⇒这条不写 price 字段 也不写进结构化数据 不许拿估的填}
 ::RULE{抓不到折扣或码⇒留空 不许猜}
 ::RULE{valid_until 已过⇒这条下架 不许留着冒充有效}
+::RULE{contact_email 为空⇒联系页和隐私页如实写"邮箱尚未开通" 不许先把地址写上去}
+::RULE{关于页 隐私页 联系页 三个标题各不相同 不许三页同一句}
 ::BOUNDARY{never:编优惠 编价格 编折扣码 编佣金|scope:permanent}
+::BOUNDARY{never:在关于页署真名 手机号 或任何能定位到个人的信息|scope:permanent}
+::BOUNDARY{never:写套话版隐私政策 或承诺这个站做不到的事|scope:permanent}

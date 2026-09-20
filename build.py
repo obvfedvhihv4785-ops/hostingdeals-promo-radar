@@ -236,7 +236,7 @@ def main():
     with open(DATA, "r", encoding="utf-8") as fh:
         data = json.load(fh)
 
-    brand = site.get("brand", "hostingdeals")
+    brand = site.get("brand", "cloudhostdeals")
     domain = site.get("domain", "example.com").strip().rstrip("/")
     base = "https://" + domain.replace("https://", "").replace("http://", "")
     lang = site.get("language", "en")
@@ -408,6 +408,12 @@ def main():
         "/",
         index_content,
         [
+            {
+                "@context": "https://schema.org",
+                "@type": "WebSite",
+                "name": brand,
+                "url": url("/"),
+            },
             {
                 "@context": "https://schema.org",
                 "@type": "ItemList",
@@ -628,6 +634,136 @@ def main():
             og_price=o.get("price_text") or "",
         )
 
+    # ---------- about / privacy / contact ----------
+    # The contact address is published only once it can actually receive mail. If
+    # .ilang/site.ilang leaves contact_email empty, the pages say so in plain words
+    # instead of printing an address that bounces.
+    contact_email = (render.get("contact_email") or "").strip()
+    contact_live = bool(re.fullmatch(r"[^@\s]+@[^@\s.]+(?:\.[^@\s.]+)+", contact_email))
+    policy_updated = esc(render.get("policy_updated", ""))
+
+    if contact_live:
+        contact_block = (
+            "<p>The address for anything to do with this site is "
+            '<a href="mailto:%s">%s</a>. It is a forwarding address on this domain rather than a '
+            "mailbox on a third-party service, and mail sent to it reaches the person who runs this "
+            "site.</p>" % (esc(contact_email), esc(contact_email))
+        )
+        contact_block_hero = '<p class="lead">Write to <a href="mailto:%s">%s</a>.</p>' % (
+            esc(contact_email),
+            esc(contact_email),
+        )
+    else:
+        contact_block = (
+            "<p>This site has no working contact address yet, so there is currently no way to write "
+            "to it. An address will be published here once it can actually receive mail. Until then "
+            "nothing on this site claims one exists.</p>"
+        )
+        contact_block_hero = (
+            '<p class="lead">No contact address is open yet. The address for this site is still '
+            "being set up, and it is deliberately not published until it can receive mail.</p>"
+        )
+
+    tracked_names = [p.get("name", "") for p in providers if p.get("name")]
+    if len(tracked_names) > 1:
+        provider_names = ", ".join(tracked_names[:-1]) + " and " + tracked_names[-1]
+    else:
+        provider_names = tracked_names[0] if tracked_names else "no providers yet"
+
+    about_content = Template(read_tpl("about.html")).safe_substitute(
+        provider_count=len(tracked_names),
+        offer_count=len(offers),
+        updated_short=esc(updated_short),
+        provider_names=esc(provider_names),
+    )
+    page(
+        "About cloudhostdeals — who runs this site and where the numbers come from",
+        "cloudhostdeals is an independent tracker for cloud hosting and VPS prices. This page covers who "
+        "runs it, where every figure comes from, how often it refreshes, and what it refuses to do.",
+        "/about",
+        about_content,
+        [
+            {
+                "@context": "https://schema.org",
+                "@type": "AboutPage",
+                "name": "About cloudhostdeals",
+                "url": url("/about"),
+            },
+            {
+                "@context": "https://schema.org",
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    {"@type": "ListItem", "position": 1, "name": "Home", "item": url("/")},
+                    {"@type": "ListItem", "position": 2, "name": "About", "item": url("/about")},
+                ],
+            },
+        ],
+        og_name="about",
+        og_head="About cloudhostdeals",
+        og_price="%d providers tracked" % len(tracked_names),
+    )
+
+    privacy_content = Template(read_tpl("privacy.html")).safe_substitute(
+        policy_updated=policy_updated,
+        contact_block=contact_block,
+    )
+    page(
+        "Privacy policy — cloudhostdeals",
+        "What cloudhostdeals does and does not collect: no accounts, no cookies of its own, no analytics "
+        "and no sale of visitor data — plus exactly what will change when third-party ads are added.",
+        "/privacy",
+        privacy_content,
+        [
+            {
+                "@context": "https://schema.org",
+                "@type": "WebPage",
+                "name": "Privacy policy",
+                "url": url("/privacy"),
+            },
+            {
+                "@context": "https://schema.org",
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    {"@type": "ListItem", "position": 1, "name": "Home", "item": url("/")},
+                    {"@type": "ListItem", "position": 2, "name": "Privacy", "item": url("/privacy")},
+                ],
+            },
+        ],
+        og_name="privacy",
+        og_head="Privacy policy",
+        og_price="",
+    )
+
+    contact_content = Template(read_tpl("contact.html")).safe_substitute(
+        contact_block_hero=contact_block_hero,
+    )
+    page(
+        "Contact cloudhostdeals — corrections, removals and questions",
+        "How to reach cloudhostdeals about a price that looks wrong, a page that will not load, a provider "
+        "to add, or a request about your data.",
+        "/contact",
+        contact_content,
+        [
+            {
+                "@context": "https://schema.org",
+                "@type": "ContactPage",
+                "name": "Contact cloudhostdeals",
+                "url": url("/contact"),
+            },
+            {
+                "@context": "https://schema.org",
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    {"@type": "ListItem", "position": 1, "name": "Home", "item": url("/")},
+                    {"@type": "ListItem", "position": 2, "name": "Contact", "item": url("/contact")},
+                ],
+            },
+        ],
+        og_name="contact",
+        og_head="Contact cloudhostdeals",
+        og_price="",
+    )
+
     # ---------- 404 ----------
     with open(os.path.join(OUT, "404.html"), "w", encoding="utf-8") as fh:
         fh.write(
@@ -643,7 +779,11 @@ def main():
         )
 
     # ---------- sitemap + robots ----------
-    urls = ["/", "/compare"] + ["/providers/" + p["slug"] for p in live] + ["/deals/" + o["slug"] for o in offers]
+    urls = (
+        ["/", "/compare", "/about", "/privacy", "/contact"]
+        + ["/providers/" + p["slug"] for p in live]
+        + ["/deals/" + o["slug"] for o in offers]
+    )
     sitemap = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
     for u in urls:
         sitemap.append(

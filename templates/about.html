@@ -1,0 +1,53 @@
+<div class="breadcrumb"><a href="/">Home</a> / About</div>
+<section class="hero">
+<h1>About cloudhostdeals</h1>
+<p class="lead">An independent price tracker for cloud hosting and VPS plans. It is not a hosting
+company: it does not sell plans, take orders or handle billing.</p>
+<div class="kv">
+<span class="badge">${provider_count} providers tracked</span>
+<span class="badge">${offer_count} listings right now</span>
+<span class="badge">Last read ${updated_short}</span>
+</div>
+</section>
+
+<h2>What this site does</h2>
+<p>cloudhostdeals reads the public pricing and promotion pages that cloud hosting and VPS providers
+publish for everyone, and republishes the prices, discounts and promo codes those pages state. Every
+listing links back to the exact page it was copied from, so any number here can be checked against
+its own source.</p>
+<p>Providers currently tracked: ${provider_names}.</p>
+
+<h2>Where the numbers come from</h2>
+<p>An automated job fetches each provider's own public page &mdash; a pricing page, a promo page, or a
+public sitemap or JSON endpoint the provider publishes &mdash; and stores what that page says.
+Nobody types prices in by hand, and no figure on this site is an estimate.</p>
+<p>When a source cannot be read, the site says so instead of filling the gap. Some providers serve
+their prices with JavaScript or put a bot check in front of their pricing page; those appear in the
+&ldquo;Source status&rdquo; table on the home and compare pages with the reason, and no price is
+published for them.</p>
+<p>The reader respects each site's robots.txt. It does not impersonate a browser, does not solve or
+bypass bot checks, and does not use any provider's private interface.</p>
+
+<h2>How often it updates</h2>
+<p>Every six hours. A scheduled build re-reads every source, regenerates the pages and publishes
+them; the pipeline lives in a public repository linked in the footer of this site. The timestamp at
+the bottom of each page is the time of the last successful read, not the time you loaded the page.</p>
+
+<h2>What this site will not do</h2>
+<ul>
+<li>It will not publish a price it could not read. A missing number stays missing.</li>
+<li>It will not invent a discount, a promo code or an expiry date.</li>
+<li>It will not keep an expired promotion listed as if it were still running.</li>
+<li>It will not describe a price as guaranteed. Providers change prices without notice.</li>
+</ul>
+
+<h2>How it is funded</h2>
+<p>Outbound provider links may be affiliate links. If you sign up through one, the provider may pay
+this site a commission; what you pay is the same either way. Listings are not paid placements &mdash;
+a provider cannot buy a spot on this site, and no provider can pay to have a competitor's listing
+removed.</p>
+
+<h2>Who is behind it</h2>
+<p>cloudhostdeals is a small independent project. It is published under the site name only: no
+personal names, phone numbers or postal addresses appear anywhere on this site. Questions,
+corrections and complaints go to the address on the <a href="/contact">contact page</a>.</p>

@@ -63,6 +63,10 @@ tr:last-child td{border-bottom:none}
 .faq p{margin:10px 0 0;color:var(--muted)}
 .src{font-size:13px;color:var(--muted);word-break:break-all}
 footer{border-top:1px solid var(--line);background:#fff;padding:26px 0 40px;color:var(--muted);font-size:14px}
+footer nav{margin:16px 0 12px}
+footer nav a{margin-right:20px;font-weight:600}
+footer p.legal{font-size:12.5px;max-width:78ch}
+footer p{margin:0 0 8px}
 .breadcrumb{font-size:13px;color:var(--muted);margin-bottom:12px}
 .breadcrumb a{color:var(--muted)}
 .kv{display:flex;gap:10px;flex-wrap:wrap;font-size:13px;color:var(--muted)}
@@ -73,7 +77,7 @@ ${jsonld}
 </head>
 <body>
 <header class="top"><div class="wrap">
-<a class="logo" href="/">${brand}<span>.deal</span></a>
+<a class="logo" href="/">${brand}</a>
 <nav class="top"><a href="/">Deals</a><a href="/compare">Compare</a></nav>
 </div></header>
 <main><div class="wrap">
@@ -82,7 +86,9 @@ ${content}
 <footer><div class="wrap">
 <p><strong>${brand}</strong> — ${niche}. ${footer_note}</p>
 <p>Data refreshed: <time datetime="${generated_at}">${generated_at}</time>. Every listing links back to the provider page it was read from.</p>
+<nav><a href="/about">About</a><a href="/privacy">Privacy</a><a href="/contact">Contact</a></nav>
 <p>${repo_line} Site rules are described with the <a href="https://ilang.ai" rel="noopener">I-Lang</a> protocol: <code>.ilang/site.ilang</code>.</p>
+<p class="legal">All product and company names mentioned on this site are trademarks or registered trademarks of their respective owners, and are used here for identification purposes only.</p>
 </div></footer>
 </body>
 </html>
