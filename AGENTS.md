@@ -61,11 +61,20 @@ entry_kind:
 [ALLOW] 联盟链接 填在 .ilang/site.ilang 厂商行的第 5 列 公开平台的公开条款
 [NEVER] 品牌词竞价 cookie 注入 自买自推 任何需要绕开平台规则才成立的玩法
 
+::MODULE{EDITORIAL|title:每日缺口页}
+editorial/gaps.json 是对标缺口表 唯一缺口来源 每个 gap_id 只能完成一次
+editorial/articles.json 是已发布文章清单 每篇必须有 gap_id title answer sections sources
+第一屏必须直接回答问题 独家补充必须来自独立计算或公开来源 不许改写对标站原文
+每次只认领一个 status=open 的 gap 写一篇 写完把它变成已发布文章 不许重复 gap_id
+发布前必须 python build.py 并检查 site/sitemap.xml 含 /articles/ 新地址
+Reddit 等被反爬挡住的来源保持 blocked 不许用别的站替代 不许猜社区意见
+
 ::MODULE{WORKFLOW|title:和这个仓库的关系}
 git init git add . git commit
 main 分支公开 repo 名 hostingdeals-promo-radar
 只让 GitHub Actions commit data/offers.json 它是仓库里唯一的时间戳源
 site/ 不进库 在 .gitignore 里 部署走 wrangler pages deploy site
+每日编辑任务只提交 editorial/ 下的内容和 build/template 支持 不改 scraper 数据规则
 
 ::LESSON{id:provider_branding|scope:project}
 a2hosting.com 已整体 301 到 hosting.com 抓的时候写 https://hosting.com/hosting/ 跳转后真实页在那个 URL 上 A2 Hosting 页面没有服务端价格 因此只在覆盖率表里出现 在 offer 列表里不出现

@@ -1,0 +1,114 @@
+[
+  {
+    "id": "hostinger-renewal-cost",
+    "priority": 1,
+    "status": "completed",
+    "topic": "Hostinger Cloud Startup: prepaid first term versus renewal cost",
+    "what_benchmarks_cover": "Headline discount, monthly promo rate, basic included features, and a renewal rate are shown, but the long-term cost is not answered in one neutral calculation.",
+    "shared_omission": "No above-the-fold total-cost or renewal-shock answer for a buyer comparing deals.",
+    "独家可补": "Show the published 48-month total beside the published renewal rate, clearly label the arithmetic as derived from source numbers, and state what is still unknown.",
+    "source_plan": [
+      "https://www.hostinger.com/pricing",
+      "https://www.hostinger.com/cloud-hosting",
+      "https://www.hostinger.com/coupons"
+    ]
+  },
+  {
+    "id": "term-normalization",
+    "priority": 2,
+    "status": "open",
+    "topic": "Normalize cloud-hosting deal terms across billing periods",
+    "what_benchmarks_cover": "Promo prices are usually shown for one preferred term, while shorter terms and upfront totals are scattered or omitted.",
+    "shared_omission": "No single 12/24/48-month comparison with the billing commitment made explicit.",
+    "独家可补": "Build a term matrix from provider-published prices only; mark unavailable terms as unavailable rather than estimating.",
+    "source_plan": [
+      "https://www.hostinger.com/pricing",
+      "https://www.pcmag.com/picks/the-best-cloud-web-hosting-services",
+      "https://www.pcmag.com/picks/the-best-web-hosting-services"
+    ]
+  },
+  {
+    "id": "cloud-resource-matrix",
+    "priority": 3,
+    "status": "completed",
+    "topic": "Cloud plan resources that deal pages leave below the fold",
+    "what_benchmarks_cover": "Cloud deal pages lead with discounts but often omit CPU, RAM, traffic, storage, and backup limits.",
+    "shared_omission": "No compact plan-by-plan resource table tied to source URLs.",
+    "独家可补": "Extract only source-stated CPU, RAM, storage, transfer, backup, and support limits and show unknown cells explicitly.",
+    "source_plan": [
+      "https://www.hostinger.com/cloud-hosting",
+      "https://www.hostinger.com/vps-hosting",
+      "https://www.hostinger.com/support/6976044-parameters-and-limits-for-hosting-plans"
+    ],
+    "plan_note": "source_plan re-planned on 2026-09-24: the PCMag URL was removed because www.pcmag.com is blocked from this machine (Cloudflare human-verification challenge, HTTP 403 on every path including /robots.txt) and was never fetched. The parameters page added here is the limits table that the two Hostinger deal pages link to from their own FAQ, so it is a provider-published source rather than a substitute for a blocked benchmark. No PCMag content was read or reproduced."
+  },
+  {
+    "id": "deal-validity-log",
+    "priority": 4,
+    "status": "completed",
+    "topic": "How to verify whether a hosting deal is still active",
+    "what_benchmarks_cover": "Provider pages use rotating discounts and frequently omit a precise expiry date.",
+    "shared_omission": "No timestamped evidence log that separates observed price, advertised expiry, and unknown expiry.",
+    "独家可补": "Record fetched time, exact offer URL, stated start/end date, and whether the price is visible without checkout.",
+    "source_plan": [
+      "https://www.hostinger.com/black-friday",
+      "https://www.hostinger.com/black-friday-web-hosting-deals",
+      "https://www.hostinger.com/coupons"
+    ]
+  },
+  {
+    "id": "sla-credit-terms",
+    "priority": 5,
+    "status": "completed",
+    "topic": "Uptime promise versus credit-backed SLA",
+    "what_benchmarks_cover": "Most pages state an uptime percentage but do not put the remedy or credit conditions beside the deal.",
+    "shared_omission": "No neutral table for uptime promise, measurement scope, credit remedy, and exclusions.",
+    "独家可补": "Link the provider's SLA/terms and report only the remedy language that is actually published.",
+    "source_plan": [
+      "https://www.hostinger.com/cloud-hosting",
+      "https://www.hostinger.com/legal/hosting-agreement",
+      "https://www.hostinger.com/legal/universal-terms-of-service-agreement",
+      "https://www.hostinger.com/legal/refund-policy"
+    ],
+    "plan_note": "source_plan re-planned on 2026-09-25: the PCMag URL was removed because www.pcmag.com is blocked from this machine (Cloudflare human-verification challenge, HTTP 403 on every path including /robots.txt) and was never fetched. The three Hostinger legal documents added here are provider-published sources, and one of them is exactly what this gap's own plan asked for ('Link the provider's SLA/terms and report only the remedy language that is actually published'). The hosting agreement is the 'specific Service agreement' that the universal terms of service defers the uptime guarantee to, so following that link is provider-published navigation rather than a substitute for a blocked benchmark. No PCMag content was read or reproduced."
+  },
+  {
+    "id": "migration-risk",
+    "priority": 6,
+    "status": "completed",
+    "topic": "Free migration deal: requirements and downtime caveats",
+    "what_benchmarks_cover": "Free migration is advertised as a benefit, while credentials, supported platforms, timing, and failure remedies are scattered.",
+    "shared_omission": "No first-screen checklist showing what the customer must provide and what the provider does not promise.",
+    "独家可补": "Summarize the provider's stated prerequisites, estimated timing, unsupported cases, and any missing downtime remedy.",
+    "source_plan": [
+      "https://www.hostinger.com/website-migration",
+      "https://www.hostinger.com/cloud-hosting"
+    ]
+  },
+  {
+    "id": "regional-price-context",
+    "priority": 7,
+    "status": "open",
+    "topic": "Region, currency, tax, and checkout context for hosting deals",
+    "what_benchmarks_cover": "PCMag regional editions and provider pages mix currencies and show prices that can vary by location.",
+    "shared_omission": "No explicit rule for which region/currency was observed and what tax/checkout values remain unknown.",
+    "独家可补": "Label locale, display currency, tax inclusion, and whether the figure was observed before or after checkout; never convert without a stated source.",
+    "source_plan": [
+      "https://www.pcmag.com/picks/the-best-cloud-web-hosting-services",
+      "https://www.hostinger.com/pricing"
+    ]
+  },
+  {
+    "id": "reddit-access-gap",
+    "priority": 8,
+    "status": "blocked",
+    "topic": "Community reports about cloud hosting deals",
+    "what_benchmarks_cover": "The Google result points to Reddit, but Reddit blocks unauthenticated reading from this machine.",
+    "shared_omission": "No verified Reddit post set can be quoted or summarized without access.",
+    "独家可补": "Keep this gap blocked; do not infer community sentiment or substitute another domain for Reddit.",
+    "source_plan": [
+      "https://www.reddit.com/r/devops/comments/1c9i15b/cheapest_cloud_servers_out_there/",
+      "https://www.reddit.com/r/devops/search/?q=cloud%20hosting&restrict_sr=1&sort=relevance&t=all"
+    ]
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "date": "2026-09-21",
+    "title": "Hostinger Cloud Startup: the deal price is not the long-term price",
+    "url": "https://cloudhostdeals.com/articles/hostinger-cloud-startup-first-term-vs-renewal",
+    "gap_id": "hostinger-renewal-cost"
+  },
+  {
+    "date": "2026-09-22",
+    "title": "How to check whether a cloud hosting deal is still active",
+    "url": "https://cloudhostdeals.com/articles/how-to-check-if-a-cloud-hosting-deal-is-still-active",
+    "gap_id": "deal-validity-log"
+  },
+  {
+    "date": "2026-09-23",
+    "title": "Free migration: what you must hand over, and the downtime it does not rule out",
+    "url": "https://cloudhostdeals.com/articles/free-migration-prerequisites-and-downtime-caveats",
+    "gap_id": "migration-risk"
+  },
+  {
+    "date": "2026-09-24",
+    "title": "Cloud hosting deals show 6 of the 29 resource limits the provider publishes",
+    "url": "https://cloudhostdeals.com/articles/cloud-hosting-deals-missing-resource-limits",
+    "gap_id": "cloud-resource-matrix"
+  },
+  {
+    "date": "2026-09-25",
+    "title": "A 99.9% uptime promise pays 5% of one month - and the deal page never says so",
+    "url": "https://cloudhostdeals.com/articles/cloud-hosting-uptime-guarantee-credit-terms",
+    "gap_id": "sla-credit-terms"
+  }
+]

@@ -235,6 +235,17 @@ def main():
     render = cfg["render"]
     with open(DATA, "r", encoding="utf-8") as fh:
         data = json.load(fh)
+    editorial_path = os.path.join(ROOT, "editorial", "articles.json")
+    if os.path.isfile(editorial_path):
+        with open(editorial_path, "r", encoding="utf-8") as fh:
+            editorial = json.load(fh)
+    else:
+        editorial = []
+    if not isinstance(editorial, list):
+        raise ValueError("editorial/articles.json must contain a list")
+    for article in editorial:
+        if not isinstance(article, dict) or not article.get("slug") or not article.get("title") or not article.get("answer"):
+            raise ValueError("each editorial article needs slug, title, and answer")
 
     brand = site.get("brand", "cloudhostdeals")
     domain = site.get("domain", "example.com").strip().rstrip("/")
@@ -301,7 +312,9 @@ def main():
             if site.get("repo")
             else "",
         )
-        with open(os.path.join(OUT, path.strip("/") + ".html" if path != "/" else "index.html"), "w", encoding="utf-8") as fh:
+        output_path = os.path.join(OUT, path.strip("/") + ".html" if path != "/" else "index.html")
+        os.makedirs(os.path.dirname(output_path), exist_ok=True)
+        with open(output_path, "w", encoding="utf-8") as fh:
             fh.write(out)
 
     # ---------- deal cards ----------
@@ -634,6 +647,51 @@ def main():
             og_price=o.get("price_text") or "",
         )
 
+    # ---------- editorial articles ----------
+    def article_paragraphs(value):
+        chunks = [part.strip() for part in str(value or "").split("\\n\\n") if part.strip()]
+        return "".join("<p>%s</p>" % esc(part).replace("\\n", "<br>") for part in chunks)
+
+    for article in editorial:
+        sections_html = []
+        for section in article.get("sections", []):
+            if not isinstance(section, dict) or not section.get("heading"):
+                continue
+            sections_html.append("<section><h2>%s</h2>%s</section>" % (esc(section["heading"]), article_paragraphs(section.get("body", ""))))
+        source_items = []
+        for source in article.get("sources", []):
+            if isinstance(source, dict) and source.get("url"):
+                label = source.get("title") or source["url"]
+                source_items.append('<li><a href="%s" rel="noopener nofollow" target="_blank">%s</a></li>' % (esc(source["url"]), esc(label)))
+        unique_note = article.get("unique_note") or "This page adds original comparison notes and links to the underlying sources."
+        article_content = Template(read_tpl("article.html")).safe_substitute(
+            breadcrumb='<div class="breadcrumb"><a href="/">Home</a> / Guides</div>',
+            title=esc(article["title"]),
+            answer=esc(article["answer"]),
+            unique_note=esc(unique_note),
+            sections="".join(sections_html),
+            sources="<ul>" + "".join(source_items) + "</ul>" if source_items else "<p>No source links were recorded.</p>",
+            published_short=esc((article.get("published_at") or generated)[:16].replace("T", " ")),
+        )
+        page(
+            article["title"] + " — " + brand,
+            article.get("description") or article["answer"],
+            "/articles/" + slugify(article["slug"]),
+            article_content,
+            {
+                "@context": "https://schema.org",
+                "@type": "Article",
+                "headline": article["title"],
+                "datePublished": article.get("published_at") or generated,
+                "dateModified": article.get("updated_at") or article.get("published_at") or generated,
+                "mainEntityOfPage": url("/articles/" + slugify(article["slug"])),
+                "author": {"@type": "Organization", "name": brand},
+            },
+            og_name="article-" + slugify(article["slug"]),
+            og_head=article["title"],
+            og_price="Original guide",
+        )
+
     # ---------- about / privacy / contact ----------
     # The contact address is published only once it can actually receive mail. If
     # .ilang/site.ilang leaves contact_email empty, the pages say so in plain words
@@ -783,6 +841,7 @@ def main():
         ["/", "/compare", "/about", "/privacy", "/contact"]
         + ["/providers/" + p["slug"] for p in live]
         + ["/deals/" + o["slug"] for o in offers]
+        + ["/articles/" + slugify(a["slug"]) for a in editorial]
     )
     sitemap = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
     for u in urls:
