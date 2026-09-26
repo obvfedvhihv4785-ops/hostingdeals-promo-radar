@@ -88,7 +88,7 @@
   {
     "id": "regional-price-context",
     "priority": 7,
-    "status": "open",
+    "status": "completed",
     "topic": "Region, currency, tax, and checkout context for hosting deals",
     "what_benchmarks_cover": "PCMag regional editions and provider pages mix currencies and show prices that can vary by location.",
     "shared_omission": "No explicit rule for which region/currency was observed and what tax/checkout values remain unknown.",
@@ -96,7 +96,8 @@
     "source_plan": [
       "https://www.pcmag.com/picks/the-best-cloud-web-hosting-services",
       "https://www.hostinger.com/pricing"
-    ]
+    ],
+    "plan_note": "source_plan re-planned on 2026-09-26: the PCMag regional-editions URL was removed because www.pcmag.com is blocked from this machine (Cloudflare human-verification challenge, HTTP 403 on every path including /robots.txt) and was never fetched. The provider's own locale pricing pages added here are provider-published sources and match what this gap's own plan asked for ('Label locale, display currency, tax inclusion, and whether the figure was observed before or after checkout; never convert without a stated source') - each locale page states its own language and displays its own currency symbol, and the deal page states in its own words that the displayed figure is pre-tax and pre-checkout. No PCMag content was read or reproduced. One further locale path was tested and abandoned on a block: /tr/pricing returned HTTP 403, so the Turkish locale was not read and no price is reported for it."
   },
   {
     "id": "reddit-access-gap",

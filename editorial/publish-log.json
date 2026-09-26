@@ -28,5 +28,11 @@
     "title": "A 99.9% uptime promise pays 5% of one month - and the deal page never says so",
     "url": "https://cloudhostdeals.com/articles/cloud-hosting-uptime-guarantee-credit-terms",
     "gap_id": "sla-credit-terms"
+  },
+  {
+    "date": "2026-09-26",
+    "title": "The same 7.99 in three currencies: what a hosting deal price leaves unsaid",
+    "url": "https://cloudhostdeals.com/articles/hosting-deal-price-locale-currency-and-tax",
+    "gap_id": "regional-price-context"
   }
 ]
