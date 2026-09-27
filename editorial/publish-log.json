@@ -34,5 +34,11 @@
     "title": "The same 7.99 in three currencies: what a hosting deal price leaves unsaid",
     "url": "https://cloudhostdeals.com/articles/hosting-deal-price-locale-currency-and-tax",
     "gap_id": "regional-price-context"
+  },
+  {
+    "date": "2026-09-27",
+    "title": "Cloud hosting deals publish one billing term, not three",
+    "url": "https://cloudhostdeals.com/articles/cloud-hosting-deals-billing-term-matrix",
+    "gap_id": "term-normalization"
   }
 ]

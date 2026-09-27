@@ -366,5 +366,67 @@
         "url": "https://www.hostinger.com/de/cloud-hosting"
       }
     ]
+  },
+  {
+    "gap_id": "term-normalization",
+    "status": "published",
+    "slug": "cloud-hosting-deals-billing-term-matrix",
+    "title": "Cloud hosting deals publish one billing term, not three",
+    "description": "A source-linked term matrix for cloud hosting deals: which billing periods the provider actually prints, how each headline monthly figure is derived, and which cells stay blank.",
+    "answer": "Every headline per-month price on a cloud hosting deal page is a 48-month prepaid amount divided by 48. For the entry cloud plan the provider prints $7.99/mo with a $383.52 upfront total and a $25.99/mo renewal rate, and all three belong to the same 48-month term. No 12-month and no 24-month price is printed for that plan on the pages checked, even though the provider's own pricing FAQ refers to an annual cloud hosting plan, so two of the three columns in a term comparison are blank rather than cheaper. Until a term is printed beside the number, treat any per-month figure as a multi-year prepaid commitment.",
+    "unique_note": "This guide adds a term matrix assembled only from figures the provider prints. Sourced facts are the quoted prices, totals, renewal rates, term labels and the provider's own division rule. Clearly labelled derived arithmetic is limited to two things: the multiplication and division that reproduce each printed figure from the printed monthly rate and term, and the percentage each off badge implies. Nothing is converted between currencies, carried over from another plan, or estimated; cells with no published value are left blank.",
+    "published_at": "2026-09-27T12:00:00Z",
+    "sections": [
+      {
+        "heading": "The term is printed, and on the cloud plans it is 48 months",
+        "body": "The pricing page renders a term control whose selected value reads '48 months plan'. The cloud hosting page answers its own plan-cost question with three figures, each tied to that same term: 'Cloud Startup - $7.99/month for the 48-month plan', 'Cloud Professional - $15.99/month for the 48-month plan' and 'Cloud Enterprise - $29.99/month for the 48-month plan'.\\n\\nThe pricing cards state the term as a total rather than a rate. For the entry cloud plan the card reads: 'Get 48 months for $383.52 (regular price $1,343.52). Renews at $25.99/mo.' The cloud hosting page's plan slider carries the matching renewal line: 'For 48-month term. $25.99/mo when you renew'.\\n\\nBoth pages also print the rule that connects the rate to the total. The pricing page and the VPS page say: 'All plans are paid upfront. The monthly rate reflects the total plan price divided by the number of months in your plan.' The cloud hosting page says: 'The price displayed is the monthly rate excluding applicable taxes. The total price for the plan to be paid upfront at checkout includes the monthly rate multiplied by the number of months in your plan, along with any applicable taxes.'"
+      },
+      {
+        "heading": "The term matrix: one column has numbers, two are blank",
+        "body": "Using only what the checked pages print, the term matrix for the entry cloud plan looks like this.\\n12-month term: no price published. The pricing FAQ asks 'How do I register the free domain included with annual hosting plans?' and answers that the free 12-month domain applies to 'every annual managed hosting for WordPress, cloud hosting, or Website Builder plan', so an annual cloud hosting plan is named on the site, but no annual cloud hosting price is printed on the pages checked.\\n24-month term: no price published for the cloud plans. The only 24-month term found on the pricing page belongs to a different plan line, whose card reads 'For 24-month term. $49/mo when you renew'.\\n48-month term: published. $7.99/mo, an upfront total of $383.52, a regular price of $1,343.52, and a renewal rate of $25.99/mo.\\n\\nThe served HTML carries the 48-month figures and no other term's numbers, so a three-term comparison cannot be assembled from these pages. Following the gap's own instruction, the unpublished cells are recorded as unavailable rather than estimated."
+      },
+      {
+        "heading": "Derived: the printed totals are the printed monthly rates multiplied by 48",
+        "body": "This part is arithmetic on the provider's own printed numbers, not a provider statement.\\n$7.99 x 48 = $383.52, which is the printed upfront total, exactly.\\n$27.99 x 48 = $1,343.52, which is the printed regular price, exactly. The regular price is therefore a 48-month amount at the regular monthly rate, not a monthly rate itself.\\n$25.99 x 48 = $1,247.52, the 48-month value of the printed renewal rate.\\n\\nThe same pattern holds on the other two cards on the same page: $2.99 x 48 = $143.52 against a regular price of $575.52, and $3.99 x 48 = $191.52 against a regular price of $911.52. Every printed total divides back to a whole-cent monthly rate, so no rounding or estimation was needed to reproduce them."
+      },
+      {
+        "heading": "Derived: what an off badge actually compares",
+        "body": "Also arithmetic, and also derived rather than stated.\\nThe entry cloud plan: 1 - (7.99 / 27.99) = 71.5%, which matches the '71% off' badge on the pricing page and the 'SAVE 71%' badge on the cloud hosting page.\\nThe cheapest shared plan: 1 - (2.99 / 11.99) = 75.1%, matching its '75% off' badge.\\nThe middle shared plan: 1 - (3.99 / 18.99) = 79.0%, matching its 'Special offer - 79% off' badge.\\nThe Agency plan on the same pricing page: 1 - (29 / 69) = 58.0%, matching its 'SAVE 58%' badge.\\n\\nTwo conclusions follow. First, the badge is a ratio of two prices on the same basis, so it comes out the same whether the operands are monthly rates or 48-month totals; it carries no information about the length of the commitment. Second, on the cloud and shared cards both operands are 48-month amounts, so a badge reading 71% off describes a discount on a four-year prepaid total rather than on a monthly invoice."
+      },
+      {
+        "heading": "The site normalizes renewal to two different horizons",
+        "body": "The renewal line is not written against a single horizon across the provider's own pages.\\nThe cloud hosting page writes it as a 48-month term: 'For 48-month term. $25.99/mo when you renew'.\\nThe VPS page writes the same kind of line as a two-year term. Its cards read $6.49/mo with 'Renews at $11.99/mo for 2 years. Cancel anytime.', $8.99/mo with 'Renews at $14.99/mo for 2 years. Cancel anytime.', $12.99/mo with 'Renews at $28.99/mo for 2 years. Cancel anytime.' and $25.99/mo with 'Renews at $49.99/mo for 2 years. Cancel anytime.'\\nThe Agency card on the pricing page writes it as a 24-month term.\\n\\nTwo years and 24 months describe the same span, so the cloud line is the outlier: it states its renewal against a four-year horizon while the other lines state theirs against two years. A reader comparing renewal rates across these pages is comparing different commitment lengths, and neither page says so."
+      },
+      {
+        "heading": "A five-step check before comparing two cloud hosting deals",
+        "body": "1. Find the term label before the price. On these pages the label is a select value reading '48 months plan' or a line reading 'for the 48-month plan', not the word 'month'.\\n2. Multiply the monthly rate by the term to get the money you actually commit, because the provider states that the monthly rate is the total divided by the months in the plan.\\n3. Decide whether the regular price in the card is a monthly rate or a term total. Here it is a 48-month total, which is why the badge reaches 71%.\\n4. Read the renewal line's own horizon, not just its number. On the same site that horizon is written as 48 months on the cloud page and 2 years on the VPS page.\\n5. Leave unpublished terms blank. A term with no printed price is unknown, not cheap."
+      },
+      {
+        "heading": "What is still unknown",
+        "body": "The checked pages do not print a 12-month or a 24-month price for the cloud plans, a tax-inclusive checkout total, an exchange rate, or an end date for the rotating offer. The regular price is printed inside the 48-month sentence but is not separately labelled as a rate or as a total. None of these values is estimated here."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Hostinger pricing",
+        "url": "https://www.hostinger.com/pricing"
+      },
+      {
+        "title": "Hostinger cloud hosting",
+        "url": "https://www.hostinger.com/cloud-hosting"
+      },
+      {
+        "title": "Hostinger VPS hosting",
+        "url": "https://www.hostinger.com/vps-hosting"
+      },
+      {
+        "title": "Hostinger shared hosting",
+        "url": "https://www.hostinger.com/shared-hosting"
+      },
+      {
+        "title": "Hostinger WordPress hosting",
+        "url": "https://www.hostinger.com/wordpress-hosting"
+      }
+    ]
   }
 ]

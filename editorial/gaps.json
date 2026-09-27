@@ -16,16 +16,19 @@
   {
     "id": "term-normalization",
     "priority": 2,
-    "status": "open",
+    "status": "completed",
     "topic": "Normalize cloud-hosting deal terms across billing periods",
     "what_benchmarks_cover": "Promo prices are usually shown for one preferred term, while shorter terms and upfront totals are scattered or omitted.",
     "shared_omission": "No single 12/24/48-month comparison with the billing commitment made explicit.",
     "独家可补": "Build a term matrix from provider-published prices only; mark unavailable terms as unavailable rather than estimating.",
     "source_plan": [
       "https://www.hostinger.com/pricing",
-      "https://www.pcmag.com/picks/the-best-cloud-web-hosting-services",
-      "https://www.pcmag.com/picks/the-best-web-hosting-services"
-    ]
+      "https://www.hostinger.com/cloud-hosting",
+      "https://www.hostinger.com/vps-hosting",
+      "https://www.hostinger.com/shared-hosting",
+      "https://www.hostinger.com/wordpress-hosting"
+    ],
+    "plan_note": "source_plan re-planned on 2026-09-27: the two PCMag URLs were removed because www.pcmag.com is blocked from this machine (Cloudflare human-verification challenge, HTTP 403 on every path including /robots.txt) and was never fetched. The five provider pages added here are provider-published sources and match what this gap's own plan asked for ('Build a term matrix from provider-published prices only; mark unavailable terms as unavailable rather than estimating') - each page prints its own term label and the provider's own division rule, and the two pages that publish no shorter-term price are reported as publishing nothing. No PCMag content was read or reproduced. The gap was marked completed only after build.py rendered the article and site/sitemap.xml listed its extensionless URL."
   },
   {
     "id": "cloud-resource-matrix",
