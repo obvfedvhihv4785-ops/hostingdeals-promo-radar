@@ -114,5 +114,21 @@
       "https://www.reddit.com/r/devops/comments/1c9i15b/cheapest_cloud_servers_out_there/",
       "https://www.reddit.com/r/devops/search/?q=cloud%20hosting&restrict_sr=1&sort=relevance&t=all"
     ]
+  },
+  {
+    "id": "bundle-boundary",
+    "priority": 9,
+    "status": "completed",
+    "topic": "What a cloud hosting deal bundles for free, for how long, and what each item is worth",
+    "what_benchmarks_cover": "Deal cards badge bundled extras such as a domain, SSL, mailboxes and AI credits as free, but do not give them a consistent duration and never place the printed value or the refund status of an item beside the headline price.",
+    "shared_omission": "No per-item boundary for the bundle: printed duration, printed value, and the provider's own refund rule for the same item in one view.",
+    "独家可补": "Build a bundle matrix from provider-published text only: for each bundled item quote the printed duration, the printed value if any, and the provider's own refund rule, and mark unstated cells as unstated rather than estimating.",
+    "source_plan": [
+      "https://www.hostinger.com/cloud-hosting",
+      "https://www.hostinger.com/pricing",
+      "https://www.hostinger.com/domains",
+      "https://www.hostinger.com/legal/refund-policy"
+    ],
+    "plan_note": "New gap created on 2026-09-28 instead of reusing a completed gap_id: the gap table held 7 completed gaps and 1 blocked gap (reddit-access-gap), so no gap with status open remained and a further article needed a new gap rather than a repeated one. The four source_plan URLs are provider-published pages, all permitted by www.hostinger.com/robots.txt. The benchmark domain www.pcmag.com appears in the source_plan of every pre-existing gap and is blocked from this machine (Cloudflare human-verification challenge, HTTP 403 on every path including /robots.txt); it was not fetched for this gap either and no PCMag content was read or reproduced, so this gap was planned on permitted provider sources from the start. The gap was marked completed only after build.py rendered the article and site/sitemap.xml listed its extensionless URL."
   }
 ]

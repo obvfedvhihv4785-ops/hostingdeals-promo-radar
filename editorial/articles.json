@@ -428,5 +428,83 @@
         "url": "https://www.hostinger.com/wordpress-hosting"
       }
     ]
+  },
+  {
+    "gap_id": "bundle-boundary",
+    "status": "published",
+    "slug": "cloud-hosting-deals-bundle-boundary",
+    "title": "What is actually free in a cloud hosting deal, and for how long",
+    "description": "A source-linked matrix of the extras bundled into a cloud hosting deal: the duration printed on each one, the single value the provider puts on any of them, and the refund clock the provider's own policy applies to each.",
+    "answer": "Five extras are bundled into the cloud hosting deal card: a free domain, unlimited SSL, 15 AI Builder credits, unlimited mailboxes, and an included CDN. Only two of them print a duration - \"Free domain for 1 year\" and \"Unlimited mailboxes per website - free for 1 year\". One is labelled a \"one-time gift\". Two of them, unlimited SSL and the included CDN, print no boundary at all. The same free domain is then described with four different scopes on four provider pages: \"for 1 year\" on the deal card, \"a free domain\" with no duration in the cloud FAQ, \"the free 12-month domain name included with every annual managed hosting for WordPress, cloud hosting, or Website Builder plan\" in the pricing FAQ, and \"included for one year with eligible annual plans\" on the domains page - while the plan being sold is printed as a 48-month term. The refund policy then applies a shorter clock to the bundle than to the hosting: hosting may be refunded only if cancelled within 30 days of the transaction, but a new domain registration only if the refund is started within 96 hours of the registration, and \"Domain Name Renewals\" and \"Privacy Protection\" sit on the list of products not available for refunds - even though the pricing table prints \"WHOIS privacy protection value $9.99\" beside the same plans. No page read for this guide prices the bundled domain or the bundled mailboxes after the free year.",
+    "unique_note": "Sourced facts on this page are the quoted lines, durations, values, windows and lists printed on the provider's own pages, each linked below. Clearly labelled derived arithmetic is limited to five things: the item counts inside the bundle block; the conversion of the 30-day, 96-hour and 168-hour windows into hours and the day on which the hosting and domain windows stop overlapping; the fourfold spread between the two readings of the printed $9.99 WHOIS value over a 48-month term; the count of 87 suffixes printed in the refund policy's ccTLD list; and the $19.98 difference between the two first-year .com figures printed on the domains page. No price, discount, traffic, ranking, click or index figure is estimated, and every cell the pages leave empty is reported as unstated rather than filled in.",
+    "published_at": "2026-09-28T00:06:00Z",
+    "sections": [
+      {
+        "heading": "The bundle the cloud deal card prints, item by item",
+        "body": "The Cloud Startup card on the cloud hosting page prints its price and then this block of bundled extras, quoted as published:\\nFree domain for 1 year; Unlimited SSL FREE; 15 vibe coding credits (one-time gift) FREE; Unlimited mailboxes per website - free for 1 year FREE; Managed hosting for WordPress, WooCommerce, and Web Apps; CDN included; Dedicated IP address; Priority 24/7 expert support; 30-Day money-back guarantee; AI SEO ready\\n\\nTwo lines in that block carry a printed duration: the domain, \"for 1 year\", and the mailboxes, \"free for 1 year\". One line carries a different kind of limit: the AI Builder credits are \"15\" and a \"one-time gift\". Two of the bundled items, \"Unlimited SSL\" and \"CDN included\", print no period of any kind even though the domain and the mailboxes sitting beside them do. The dedicated IP address is listed without a FREE badge at all, so it reads as a plan feature rather than a promotional extra.\\n\\nThe same card's small print says the displayed figure is the monthly rate excluding applicable taxes and that the upfront total is that monthly rate multiplied by the number of months in the plan, which the card prints as a 48-month term. Nothing in the bundle block says what any of the five items costs once its printed period ends, and nothing in the block attaches a value to any of them."
+      },
+      {
+        "heading": "The same free domain is described with four different scopes",
+        "body": "Four provider pages carry a sentence about the free domain, and no two of them are worded the same way.\\nCloud hosting deal card: \"Free domain for 1 year\"\\nCloud hosting FAQ: \"Every cloud hosting package includes a free domain, free SSL certificates, free domain-based emails, and 24/7 priority support.\"\\nPricing FAQ: \"To activate the free 12-month domain name included with every annual managed hosting for WordPress, cloud hosting, or Website Builder plan ...\"\\nDomains page: \"A free domain is included for one year with eligible annual plans.\"\\n\\nThree of the four attach a duration of one year or 12 months; the cloud FAQ attaches none and instead folds the domain in with SSL, email and support as things the package \"includes\". Two of the four attach an eligibility condition - \"annual\" in the pricing FAQ, \"eligible annual plans\" on the domains page - while the plan those sentences would apply to is sold on the card as a 48-month term. None of the pages read for this guide states whether a 48-month cloud plan is one of the plans those eligibility sentences mean, so the one cell a reader would want to fill in stays empty."
+      },
+      {
+        "heading": "The bundle's refund clock is shorter than the hosting's",
+        "body": "The refund policy sets one window for the plan and a different one for an item inside it. Its standard terms say: \"Products purchased from Hostinger may be refunded only if canceled within 30 days of the date of the transaction.\" Its special terms for a domain say: \"New registration of domain name: Refundable only if at the moment of initiation of the refund both the following conditions are met: (i) domain name refund is initiated within 96 hours from such domain name registration and (ii) more than 24 hours have passed from the moment of initiation of last refund of any other domain name registration.\"\\n\\nThe two windows are not close in size. Thirty days is 720 hours, so the 96-hour domain window is 13.3% of the hosting window and closes 624 hours, or 26 days, earlier. For a .br registration the policy prints a longer domain window of 168 hours, which is 7 days, still well inside the hosting's 30. The policy also prints a separate rule for a domain that was never activated: \"Non-activated domain name: Refundable only if the domain name has not been activated and the cancellation is requested within the applicable 30-day refund period from the date of payment.\" The document does not say which of its two clauses governs a domain that has been registered but not yet activated."
+      },
+      {
+        "heading": "Eighty-seven domain suffixes where a registration cannot be refunded at all",
+        "body": "The same special-terms section closes with a list introduced by this sentence: \"The following ccTLD registries DO NOT permit refunds upon cancellation.\" The list is printed as a single run of suffixes, and it contains 87 entries. It mixes top-level suffixes with their sub-variants - for example .uk is printed together with .co.uk, .org.uk and .me.uk, and .pl with .com.pl, .net.pl, .info.pl and .biz.pl - and it includes widely used extensions such as .de, .eu, .fr, .it, .nl, .se, .us, .in, .jp, .au, .ca, .ch and .ai.\\n\\nFor a buyer reading the deal card this matters because the card prints one undivided promise, \"Free domain for 1 year\", with no hint that the extension chosen changes what happens if the plan is cancelled. The count of 87 is derived by counting the suffixes printed in that one sentence; the sentence itself is quoted, not paraphrased."
+      },
+      {
+        "heading": "The one value the provider prints for a bundled item: WHOIS privacy protection, $9.99",
+        "body": "The pricing page's feature comparison lists, for every cloud plan, the row \"WHOIS privacy protection value $9.99\". It is the only figure in the bundle neighbourhood of any page read for this guide that puts a number on a bundled extra. The numeral is printed with no period attached, so the same text supports two readings over the 48-month term the card sells: $9.99 once, or $9.99 for each of four years, which is $39.96. The page does not say which one it means, and the two readings differ fourfold.\\n\\nThe refund policy pulls the other way. \"Privacy Protection\" appears on its list of products not available for refunds, in the same list as \"Domain Name Renewals\", \"Redemption Fees\" and \"Domain Name Transfers (if the transfer is successful)\". So an item the pricing table values at $9.99 is an item the policy says cannot be refunded. The same list also names \"Hostinger AI Builder credits\", which the deal card badges \"FREE\" and describes as a \"one-time gift\"."
+      },
+      {
+        "heading": "The free domain is claimed, not granted, and that moves the clock",
+        "body": "The pricing FAQ describes the free domain as an action rather than an automatic inclusion: \"simply log in to your dashboard, click on the Claim domain button, find your perfect domain, and register it.\" The refund policy then measures the domain's clock from a different event than the hosting's: the domain window runs \"within 96 hours from such domain name registration\", while the hosting window runs \"within 30 days of the date of the transaction\".\\n\\nIf the claim is what starts the domain clock, the two windows do not stay nested. Claiming on day 25 of a 30-day hosting window leaves 5 days, or 120 hours, of hosting window, and the domain's own 96-hour window closes on day 29 - one day before the hosting window does. Claim on day 26 and the two close together. Claim on or after day 27 and the domain's 96-hour window extends past the end of the hosting's 30-day window. The deal card prints the 30-day money-back guarantee and the free domain in the same block without noting that the two are measured from different starting points."
+      },
+      {
+        "heading": "The same bundle line appears on other plans with different refund rules",
+        "body": "The free domain is not a cloud-only line. The VPS page prints \"Free domain for 1 year\" in its feature list, and the shared hosting and WordPress hosting cards print \"Domain - free for 1 year\". The quantity attached to the mailboxes is not consistent across them: the cloud card says \"Unlimited mailboxes per website - free for 1 year\", while the WordPress page's FAQ says managed WooCommerce plans come with \"a free domain name, unlimited free SSL certificates, 100 free email addresses, and free CDN\".\\n\\nThe refund rules behind those identical-looking lines differ too. The refund policy's standard list reads \"Hosting (all plans, except first payment after Free Trial and all VPS hosting plans)\" and then names \"VPS (except upgrades)\" and \"KVM VPS (except upgrades)\" as items available under those same standard terms, while a separate special clause adds a further condition for VPS: the refund must be initiated \"within 30 days of the date of the transaction of that specific VPS hosting plan\" and \"more than 180 days\" must have passed since the last VPS refund. Read together with the domain clause, the cooldown printed between two refunds is 24 hours for a domain registration and 180 days for a VPS plan."
+      },
+      {
+        "heading": "What the pages read for this guide do not state",
+        "body": "These cells are empty on every page read for this guide. They are listed as unstated rather than filled in:\\nThe price of the bundled domain after the free year. The domains page says only that \"Standard renewal rates apply after year one\", with no number.\\nThe price of the bundled mailboxes after the free year.\\nWhether a bundled free domain is valued, deducted or clawed back when the hosting plan itself is refunded. The policy states a rule for a domain bought as a product; it does not state how a bundled one is treated.\\nWhich domain extensions are eligible for the free domain.\\nWhether the 96-hour new-registration rule is the clause that applies to a bundled free domain, or whether the 30-day non-activated rule applies instead.\\nWhether the $9.99 WHOIS privacy protection value is a yearly figure or a one-off.\\nWhether a 48-month cloud plan counts as an \"annual\" plan for the eligibility sentences in the pricing FAQ and on the domains page.\\n\\nOne further figure sits nearby without being part of the bundle: the domains page prints \".com\" at \"$19.99\" beside \"$0.01 /1st yr\", with the note \"*Applicable when you choose a 3-year term. Standard renewal rates apply after year one.\" The difference between the two printed first-year figures is $19.98, and the 3-year term in that note is a third different term length from the 48-month cloud term."
+      },
+      {
+        "heading": "How to read a bundle when you compare cloud hosting deals",
+        "body": "The deal card treats the bundle as a list of features. Reading it as a list of durations gives a different picture, and the provider's own documents supply everything needed to do that:\\nSeparate the items that print a period from the items that do not. On this card that is two against two, with one labelled one-time.\\nFind the claim step. If the item has to be claimed, its clock may start at the claim rather than at checkout.\\nCheck the refund rule per item, not per plan. The plan's 30 days does not carry over to a new domain registration.\\nCount an item at a value only where a page prints one, and treat a value printed without a period as a value with an unknown period.\\nTreat a \"free\" badge with no duration as a statement about the term you are buying, not as a permanent entitlement.\\n\\nAll figures quoted here were read from the provider's own pages on 2026-09-28, and the sources are linked below so they can be re-checked. Prices, discounts and bundled extras on these pages rotate, so a figure quoted here may not be the figure on the page today."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Hostinger cloud hosting",
+        "url": "https://www.hostinger.com/cloud-hosting"
+      },
+      {
+        "title": "Hostinger pricing",
+        "url": "https://www.hostinger.com/pricing"
+      },
+      {
+        "title": "Hostinger domains",
+        "url": "https://www.hostinger.com/domains"
+      },
+      {
+        "title": "Hostinger refund policy",
+        "url": "https://www.hostinger.com/legal/refund-policy"
+      },
+      {
+        "title": "Hostinger VPS hosting",
+        "url": "https://www.hostinger.com/vps-hosting"
+      },
+      {
+        "title": "Hostinger shared hosting",
+        "url": "https://www.hostinger.com/shared-hosting"
+      },
+      {
+        "title": "Hostinger WordPress hosting",
+        "url": "https://www.hostinger.com/wordpress-hosting"
+      }
+    ]
   }
 ]
