@@ -130,5 +130,23 @@
       "https://www.hostinger.com/legal/refund-policy"
     ],
     "plan_note": "New gap created on 2026-09-28 instead of reusing a completed gap_id: the gap table held 7 completed gaps and 1 blocked gap (reddit-access-gap), so no gap with status open remained and a further article needed a new gap rather than a repeated one. The four source_plan URLs are provider-published pages, all permitted by www.hostinger.com/robots.txt. The benchmark domain www.pcmag.com appears in the source_plan of every pre-existing gap and is blocked from this machine (Cloudflare human-verification challenge, HTTP 403 on every path including /robots.txt); it was not fetched for this gap either and no PCMag content was read or reproduced, so this gap was planned on permitted provider sources from the start. The gap was marked completed only after build.py rendered the article and site/sitemap.xml listed its extensionless URL."
+  },
+  {
+    "id": "backup-schedule-boundary",
+    "priority": 10,
+    "status": "completed",
+    "topic": "What a hosting deal's backup badge actually promises: schedule, retention window, tier gate, and exclusions",
+    "what_benchmarks_cover": "Plan cards badge backups as a headline feature - sometimes weekly, sometimes daily - but do not state which tier the schedule belongs to, how long a copy survives, whether the daily schedule is included or bought, or which files are left out.",
+    "shared_omission": "No single view that puts the exact backup string each plan card prints beside the provider's published schedule, retention window, purchase condition, manual-backup cadence and exclusion list.",
+    "独家可补": "Table the exact backup string printed on each plan card, then the provider's own published schedule, the published retention window per product, the separate-purchase condition on lower tiers, the manual-backup tier gate and cadence, and the excluded folder paths - marking unstated cells as unstated rather than estimating.",
+    "source_plan": [
+      "https://www.hostinger.com/pricing",
+      "https://www.hostinger.com/cloud-hosting",
+      "https://www.hostinger.com/vps-hosting",
+      "https://www.hostinger.com/support/1665153-how-to-activate-daily-backups-in-hostinger/",
+      "https://www.hostinger.com/support/which-files-are-excluded-from-hostinger-backups/",
+      "https://www.hostinger.com/support/2298928-how-to-create-backups-at-hostinger/"
+    ],
+    "plan_note": "New gap created on 2026-09-29 instead of reusing a completed gap_id: the gap table held 8 completed gaps and 1 blocked gap (reddit-access-gap), so no gap with status open remained and a further article needed a new gap rather than a repeated one. The six source_plan URLs are provider-published pages, all permitted by www.hostinger.com/robots.txt (which disallows only /special/000webhost and /special/webhost across locales, cart/api-proxy/cdn-cgi paths, _nuxt and tag paths, and query-string variants). The benchmark domain www.pcmag.com appears in the source_plan of every pre-existing gap and is blocked from this machine (Cloudflare human-verification challenge, HTTP 403 on every path including /robots.txt); it was not fetched for this gap either and no PCMag content was read or reproduced, so this gap was planned on permitted provider sources from the start. The subject does not overlap the published articles: cloud-resource-matrix covered the plan parameter limits table (CPU, RAM, storage, inodes, bandwidth, MySQL sizes) and this gap covers the backup schedule, retention window, tier gate and exclusion list, which no published article has treated. The gap was marked completed only after build.py rendered the article and site/sitemap.xml listed its extensionless URL."
   }
 ]
