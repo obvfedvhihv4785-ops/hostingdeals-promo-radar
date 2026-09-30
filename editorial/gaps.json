@@ -148,5 +148,24 @@
       "https://www.hostinger.com/support/2298928-how-to-create-backups-at-hostinger/"
     ],
     "plan_note": "New gap created on 2026-09-29 instead of reusing a completed gap_id: the gap table held 8 completed gaps and 1 blocked gap (reddit-access-gap), so no gap with status open remained and a further article needed a new gap rather than a repeated one. The six source_plan URLs are provider-published pages, all permitted by www.hostinger.com/robots.txt (which disallows only /special/000webhost and /special/webhost across locales, cart/api-proxy/cdn-cgi paths, _nuxt and tag paths, and query-string variants). The benchmark domain www.pcmag.com appears in the source_plan of every pre-existing gap and is blocked from this machine (Cloudflare human-verification challenge, HTTP 403 on every path including /robots.txt); it was not fetched for this gap either and no PCMag content was read or reproduced, so this gap was planned on permitted provider sources from the start. The subject does not overlap the published articles: cloud-resource-matrix covered the plan parameter limits table (CPU, RAM, storage, inodes, bandwidth, MySQL sizes) and this gap covers the backup schedule, retention window, tier gate and exclusion list, which no published article has treated. The gap was marked completed only after build.py rendered the article and site/sitemap.xml listed its extensionless URL."
+  },
+  {
+    "id": "server-location-boundary",
+    "priority": 11,
+    "status": "completed",
+    "topic": "Where a hosting deal actually places your site: the published location list, the change cadence, and the irreversible cases",
+    "what_benchmarks_cover": "Plan pages badge the location feature with a slogan such as a global data-centre network, but publish no country or city for the plan being sold and never state whether the location can be changed, how often, what a transfer does to the site, or which products cannot be moved at all.",
+    "shared_omission": "No single view that puts the location string each plan page prints beside the provider's own published location list per product, the published change cadence, the published transfer duration and lock, and the products where the choice is one-way.",
+    "source_plan": [
+      "https://www.hostinger.com/cloud-hosting",
+      "https://www.hostinger.com/vps-hosting",
+      "https://www.hostinger.com/pricing",
+      "https://www.hostinger.com/support/1583267-where-are-hostinger-servers-located/",
+      "https://www.hostinger.com/support/5577027-how-to-transfer-your-hosting-plan-to-a-different-server-in-hostinger/",
+      "https://www.hostinger.com/support/10289743-how-to-transfer-your-vps-to-a-different-location-in-hostinger/",
+      "https://www.hostinger.com/support/6962418-where-are-hostinger-ai-builder-data-centers-located/",
+      "https://www.hostinger.com/support/8649902-what-to-do-if-the-ip-location-of-your-hostinger-services-is-incorrect/"
+    ],
+    "plan_note": "New gap created on 2026-09-30 instead of reusing a completed gap_id: the gap table held 9 completed gaps and 1 blocked gap (reddit-access-gap), so no gap with status open remained and a further article needed a new gap rather than a repeated one. The eight source_plan URLs are provider-published pages, all permitted by www.hostinger.com/robots.txt (which disallows only /special/000webhost and /special/webhost across locales, cart-hosting/api-proxy/cdn-cgi paths, _nuxt and tag paths, and query-string variants); all eight returned HTTP 200 and none required a query string. The benchmark domain www.pcmag.com appears in the source_plan of every pre-existing gap and is blocked from this machine (Cloudflare human-verification challenge, HTTP 403 on every path including /robots.txt); it was not fetched for this gap either and no PCMag content was read or reproduced, so this gap was planned on permitted provider sources from the start. The subject does not overlap the published articles: cloud-resource-matrix covered the parameter limits table, backup-schedule-boundary covered the backup schedule and retention, and no published article has treated where the server physically sits, the published location list per product, the change cadence or the irreversible cases. The gap was marked completed only after build.py rendered the article and site/sitemap.xml listed its extensionless URL."
   }
 ]
