@@ -1,171 +1,192 @@
 [
-  {
-    "id": "hostinger-renewal-cost",
-    "priority": 1,
-    "status": "completed",
-    "topic": "Hostinger Cloud Startup: prepaid first term versus renewal cost",
-    "what_benchmarks_cover": "Headline discount, monthly promo rate, basic included features, and a renewal rate are shown, but the long-term cost is not answered in one neutral calculation.",
-    "shared_omission": "No above-the-fold total-cost or renewal-shock answer for a buyer comparing deals.",
-    "独家可补": "Show the published 48-month total beside the published renewal rate, clearly label the arithmetic as derived from source numbers, and state what is still unknown.",
-    "source_plan": [
-      "https://www.hostinger.com/pricing",
-      "https://www.hostinger.com/cloud-hosting",
-      "https://www.hostinger.com/coupons"
-    ]
-  },
-  {
-    "id": "term-normalization",
-    "priority": 2,
-    "status": "completed",
-    "topic": "Normalize cloud-hosting deal terms across billing periods",
-    "what_benchmarks_cover": "Promo prices are usually shown for one preferred term, while shorter terms and upfront totals are scattered or omitted.",
-    "shared_omission": "No single 12/24/48-month comparison with the billing commitment made explicit.",
-    "独家可补": "Build a term matrix from provider-published prices only; mark unavailable terms as unavailable rather than estimating.",
-    "source_plan": [
-      "https://www.hostinger.com/pricing",
-      "https://www.hostinger.com/cloud-hosting",
-      "https://www.hostinger.com/vps-hosting",
-      "https://www.hostinger.com/shared-hosting",
-      "https://www.hostinger.com/wordpress-hosting"
-    ],
-    "plan_note": "source_plan re-planned on 2026-09-27: the two PCMag URLs were removed because www.pcmag.com is blocked from this machine (Cloudflare human-verification challenge, HTTP 403 on every path including /robots.txt) and was never fetched. The five provider pages added here are provider-published sources and match what this gap's own plan asked for ('Build a term matrix from provider-published prices only; mark unavailable terms as unavailable rather than estimating') - each page prints its own term label and the provider's own division rule, and the two pages that publish no shorter-term price are reported as publishing nothing. No PCMag content was read or reproduced. The gap was marked completed only after build.py rendered the article and site/sitemap.xml listed its extensionless URL."
-  },
-  {
-    "id": "cloud-resource-matrix",
-    "priority": 3,
-    "status": "completed",
-    "topic": "Cloud plan resources that deal pages leave below the fold",
-    "what_benchmarks_cover": "Cloud deal pages lead with discounts but often omit CPU, RAM, traffic, storage, and backup limits.",
-    "shared_omission": "No compact plan-by-plan resource table tied to source URLs.",
-    "独家可补": "Extract only source-stated CPU, RAM, storage, transfer, backup, and support limits and show unknown cells explicitly.",
-    "source_plan": [
-      "https://www.hostinger.com/cloud-hosting",
-      "https://www.hostinger.com/vps-hosting",
-      "https://www.hostinger.com/support/6976044-parameters-and-limits-for-hosting-plans"
-    ],
-    "plan_note": "source_plan re-planned on 2026-09-24: the PCMag URL was removed because www.pcmag.com is blocked from this machine (Cloudflare human-verification challenge, HTTP 403 on every path including /robots.txt) and was never fetched. The parameters page added here is the limits table that the two Hostinger deal pages link to from their own FAQ, so it is a provider-published source rather than a substitute for a blocked benchmark. No PCMag content was read or reproduced."
-  },
-  {
-    "id": "deal-validity-log",
-    "priority": 4,
-    "status": "completed",
-    "topic": "How to verify whether a hosting deal is still active",
-    "what_benchmarks_cover": "Provider pages use rotating discounts and frequently omit a precise expiry date.",
-    "shared_omission": "No timestamped evidence log that separates observed price, advertised expiry, and unknown expiry.",
-    "独家可补": "Record fetched time, exact offer URL, stated start/end date, and whether the price is visible without checkout.",
-    "source_plan": [
-      "https://www.hostinger.com/black-friday",
-      "https://www.hostinger.com/black-friday-web-hosting-deals",
-      "https://www.hostinger.com/coupons"
-    ]
-  },
-  {
-    "id": "sla-credit-terms",
-    "priority": 5,
-    "status": "completed",
-    "topic": "Uptime promise versus credit-backed SLA",
-    "what_benchmarks_cover": "Most pages state an uptime percentage but do not put the remedy or credit conditions beside the deal.",
-    "shared_omission": "No neutral table for uptime promise, measurement scope, credit remedy, and exclusions.",
-    "独家可补": "Link the provider's SLA/terms and report only the remedy language that is actually published.",
-    "source_plan": [
-      "https://www.hostinger.com/cloud-hosting",
-      "https://www.hostinger.com/legal/hosting-agreement",
-      "https://www.hostinger.com/legal/universal-terms-of-service-agreement",
-      "https://www.hostinger.com/legal/refund-policy"
-    ],
-    "plan_note": "source_plan re-planned on 2026-09-25: the PCMag URL was removed because www.pcmag.com is blocked from this machine (Cloudflare human-verification challenge, HTTP 403 on every path including /robots.txt) and was never fetched. The three Hostinger legal documents added here are provider-published sources, and one of them is exactly what this gap's own plan asked for ('Link the provider's SLA/terms and report only the remedy language that is actually published'). The hosting agreement is the 'specific Service agreement' that the universal terms of service defers the uptime guarantee to, so following that link is provider-published navigation rather than a substitute for a blocked benchmark. No PCMag content was read or reproduced."
-  },
-  {
-    "id": "migration-risk",
-    "priority": 6,
-    "status": "completed",
-    "topic": "Free migration deal: requirements and downtime caveats",
-    "what_benchmarks_cover": "Free migration is advertised as a benefit, while credentials, supported platforms, timing, and failure remedies are scattered.",
-    "shared_omission": "No first-screen checklist showing what the customer must provide and what the provider does not promise.",
-    "独家可补": "Summarize the provider's stated prerequisites, estimated timing, unsupported cases, and any missing downtime remedy.",
-    "source_plan": [
-      "https://www.hostinger.com/website-migration",
-      "https://www.hostinger.com/cloud-hosting"
-    ]
-  },
-  {
-    "id": "regional-price-context",
-    "priority": 7,
-    "status": "completed",
-    "topic": "Region, currency, tax, and checkout context for hosting deals",
-    "what_benchmarks_cover": "PCMag regional editions and provider pages mix currencies and show prices that can vary by location.",
-    "shared_omission": "No explicit rule for which region/currency was observed and what tax/checkout values remain unknown.",
-    "独家可补": "Label locale, display currency, tax inclusion, and whether the figure was observed before or after checkout; never convert without a stated source.",
-    "source_plan": [
-      "https://www.pcmag.com/picks/the-best-cloud-web-hosting-services",
-      "https://www.hostinger.com/pricing"
-    ],
-    "plan_note": "source_plan re-planned on 2026-09-26: the PCMag regional-editions URL was removed because www.pcmag.com is blocked from this machine (Cloudflare human-verification challenge, HTTP 403 on every path including /robots.txt) and was never fetched. The provider's own locale pricing pages added here are provider-published sources and match what this gap's own plan asked for ('Label locale, display currency, tax inclusion, and whether the figure was observed before or after checkout; never convert without a stated source') - each locale page states its own language and displays its own currency symbol, and the deal page states in its own words that the displayed figure is pre-tax and pre-checkout. No PCMag content was read or reproduced. One further locale path was tested and abandoned on a block: /tr/pricing returned HTTP 403, so the Turkish locale was not read and no price is reported for it."
-  },
-  {
-    "id": "reddit-access-gap",
-    "priority": 8,
-    "status": "blocked",
-    "topic": "Community reports about cloud hosting deals",
-    "what_benchmarks_cover": "The Google result points to Reddit, but Reddit blocks unauthenticated reading from this machine.",
-    "shared_omission": "No verified Reddit post set can be quoted or summarized without access.",
-    "独家可补": "Keep this gap blocked; do not infer community sentiment or substitute another domain for Reddit.",
-    "source_plan": [
-      "https://www.reddit.com/r/devops/comments/1c9i15b/cheapest_cloud_servers_out_there/",
-      "https://www.reddit.com/r/devops/search/?q=cloud%20hosting&restrict_sr=1&sort=relevance&t=all"
-    ]
-  },
-  {
-    "id": "bundle-boundary",
-    "priority": 9,
-    "status": "completed",
-    "topic": "What a cloud hosting deal bundles for free, for how long, and what each item is worth",
-    "what_benchmarks_cover": "Deal cards badge bundled extras such as a domain, SSL, mailboxes and AI credits as free, but do not give them a consistent duration and never place the printed value or the refund status of an item beside the headline price.",
-    "shared_omission": "No per-item boundary for the bundle: printed duration, printed value, and the provider's own refund rule for the same item in one view.",
-    "独家可补": "Build a bundle matrix from provider-published text only: for each bundled item quote the printed duration, the printed value if any, and the provider's own refund rule, and mark unstated cells as unstated rather than estimating.",
-    "source_plan": [
-      "https://www.hostinger.com/cloud-hosting",
-      "https://www.hostinger.com/pricing",
-      "https://www.hostinger.com/domains",
-      "https://www.hostinger.com/legal/refund-policy"
-    ],
-    "plan_note": "New gap created on 2026-09-28 instead of reusing a completed gap_id: the gap table held 7 completed gaps and 1 blocked gap (reddit-access-gap), so no gap with status open remained and a further article needed a new gap rather than a repeated one. The four source_plan URLs are provider-published pages, all permitted by www.hostinger.com/robots.txt. The benchmark domain www.pcmag.com appears in the source_plan of every pre-existing gap and is blocked from this machine (Cloudflare human-verification challenge, HTTP 403 on every path including /robots.txt); it was not fetched for this gap either and no PCMag content was read or reproduced, so this gap was planned on permitted provider sources from the start. The gap was marked completed only after build.py rendered the article and site/sitemap.xml listed its extensionless URL."
-  },
-  {
-    "id": "backup-schedule-boundary",
-    "priority": 10,
-    "status": "completed",
-    "topic": "What a hosting deal's backup badge actually promises: schedule, retention window, tier gate, and exclusions",
-    "what_benchmarks_cover": "Plan cards badge backups as a headline feature - sometimes weekly, sometimes daily - but do not state which tier the schedule belongs to, how long a copy survives, whether the daily schedule is included or bought, or which files are left out.",
-    "shared_omission": "No single view that puts the exact backup string each plan card prints beside the provider's published schedule, retention window, purchase condition, manual-backup cadence and exclusion list.",
-    "独家可补": "Table the exact backup string printed on each plan card, then the provider's own published schedule, the published retention window per product, the separate-purchase condition on lower tiers, the manual-backup tier gate and cadence, and the excluded folder paths - marking unstated cells as unstated rather than estimating.",
-    "source_plan": [
-      "https://www.hostinger.com/pricing",
-      "https://www.hostinger.com/cloud-hosting",
-      "https://www.hostinger.com/vps-hosting",
-      "https://www.hostinger.com/support/1665153-how-to-activate-daily-backups-in-hostinger/",
-      "https://www.hostinger.com/support/which-files-are-excluded-from-hostinger-backups/",
-      "https://www.hostinger.com/support/2298928-how-to-create-backups-at-hostinger/"
-    ],
-    "plan_note": "New gap created on 2026-09-29 instead of reusing a completed gap_id: the gap table held 8 completed gaps and 1 blocked gap (reddit-access-gap), so no gap with status open remained and a further article needed a new gap rather than a repeated one. The six source_plan URLs are provider-published pages, all permitted by www.hostinger.com/robots.txt (which disallows only /special/000webhost and /special/webhost across locales, cart/api-proxy/cdn-cgi paths, _nuxt and tag paths, and query-string variants). The benchmark domain www.pcmag.com appears in the source_plan of every pre-existing gap and is blocked from this machine (Cloudflare human-verification challenge, HTTP 403 on every path including /robots.txt); it was not fetched for this gap either and no PCMag content was read or reproduced, so this gap was planned on permitted provider sources from the start. The subject does not overlap the published articles: cloud-resource-matrix covered the plan parameter limits table (CPU, RAM, storage, inodes, bandwidth, MySQL sizes) and this gap covers the backup schedule, retention window, tier gate and exclusion list, which no published article has treated. The gap was marked completed only after build.py rendered the article and site/sitemap.xml listed its extensionless URL."
-  },
-  {
-    "id": "server-location-boundary",
-    "priority": 11,
-    "status": "completed",
-    "topic": "Where a hosting deal actually places your site: the published location list, the change cadence, and the irreversible cases",
-    "what_benchmarks_cover": "Plan pages badge the location feature with a slogan such as a global data-centre network, but publish no country or city for the plan being sold and never state whether the location can be changed, how often, what a transfer does to the site, or which products cannot be moved at all.",
-    "shared_omission": "No single view that puts the location string each plan page prints beside the provider's own published location list per product, the published change cadence, the published transfer duration and lock, and the products where the choice is one-way.",
-    "source_plan": [
-      "https://www.hostinger.com/cloud-hosting",
-      "https://www.hostinger.com/vps-hosting",
-      "https://www.hostinger.com/pricing",
-      "https://www.hostinger.com/support/1583267-where-are-hostinger-servers-located/",
-      "https://www.hostinger.com/support/5577027-how-to-transfer-your-hosting-plan-to-a-different-server-in-hostinger/",
-      "https://www.hostinger.com/support/10289743-how-to-transfer-your-vps-to-a-different-location-in-hostinger/",
-      "https://www.hostinger.com/support/6962418-where-are-hostinger-ai-builder-data-centers-located/",
-      "https://www.hostinger.com/support/8649902-what-to-do-if-the-ip-location-of-your-hostinger-services-is-incorrect/"
-    ],
-    "plan_note": "New gap created on 2026-09-30 instead of reusing a completed gap_id: the gap table held 9 completed gaps and 1 blocked gap (reddit-access-gap), so no gap with status open remained and a further article needed a new gap rather than a repeated one. The eight source_plan URLs are provider-published pages, all permitted by www.hostinger.com/robots.txt (which disallows only /special/000webhost and /special/webhost across locales, cart-hosting/api-proxy/cdn-cgi paths, _nuxt and tag paths, and query-string variants); all eight returned HTTP 200 and none required a query string. The benchmark domain www.pcmag.com appears in the source_plan of every pre-existing gap and is blocked from this machine (Cloudflare human-verification challenge, HTTP 403 on every path including /robots.txt); it was not fetched for this gap either and no PCMag content was read or reproduced, so this gap was planned on permitted provider sources from the start. The subject does not overlap the published articles: cloud-resource-matrix covered the parameter limits table, backup-schedule-boundary covered the backup schedule and retention, and no published article has treated where the server physically sits, the published location list per product, the change cadence or the irreversible cases. The gap was marked completed only after build.py rendered the article and site/sitemap.xml listed its extensionless URL."
-  }
+ {
+  "id": "hostinger-renewal-cost",
+  "priority": 1,
+  "status": "completed",
+  "topic": "Hostinger Cloud Startup: prepaid first term versus renewal cost",
+  "what_benchmarks_cover": "Headline discount, monthly promo rate, basic included features, and a renewal rate are shown, but the long-term cost is not answered in one neutral calculation.",
+  "shared_omission": "No above-the-fold total-cost or renewal-shock answer for a buyer comparing deals.",
+  "独家可补": "Show the published 48-month total beside the published renewal rate, clearly label the arithmetic as derived from source numbers, and state what is still unknown.",
+  "source_plan": [
+   "https://www.hostinger.com/pricing",
+   "https://www.hostinger.com/cloud-hosting",
+   "https://www.hostinger.com/coupons"
+  ]
+ },
+ {
+  "id": "term-normalization",
+  "priority": 2,
+  "status": "completed",
+  "topic": "Normalize cloud-hosting deal terms across billing periods",
+  "what_benchmarks_cover": "Promo prices are usually shown for one preferred term, while shorter terms and upfront totals are scattered or omitted.",
+  "shared_omission": "No single 12/24/48-month comparison with the billing commitment made explicit.",
+  "独家可补": "Build a term matrix from provider-published prices only; mark unavailable terms as unavailable rather than estimating.",
+  "source_plan": [
+   "https://www.hostinger.com/pricing",
+   "https://www.hostinger.com/cloud-hosting",
+   "https://www.hostinger.com/vps-hosting",
+   "https://www.hostinger.com/shared-hosting",
+   "https://www.hostinger.com/wordpress-hosting"
+  ],
+  "plan_note": "source_plan re-planned on 2026-09-27: the two PCMag URLs were removed because www.pcmag.com is blocked from this machine (Cloudflare human-verification challenge, HTTP 403 on every path including /robots.txt) and was never fetched. The five provider pages added here are provider-published sources and match what this gap's own plan asked for ('Build a term matrix from provider-published prices only; mark unavailable terms as unavailable rather than estimating') - each page prints its own term label and the provider's own division rule, and the two pages that publish no shorter-term price are reported as publishing nothing. No PCMag content was read or reproduced. The gap was marked completed only after build.py rendered the article and site/sitemap.xml listed its extensionless URL."
+ },
+ {
+  "id": "cloud-resource-matrix",
+  "priority": 3,
+  "status": "completed",
+  "topic": "Cloud plan resources that deal pages leave below the fold",
+  "what_benchmarks_cover": "Cloud deal pages lead with discounts but often omit CPU, RAM, traffic, storage, and backup limits.",
+  "shared_omission": "No compact plan-by-plan resource table tied to source URLs.",
+  "独家可补": "Extract only source-stated CPU, RAM, storage, transfer, backup, and support limits and show unknown cells explicitly.",
+  "source_plan": [
+   "https://www.hostinger.com/cloud-hosting",
+   "https://www.hostinger.com/vps-hosting",
+   "https://www.hostinger.com/support/6976044-parameters-and-limits-for-hosting-plans"
+  ],
+  "plan_note": "source_plan re-planned on 2026-09-24: the PCMag URL was removed because www.pcmag.com is blocked from this machine (Cloudflare human-verification challenge, HTTP 403 on every path including /robots.txt) and was never fetched. The parameters page added here is the limits table that the two Hostinger deal pages link to from their own FAQ, so it is a provider-published source rather than a substitute for a blocked benchmark. No PCMag content was read or reproduced."
+ },
+ {
+  "id": "deal-validity-log",
+  "priority": 4,
+  "status": "completed",
+  "topic": "How to verify whether a hosting deal is still active",
+  "what_benchmarks_cover": "Provider pages use rotating discounts and frequently omit a precise expiry date.",
+  "shared_omission": "No timestamped evidence log that separates observed price, advertised expiry, and unknown expiry.",
+  "独家可补": "Record fetched time, exact offer URL, stated start/end date, and whether the price is visible without checkout.",
+  "source_plan": [
+   "https://www.hostinger.com/black-friday",
+   "https://www.hostinger.com/black-friday-web-hosting-deals",
+   "https://www.hostinger.com/coupons"
+  ]
+ },
+ {
+  "id": "sla-credit-terms",
+  "priority": 5,
+  "status": "completed",
+  "topic": "Uptime promise versus credit-backed SLA",
+  "what_benchmarks_cover": "Most pages state an uptime percentage but do not put the remedy or credit conditions beside the deal.",
+  "shared_omission": "No neutral table for uptime promise, measurement scope, credit remedy, and exclusions.",
+  "独家可补": "Link the provider's SLA/terms and report only the remedy language that is actually published.",
+  "source_plan": [
+   "https://www.hostinger.com/cloud-hosting",
+   "https://www.hostinger.com/legal/hosting-agreement",
+   "https://www.hostinger.com/legal/universal-terms-of-service-agreement",
+   "https://www.hostinger.com/legal/refund-policy"
+  ],
+  "plan_note": "source_plan re-planned on 2026-09-25: the PCMag URL was removed because www.pcmag.com is blocked from this machine (Cloudflare human-verification challenge, HTTP 403 on every path including /robots.txt) and was never fetched. The three Hostinger legal documents added here are provider-published sources, and one of them is exactly what this gap's own plan asked for ('Link the provider's SLA/terms and report only the remedy language that is actually published'). The hosting agreement is the 'specific Service agreement' that the universal terms of service defers the uptime guarantee to, so following that link is provider-published navigation rather than a substitute for a blocked benchmark. No PCMag content was read or reproduced."
+ },
+ {
+  "id": "migration-risk",
+  "priority": 6,
+  "status": "completed",
+  "topic": "Free migration deal: requirements and downtime caveats",
+  "what_benchmarks_cover": "Free migration is advertised as a benefit, while credentials, supported platforms, timing, and failure remedies are scattered.",
+  "shared_omission": "No first-screen checklist showing what the customer must provide and what the provider does not promise.",
+  "独家可补": "Summarize the provider's stated prerequisites, estimated timing, unsupported cases, and any missing downtime remedy.",
+  "source_plan": [
+   "https://www.hostinger.com/website-migration",
+   "https://www.hostinger.com/cloud-hosting"
+  ]
+ },
+ {
+  "id": "regional-price-context",
+  "priority": 7,
+  "status": "completed",
+  "topic": "Region, currency, tax, and checkout context for hosting deals",
+  "what_benchmarks_cover": "PCMag regional editions and provider pages mix currencies and show prices that can vary by location.",
+  "shared_omission": "No explicit rule for which region/currency was observed and what tax/checkout values remain unknown.",
+  "独家可补": "Label locale, display currency, tax inclusion, and whether the figure was observed before or after checkout; never convert without a stated source.",
+  "source_plan": [
+   "https://www.pcmag.com/picks/the-best-cloud-web-hosting-services",
+   "https://www.hostinger.com/pricing"
+  ],
+  "plan_note": "source_plan re-planned on 2026-09-26: the PCMag regional-editions URL was removed because www.pcmag.com is blocked from this machine (Cloudflare human-verification challenge, HTTP 403 on every path including /robots.txt) and was never fetched. The provider's own locale pricing pages added here are provider-published sources and match what this gap's own plan asked for ('Label locale, display currency, tax inclusion, and whether the figure was observed before or after checkout; never convert without a stated source') - each locale page states its own language and displays its own currency symbol, and the deal page states in its own words that the displayed figure is pre-tax and pre-checkout. No PCMag content was read or reproduced. One further locale path was tested and abandoned on a block: /tr/pricing returned HTTP 403, so the Turkish locale was not read and no price is reported for it."
+ },
+ {
+  "id": "reddit-access-gap",
+  "priority": 8,
+  "status": "blocked",
+  "topic": "Community reports about cloud hosting deals",
+  "what_benchmarks_cover": "The Google result points to Reddit, but Reddit blocks unauthenticated reading from this machine.",
+  "shared_omission": "No verified Reddit post set can be quoted or summarized without access.",
+  "独家可补": "Keep this gap blocked; do not infer community sentiment or substitute another domain for Reddit.",
+  "source_plan": [
+   "https://www.reddit.com/r/devops/comments/1c9i15b/cheapest_cloud_servers_out_there/",
+   "https://www.reddit.com/r/devops/search/?q=cloud%20hosting&restrict_sr=1&sort=relevance&t=all"
+  ]
+ },
+ {
+  "id": "bundle-boundary",
+  "priority": 9,
+  "status": "completed",
+  "topic": "What a cloud hosting deal bundles for free, for how long, and what each item is worth",
+  "what_benchmarks_cover": "Deal cards badge bundled extras such as a domain, SSL, mailboxes and AI credits as free, but do not give them a consistent duration and never place the printed value or the refund status of an item beside the headline price.",
+  "shared_omission": "No per-item boundary for the bundle: printed duration, printed value, and the provider's own refund rule for the same item in one view.",
+  "独家可补": "Build a bundle matrix from provider-published text only: for each bundled item quote the printed duration, the printed value if any, and the provider's own refund rule, and mark unstated cells as unstated rather than estimating.",
+  "source_plan": [
+   "https://www.hostinger.com/cloud-hosting",
+   "https://www.hostinger.com/pricing",
+   "https://www.hostinger.com/domains",
+   "https://www.hostinger.com/legal/refund-policy"
+  ],
+  "plan_note": "New gap created on 2026-09-28 instead of reusing a completed gap_id: the gap table held 7 completed gaps and 1 blocked gap (reddit-access-gap), so no gap with status open remained and a further article needed a new gap rather than a repeated one. The four source_plan URLs are provider-published pages, all permitted by www.hostinger.com/robots.txt. The benchmark domain www.pcmag.com appears in the source_plan of every pre-existing gap and is blocked from this machine (Cloudflare human-verification challenge, HTTP 403 on every path including /robots.txt); it was not fetched for this gap either and no PCMag content was read or reproduced, so this gap was planned on permitted provider sources from the start. The gap was marked completed only after build.py rendered the article and site/sitemap.xml listed its extensionless URL."
+ },
+ {
+  "id": "backup-schedule-boundary",
+  "priority": 10,
+  "status": "completed",
+  "topic": "What a hosting deal's backup badge actually promises: schedule, retention window, tier gate, and exclusions",
+  "what_benchmarks_cover": "Plan cards badge backups as a headline feature - sometimes weekly, sometimes daily - but do not state which tier the schedule belongs to, how long a copy survives, whether the daily schedule is included or bought, or which files are left out.",
+  "shared_omission": "No single view that puts the exact backup string each plan card prints beside the provider's published schedule, retention window, purchase condition, manual-backup cadence and exclusion list.",
+  "独家可补": "Table the exact backup string printed on each plan card, then the provider's own published schedule, the published retention window per product, the separate-purchase condition on lower tiers, the manual-backup tier gate and cadence, and the excluded folder paths - marking unstated cells as unstated rather than estimating.",
+  "source_plan": [
+   "https://www.hostinger.com/pricing",
+   "https://www.hostinger.com/cloud-hosting",
+   "https://www.hostinger.com/vps-hosting",
+   "https://www.hostinger.com/support/1665153-how-to-activate-daily-backups-in-hostinger/",
+   "https://www.hostinger.com/support/which-files-are-excluded-from-hostinger-backups/",
+   "https://www.hostinger.com/support/2298928-how-to-create-backups-at-hostinger/"
+  ],
+  "plan_note": "New gap created on 2026-09-29 instead of reusing a completed gap_id: the gap table held 8 completed gaps and 1 blocked gap (reddit-access-gap), so no gap with status open remained and a further article needed a new gap rather than a repeated one. The six source_plan URLs are provider-published pages, all permitted by www.hostinger.com/robots.txt (which disallows only /special/000webhost and /special/webhost across locales, cart/api-proxy/cdn-cgi paths, _nuxt and tag paths, and query-string variants). The benchmark domain www.pcmag.com appears in the source_plan of every pre-existing gap and is blocked from this machine (Cloudflare human-verification challenge, HTTP 403 on every path including /robots.txt); it was not fetched for this gap either and no PCMag content was read or reproduced, so this gap was planned on permitted provider sources from the start. The subject does not overlap the published articles: cloud-resource-matrix covered the plan parameter limits table (CPU, RAM, storage, inodes, bandwidth, MySQL sizes) and this gap covers the backup schedule, retention window, tier gate and exclusion list, which no published article has treated. The gap was marked completed only after build.py rendered the article and site/sitemap.xml listed its extensionless URL."
+ },
+ {
+  "id": "server-location-boundary",
+  "priority": 11,
+  "status": "completed",
+  "topic": "Where a hosting deal actually places your site: the published location list, the change cadence, and the irreversible cases",
+  "what_benchmarks_cover": "Plan pages badge the location feature with a slogan such as a global data-centre network, but publish no country or city for the plan being sold and never state whether the location can be changed, how often, what a transfer does to the site, or which products cannot be moved at all.",
+  "shared_omission": "No single view that puts the location string each plan page prints beside the provider's own published location list per product, the published change cadence, the published transfer duration and lock, and the products where the choice is one-way.",
+  "source_plan": [
+   "https://www.hostinger.com/cloud-hosting",
+   "https://www.hostinger.com/vps-hosting",
+   "https://www.hostinger.com/pricing",
+   "https://www.hostinger.com/support/1583267-where-are-hostinger-servers-located/",
+   "https://www.hostinger.com/support/5577027-how-to-transfer-your-hosting-plan-to-a-different-server-in-hostinger/",
+   "https://www.hostinger.com/support/10289743-how-to-transfer-your-vps-to-a-different-location-in-hostinger/",
+   "https://www.hostinger.com/support/6962418-where-are-hostinger-ai-builder-data-centers-located/",
+   "https://www.hostinger.com/support/8649902-what-to-do-if-the-ip-location-of-your-hostinger-services-is-incorrect/"
+  ],
+  "plan_note": "New gap created on 2026-09-30 instead of reusing a completed gap_id: the gap table held 9 completed gaps and 1 blocked gap (reddit-access-gap), so no gap with status open remained and a further article needed a new gap rather than a repeated one. The eight source_plan URLs are provider-published pages, all permitted by www.hostinger.com/robots.txt (which disallows only /special/000webhost and /special/webhost across locales, cart-hosting/api-proxy/cdn-cgi paths, _nuxt and tag paths, and query-string variants); all eight returned HTTP 200 and none required a query string. The benchmark domain www.pcmag.com appears in the source_plan of every pre-existing gap and is blocked from this machine (Cloudflare human-verification challenge, HTTP 403 on every path including /robots.txt); it was not fetched for this gap either and no PCMag content was read or reproduced, so this gap was planned on permitted provider sources from the start. The subject does not overlap the published articles: cloud-resource-matrix covered the parameter limits table, backup-schedule-boundary covered the backup schedule and retention, and no published article has treated where the server physically sits, the published location list per product, the change cadence or the irreversible cases. The gap was marked completed only after build.py rendered the article and site/sitemap.xml listed its extensionless URL."
+ },
+ {
+  "id": "exit-and-auto-renewal-boundary",
+  "priority": 12,
+  "status": "completed",
+  "topic": "How a cloud hosting deal ends: the advertised 30-day guarantee as a cancellation window, the auto-renewal default, the length of the next term and the notice that is not promised",
+  "what_benchmarks_cover": "The deal page prints a 30-day money-back guarantee and calls the purchase risk-free, and the pricing page prints Cancel anytime beside the plan selector, but neither page says what cancelling does to the service, what happens to the term already paid, whether the plan renews on its own, how long the next term is, when the renewal charge is taken or how much notice is promised before it.",
+  "shared_omission": "No single view that places the advertised risk-free purchase beside the contract terms that turn it into a 30-day cancellation window, state that fees are otherwise non-refundable, default the plan to auto-renewal for a period equal to the term just bought, and leave the renewal notice to the provider's discretion.",
+  "source_plan": [
+   "https://www.hostinger.com/cloud-hosting",
+   "https://www.hostinger.com/pricing",
+   "https://www.hostinger.com/legal/universal-terms-of-service-agreement",
+   "https://www.hostinger.com/legal/refund-policy",
+   "https://www.hostinger.com/support/1583234-how-to-disable-auto-renewal-at-hostinger/",
+   "https://www.hostinger.com/support/1583775-how-to-cancel-a-hosting-plan-at-hostinger/",
+   "https://www.hostinger.com/support/9088216-what-is-hostinger-refund-policy/",
+   "https://www.hostinger.com/support/1583459-how-to-upgrade-a-hosting-plan-at-hostinger/",
+   "https://www.hostinger.com/support/how-to-downgrade-a-hostinger-hosting-plan/",
+   "https://www.hostinger.com/support/new-hosting-instead-renewal-hostinger/"
+  ],
+  "plan_note": "New gap created on 2026-10-01 instead of reusing a completed gap_id: the gap table held 10 completed gaps and 1 blocked gap (reddit-access-gap), so no gap with status open remained and a further article needed a new gap rather than a repeated one. The ten source_plan URLs are provider-published pages, all permitted by www.hostinger.com/robots.txt (which disallows only /special/000webhost and /special/webhost across locales, cart-hosting, api-proxy and cdn-cgi paths, _nuxt and tag paths, and query-string variants); all ten returned HTTP 200 and none required a query string, and the ten-page ceiling was respected. The benchmark domain www.pcmag.com appears in the source_plan of every pre-existing gap and is blocked from this machine (Cloudflare human-verification challenge, HTTP 403 on every path including /robots.txt); it was not fetched for this gap either and no PCMag content was read or reproduced, so this gap was planned on permitted provider sources from the start. The subject does not overlap the published articles: hostinger-renewal-cost compared the promotional rate with the printed renewal rate, sla-credit-terms covered the uptime credit, bundle-boundary covered the free extras and the refund clock for a new domain, and no published article has treated how the service is actually ended, what the 30-day guarantee does to it, the auto-renewal default, the length of the following term or the renewal notice. The gap was marked completed only after build.py rendered the article and site/sitemap.xml listed its extensionless URL."
+ }
 ]
