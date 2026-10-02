@@ -760,5 +760,75 @@
     "url": "https://www.hostinger.com/support/new-hosting-instead-renewal-hostinger/"
    }
   ]
+ },
+ {
+  "gap_id": "support-channel-and-response-boundary",
+  "status": "published",
+  "slug": "cloud-hosting-deals-support-channel-and-response-time",
+  "title": "Cloud hosting deals sell 24/7 support in five phrases. Only one comes with a number.",
+  "description": "The same Priority 24/7 expert support badge is printed on a $2.99 plan and a $29 plan. The only response time published anywhere is a one-minute median, on live chat, in English.",
+  "answer": "The deal pages sell support with five different phrases - 24/7 support, 24/7 customer support, Priority 24/7 expert support, 24/7 priority support and 24/7 Customer Success support - and exactly one of them carries a number. The cloud-hosting FAQ publishes a median response time of one minute for requests in English, on live chat. That is a median rather than a ceiling, it is attached to one channel in one language, and it is the only response-time figure printed on any of the six pages read for this guide. The provider's contractual document points the other way: the customer service policy, last revised 2023-05-10, promises live chat only as soon as possible, with no number at all, and attaches its single figure - within 1 business day - to the email and ticket route instead. The same four-word badge, Priority 24/7 expert support, is printed on the $2.99/mo Premium card, the $3.99/mo Unlimited card, the $7.99/mo Cloud Startup card and the $29/mo Agency card, and as a row in the compare-plans table. The word priority is defined on one page only, the cloud-hosting FAQ, where it means routing to cloud-hosting experts instead of the general Customer Success specialists. VPS plan cards print no support badge at all.",
+  "unique_note": "Sourced facts: every quoted phrase, price, count and date comes from the six provider pages listed at the bottom of this page, read on 2026-10-02; the plan-card support strings, the FAQ answer, the customer service policy wording, the contact-page wording and the page-title strings are quoted as printed. Derived, and labelled as derived wherever it appears: the count of distinct support phrases, the mapping of each phrase to the page that prints it, the observation that one badge string covers four price points, the comparison between the policy's last-revised stamp and the contact page's updated stamp, and the note that a median leaves half of requests slower by definition. Reported as unstated rather than estimated: any response time for a language other than English, any response time for email, ticket or WhatsApp, any per-plan channel entitlement, and any figure at all in the contractual document for the live-chat route. No benchmark domain was read for this article; the benchmark domain recorded in the gap table is blocked from this machine and was not fetched.",
+  "published_at": "2026-10-02T08:00:00+08:00",
+  "sections": [
+   {
+    "heading": "The support badge, exactly as printed",
+    "body": "The pricing page prints one support string on every plan card, and it is the same four words every time: Priority 24/7 expert support. The string appears nine times on that page, including once as a row in the compare-plans table.\\n\\nHere is each plan card with the exact support string it carries and the price printed beside it:\\n\\nPremium - $2.99/mo on the 48-month term, renews at $10.99/mo - Priority 24/7 expert support\\nUnlimited - $3.99/mo, renews at $16.99/mo - Priority 24/7 expert support\\nCloud Startup - $7.99/mo, renews at $25.99/mo - Priority 24/7 expert support\\nAgency - $29/mo on a 24-month term, $49/mo when it renews - Priority 24/7 expert support\\n\\nThe same page carries a different badge in its header strip, where it sits beside the money-back guarantee and the cancellation promise: 30-day money-back guarantee, 24/7 support, Cancel anytime. So the page uses 24/7 support at the top and Priority 24/7 expert support on the cards below it.\\n\\nThe all-plans-include list is thinner still - Reliable hosting, Custom domain, Email, Building tools - and does not mention support at all."
+   },
+   {
+    "heading": "Five phrases for one benefit",
+    "body": "Across the three product pages read for this guide, support is sold under five distinct phrases. These are the strings as printed, and the page that prints each one:\\n\\n24/7 support - the header badge on the pricing page, once, and again in the Fully managed block on the cloud page\\n24/7 customer support - the hero strip on the cloud page, once\\nPriority 24/7 expert support - the plan cards and the compare-plans table on the pricing page, nine times, plus the cloud feature list, once\\n24/7 priority support - the cloud FAQ sentence that lists what every cloud package includes, once\\n24/7 Customer Success support - the cloud-versus-VPS comparison answer on the VPS page, once\\n\\nNot one of those five phrases is accompanied by a contact channel, a language, a plan tier or a response time on the page that prints it. The words are the whole claim.\\n\\nThe VPS page is the outlier. Its plan cards print no support string at all: the phrase priority support appears zero times and 24/7 support appears zero times on that page, even though its own FAQ tells buyers that Customer Success agents can be reached via live chat 24/7 and its comparison answer refers to 24/7 Customer Success support."
+   },
+   {
+    "heading": "The one number, and the three qualifiers attached to it",
+    "body": "The only response-time figure printed anywhere in this set of pages sits in a single FAQ answer on the cloud page, under the question What does expert priority support mean? The answer reads:\\n\\nWith priority support, your questions will go straight to our cloud hosting experts, instead of the general Customer Success specialists. These technical agents know the ins and outs of cloud hosting, which means you will get more accurate answers, faster. Our priority support is available 24/7 via live chat, with a median response time of one minute for requests in English.\\n\\nThree qualifiers travel with that number. It is a median, which by definition means half of the requests measured were slower than one minute. It is attached to live chat and to no other channel. And it is stated for requests in English only.\\n\\nThe same answer immediately offers 10 other languages, including Spanish, French, Portuguese, Chinese and Arabic, and attaches no figure to any of them.\\n\\nThe definition of the word priority is also only here. On this page it describes routing - your question goes to cloud-hosting experts rather than to the general Customer Success specialists - and the page's own wording confirms that the general specialists are the normal destination. It is a queue claim, not a longer opening window. The phrase median response time appears once on the cloud page and zero times on the pricing page, the VPS page, the customer service policy and the contact page."
+   },
+   {
+    "heading": "The contract puts its only number on a different channel",
+    "body": "The provider's contractual document on support is the customer service policy, and it answers the question differently. Under the heading How we handle Customer Service it lists exactly two routes.\\n\\nLive chat: From your account or from the Help Center. We will reply as soon as possible.\\nEmail/Ticket system: Sending an email message to support@hostinger.com. We will reply within 1 business day.\\n\\nThe only reply-time figure in the document - within 1 business day - belongs to the email and ticket route, which no deal page mentions. The route that carries the FAQ's one-minute median, live chat, has no number in the policy at all: as soon as possible.\\n\\nCounting the policy's own words makes the split plain. The string 24/7 appears zero times in it. The phrase response time appears zero times. The phrase 1 business day appears once. Live chat appears three times, twice of them inside a security warning that the deal pages never carry, which strictly prohibits sharing sensitive information such as passwords, full credit-card details or copies of ID documents in live chat and states that doing so is entirely at the customer's own risk.\\n\\nThe policy is stamped Last revised: 2023-05-10, more than three years before this guide was written."
+   },
+   {
+    "heading": "The route the deal pages never name",
+    "body": "The page that actually documents how to reach support describes a route the deal pages do not name. Under the heading How to contact Hostinger support, updated one week before this guide was written, the first instruction is: The fastest way to get help is through Hostinger dashboard. The mechanism is an Ask AI button at the top of any dashboard page, and clicking it opens a chat with Hostinger Agent, described on the page as the provider's AI assistant that replaced Kodee.\\n\\nThe page lists what that assistant can do: answer common questions, guide a user through troubleshooting steps, provide relevant help articles, help clarify error messages, and perform selected account actions after the user confirms the request. On Business Web and Cloud hosting plans it can also perform WordPress admin actions directly from the chat.\\n\\nA human is conditional, not the default. The page says: If additional assistance is needed, a Customer Success Specialist can join the chat to continue helping you. It also offers a WhatsApp tab that continues the same conversation, including voice notes and scheduled job results.\\n\\nThe word counts on this page are the sharpest evidence of the gap. Hostinger Agent appears 27 times. WhatsApp appears five times. The phrase live chat appears zero times. The word ticket appears zero times. The string 24/7 appears zero times. The page that documents support does not use the vocabulary the deal pages sell, and it never mentions a ticket route at all - even though the contractual policy's single reply-time figure is attached to one."
+   },
+   {
+    "heading": "Two smaller mismatches that cut against the badge",
+    "body": "First, the support center's own page title reads Hostinger Support Center - Get help and guides 24/7, while the body text of that same page contains the string 24/7 zero times. The 24/7 claim lives in the title tag, not in the page.\\n\\nSecond, the Agency card is the only plan card in this set that adds anything support-adjacent: Proactive monitoring alerts, marked NEW. No other card differentiates its support from any other card, which is the point - the badge is identical at $2.99/mo and at $29/mo."
+   },
+   {
+    "heading": "The support table a buyer cannot find on the site",
+    "body": "Putting the printed strings beside the published figures produces the table the site does not publish. Unstated cells are reported as unstated, not filled in.\\n\\nPremium, $2.99/mo - printed string: Priority 24/7 expert support - channel named: unstated - language named: unstated - response figure: unstated\\nUnlimited, $3.99/mo - printed string: Priority 24/7 expert support - channel named: unstated - language named: unstated - response figure: unstated\\nCloud Startup, $7.99/mo - printed string: Priority 24/7 expert support - channel named: unstated - language named: unstated - response figure: unstated\\nAgency, $29/mo - printed string: Priority 24/7 expert support - channel named: unstated - language named: unstated - response figure: unstated\\nVPS plans - printed string: none - channel named: live chat, in the FAQ only and never on the card - language named: unstated - response figure: unstated\\nCloud hosting as a product - printed string: 24/7 priority support - channel named: live chat - language named: English only - response figure: median one minute\\nAll plans, contractual - printed string: not applicable - channel named: live chat and email/ticket - language named: unstated - response figure: 1 business day on email/ticket, unstated on live chat\\n\\nThe only cell in that table that contains a number is a product-level FAQ answer, not a plan-card claim. No plan card in this set names the channel its badge entitles the buyer to, and no page maps a tier to a channel."
+   },
+   {
+    "heading": "What this means before you buy",
+    "body": "Four things follow for anyone reading a support badge on a hosting deal.\\n\\nThe badge does not distinguish tiers. The identical string is printed from $2.99/mo to $29/mo, so it cannot be used to compare plans. On these pages it is a constant, not a variable.\\n\\nThe one published number is narrow. It is a median, so it is a midpoint rather than a ceiling; it is stated for live chat; and it is stated for English. If the question will be asked in another language, or sent by email, no figure is published to hold anyone to.\\n\\nThe binding figure is the smaller one on the other channel. The customer service policy promises a reply within 1 business day on email and ticket, and only as soon as possible on live chat. A buyer who wants a documented reply time should read that as the number that actually applies.\\n\\nThe advertised chat now opens with an AI assistant, and a human specialist joins only if additional assistance is needed. That is stated on the provider's own contact page, and it is absent from every deal page and from the 2023-05-10 policy that governs support."
+   }
+  ],
+  "sources": [
+   {
+    "title": "Hostinger pricing - plan cards and compare-plans table",
+    "url": "https://www.hostinger.com/pricing"
+   },
+   {
+    "title": "Hostinger managed cloud hosting - hero, feature list and FAQ",
+    "url": "https://www.hostinger.com/cloud-hosting"
+   },
+   {
+    "title": "Hostinger VPS hosting - plan cards and FAQ",
+    "url": "https://www.hostinger.com/vps-hosting"
+   },
+   {
+    "title": "How to contact Hostinger support",
+    "url": "https://www.hostinger.com/support/1583780-how-to-contact-hostinger-support/"
+   },
+   {
+    "title": "Hostinger customer service policy",
+    "url": "https://www.hostinger.com/legal/customer-service-policy"
+   },
+   {
+    "title": "Hostinger Support Center",
+    "url": "https://www.hostinger.com/support/"
+   }
+  ]
  }
 ]
