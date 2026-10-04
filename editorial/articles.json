@@ -920,5 +920,95 @@
     "url": "https://www.hostinger.com/support/5394917-how-to-manage-payment-methods-in-a-hostinger-account/"
    }
   ]
+ },
+ {
+  "gap_id": "developer-tooling-tier-boundary",
+  "status": "published",
+  "slug": "cloud-hosting-deals-developer-tools-and-plan-floors",
+  "title": "Cloud hosting deals badge developer tools without saying which plan unlocks them",
+  "description": "The cloud plan card prints 18 features and names none of the developer tools. The floors for SSH, staging, cron, Git and the PHP version live in the knowledge base - and they are not one ladder.",
+  "answer": "On the Cloud Startup card the cloud hosting page sells, 18 feature lines are printed and none of them is staging, SSH, cron jobs or Git deployment. The pricing page does name three of those four - “SSH & WP-CLI for faster site management”, “Free safe staging environments” and “Cron jobs automate tasks” - but it prints them in a block headed “Every plan has everything you need and more”, with no plan tier attached, and the plan comparison underneath has no staging, SSH, cron, Git or PHP-version row at all. The provider's own knowledge base is the only place the floors are stated, and they are not one ladder: SSH needs “Premium Web or greater”, WordPress staging needs “a Business web hosting plan or higher”, a Node.js application needs “a Business web hosting plan or any Cloud hosting plan”, and cron jobs are capped at “a maximum of two” on the Single plan and unlimited from Premium up. Two tools carry product exclusions instead of a tier floor: Git deployment is limited to custom PHP and HTML websites and is excluded from Node.js websites and from AI Builder websites, and the PHP version cannot be changed at all on an account whose only websites were built with AI Builder.",
+  "unique_note": "Sourced: every eligibility floor, cap, exclusion and warning quoted in this article is printed on one of the ten provider pages listed under Sources - the six knowledge-base articles carry the floors and exclusions, the cloud hosting and pricing pages carry the badge strings and the row lists, and the VPS page carries the root-access language. Derived: the 18-line count on the Cloud Startup card and the counts of how many times each tool name appears on each deal page are my own tallies of the served pages, not provider statements; the statement that the pricing page's comparison carries no staging, SSH, cron, Git or PHP-version row is a reading of that table's own rows; and the statement that the word Business appears on the pricing page only in navigation and footer text rather than as one of the three compared plans is a count of that page's own text. Unstated by every page read: what staging, SSH, cron or Git cost beyond the plan price; whether a staging environment consumes inodes, disk or a website slot; and which of the three plans the pricing page compares satisfies the Business floor that the staging and Node.js articles name.",
+  "published_at": "2026-10-04",
+  "sections": [
+   {
+    "heading": "What the two deal pages actually print",
+    "body": "Two pages carry the deal claims here: the cloud hosting page, which sells the Cloud Startup plan this site tracks, and the pricing page, which carries the plan comparison.\\n\\nThe Cloud Startup card prints 18 feature lines: 10 Web Apps, 4 CPU cores, 4 GB RAM, 100 GB NVMe storage, 2 000 000 inodes, 100 PHP workers, unlimited websites, access sharing, a free domain for 1 year, unlimited SSL, 15 vibe coding credits, unlimited mailboxes per website for 1 year, managed hosting for WordPress and WooCommerce and Web Apps, CDN included, a dedicated IP address, priority 24/7 expert support, a 30-day money-back guarantee, and AI SEO ready.\\n\\nCounting that same page's text for the four tools a developer is most likely to look for returns zero: the cloud hosting page contains the strings staging, SSH, cron and Git zero times each.\\n\\nThe card ends with a link labelled View all features, which is the page telling the reader that the list above it is not the whole list.\\n\\nOn the pricing page the same four strings behave differently: staging, SSH and cron appear twice each, and Git appears zero times."
+   },
+   {
+    "heading": "The block that names three tools and attaches no tier",
+    "body": "The pricing page's developer-tool claims sit in a single block, headed Every plan has everything you need and more, listing nine items: SSH & WP-CLI for faster site management, SFTP account management for secure team access, PHP version management offers better performance, Free safe staging environments, 1-click website cloning, Redirects Manager preserves SEO, Cron jobs automate tasks, Free malware scanning, and Unlimited collaborators.\\n\\nThat block is printed twice on the page, and not one of its nine items carries a plan name, a tick mark, an asterisk or a footnote.\\n\\nA second, shorter block on the same page is headed All plans include and lists only four things: reliable hosting, a custom domain, email, and building tools. None of the developer tools is in it.\\n\\nThe comparison table that follows is where a reader would expect the tier answers to appear, and it is where they are missing. Its rows run through websites, storage, daily backups, CDN, WordPress, AI Builder credits, Web Apps, free domain, WHOIS privacy, mailboxes per website, free email marketing, priority support, AI tools, AI SEO readiness, uptime guarantee, data centers, automatic migration, SSL, inodes, PHP workers, databases, database size, RAM, CPU cores, bandwidth, a dedicated IP, two AI Builder modes, managed WordPress, and a Node.js frameworks row.\\n\\nThere is no staging row, no SSH row, no cron row, no Git row and no PHP-version row."
+   },
+   {
+    "heading": "SSH: the floor is Premium Web, and the jail is your home directory",
+    "body": "The provider's SSH article states its floor in its own words: If your hosting plan is Premium Web or greater, you can access your hosting via SSH.\\n\\nIt then adds a scope limit that no deal page mentions: The SSH access type is restricted to your home directory and below.\\n\\nThe remedy it offers a plan below the floor is an upgrade rather than a workaround: If you have a Single hosting plan and you definitely need SSH access, you can consider upgrading your hosting plan.\\n\\nThe VPS page is the contrast case. It advertises Full root access - Customize and manage your VPS environment with unrestricted administrative control - alongside a Web terminal offering One-click root access, and its FAQ answers Can I install custom software on my virtual server hosting? with Yes. With full root access, you have the freedom to configure your VPS for many purposes.\\n\\nSo the same provider sells shell access three ways: unrestricted on a VPS, enabled but confined to the home directory from Premium Web upward, and unavailable on the entry plan. The cloud plan card names none of the three."
+   },
+   {
+    "heading": "Staging: the floor is Business, and publishing overwrites the live site",
+    "body": "The staging article sets a higher floor than SSH: you can create and manage these environments directly from Hostinger dashboard if you have a Business web hosting plan or higher. It repeats the condition under its own Before you start heading: Ensure you have a Business web hosting plan or higher.\\n\\nIt then narrows the scope twice. The Hostinger staging tool creates staging environments for root domains. To set up staging for a subdomain, you must do so manually. And if your domain uses external nameservers, you must manually create an A record for the staging subdomain in your active DNS zone.\\n\\nThe most consequential sentence appears in no deal page: Publishing replaces your live files and database with the staging copy. Any changes made to your live website after the staging environment was created will be overwritten and lost.\\n\\nThe same article points Agency plan owners to a separate guide, so the staging tool described here is not the Agency one.\\n\\nDerived observation: because publishing replaces files and database together, the only safeguard the article describes is a confirmation window to review before clicking Publish. No export step, backup step or diff of the live site is mentioned."
+   },
+   {
+    "heading": "Cron: the one published per-plan number is a cap",
+    "body": "The cron article is the only page of the ten that publishes a per-plan number for a developer tool: For Single hosting - Maximum of two cron jobs, and For Premium hosting and above - Unlimited.\\n\\nIt immediately qualifies the word unlimited with a resource rule rather than a job count: When setting up cron jobs, it is essential to consider both CPU and memory limits. If you need to create a significant number of cron jobs, it's recommended to schedule them avoiding simultaneous runs that could lead to performance issues.\\n\\nThe companion setup article adds two operational facts the deal pages never carry: a job's type is either PHP or Custom, and Cron jobs tasks schedule is based on Coordinated Universal Time (UTC+0).\\n\\nDerived: unlimited here is a cap on the number of entries, not a promise about resources, and the entry plan's ceiling of two jobs against no stated ceiling from Premium up is the widest published tier gap of any tool in this set."
+   },
+   {
+    "heading": "Git deployment: three exclusions and one overwrite warning",
+    "body": "Git deployment carries the most published exclusions of any tool here, and it is the one that appears zero times on both deal pages read.\\n\\nThe Git article opens with its scope: Git integration is available for custom PHP and HTML websites hosted on web and cloud hosting plans.\\n\\nIt then excludes three cases by name. This does not apply for Node.js websites, instead please refer to the guide on deploying Node.js from a GitHub repository. Hostinger AI Builder websites do not support Git integration. And Agency Hosting plans support a separate GitHub integration for existing websites, which the article later describes as not supporting GitLab or Node.js full-stack applications.\\n\\nSetup is OAuth-based with no SSH key setup required, and the root directory defaults to public_html, changeable to any valid directory on the hosting account.\\n\\nThe article's own note is the second overwrite warning in this set: Disconnecting or changing your deployment repository will cause newly deployed files to overwrite existing data in your target directory. Deployment history is published, listing the branch name, commit ID, timestamp and status, and automatic deployments can be paused."
+   },
+   {
+    "heading": "PHP versions: a four-version window and a product exclusion",
+    "body": "The PHP article publishes both a supported window and a direction of travel. PHP 8.3 is selected by default for new websites, You can only select PHP versions 8.2 and higher up to PHP 8.5, and Older PHP versions (8.1 and below) are no longer available as options.\\n\\nDowngrades are blocked. For existing websites with older PHP versions, your current PHP version remains active and you can upgrade to any higher PHP version, but Downgrading to lower versions is not possible - with a temporary exception through the website's .htaccess file that the article asks you to revert as soon as you are ready.\\n\\nThe article's closing note is a product exclusion rather than a tier floor: The selected version will apply to all the websites added to your hosting plan (except for websites created using Hostinger AI Builder), and The PHP version cannot be changed if you only have websites created with Hostinger AI Builder.\\n\\nThe pricing page advertises PHP version management offers better performance in its un-tiered block, without mentioning the AI Builder exclusion the knowledge base states - an exclusion that removes the control rather than gating it behind a plan."
+   },
+   {
+    "heading": "Node.js applications: two floors, depending on the product family",
+    "body": "The Node.js overview splits the answer three ways by product family. On web or cloud hosting: If you have a Business web hosting plan or any Cloud hosting plan, you can deploy a Node.js application from a GitHub repository or using the file upload method. On a VPS: by using the CloudPanel template on your VPS, you can easily set up and manage Node.js applications, which the page frames as the option for precise control over runtime versions, system dependencies, and deployment workflows. On Agency: If you have a Hostinger Agency plan, you can host Node.js projects as static front-end applications.\\n\\nThe cloud hosting page's own FAQ gives the short version - Our Cloud and Shared Business Plan hosting plans support Node.js - and the pricing page's comparison carries a Node.js frameworks row, which makes this the one developer tool in the set that the comparison acknowledges.\\n\\nDerived: the floors collected here are not one ladder. SSH starts at Premium Web, staging at Business, a Node.js application on shared hosting at Business or any Cloud plan; Git is scoped by website type rather than by tier; and cron is capped only on the Single plan."
+   },
+   {
+    "heading": "The six floors side by side, and what is still unstated",
+    "body": "Read together, the ten pages produce the comparison below. Every floor, cap, scope limit and exclusion is quoted from the pages named in Sources; the arrangement is mine.\\n\\nSSH - floor: Premium Web or greater. Scope: restricted to your home directory and below. Source: the SSH article.\\nWordPress staging - floor: a Business web hosting plan or higher. Scope: root domains only, manual A record with external nameservers. Warning: publishing replaces live files and database. Source: the staging article.\\nCron jobs - cap: a maximum of two on Single, unlimited from Premium up. Qualifier: subject to CPU and memory limits. Schedule basis: UTC+0. Source: the two cron articles.\\nGit deployment - scope: custom PHP and HTML websites on web and cloud hosting. Exclusions: Node.js websites, AI Builder websites, and Agency plans limited to a separate GitHub-only integration. Source: the Git article.\\nPHP version - window: 8.2 to 8.5, with 8.3 by default. Direction: upgrade only, no downgrade. Exclusion: not changeable on an AI Builder-only account. Source: the PHP article.\\nNode.js application - floor: a Business web hosting plan or any Cloud hosting plan. Alternatives: VPS via the CloudPanel template, or Agency as static front-end only. Source: the Node.js article.\\n\\nStill unstated by every page read: what staging, SSH, cron or Git cost, if anything, beyond the plan price; whether a staging environment consumes inodes, disk or a website slot; and which of the three plans the pricing page compares - Premium, Unlimited and Cloud Startup - satisfies the Business floor that the staging and Node.js articles name. On the pricing page the word Business appears in navigation and footer text, not as one of the compared plans."
+   }
+  ],
+  "sources": [
+   {
+    "title": "Hostinger pricing and plan comparison",
+    "url": "https://www.hostinger.com/pricing"
+   },
+   {
+    "title": "Hostinger cloud hosting (Cloud Startup plan card)",
+    "url": "https://www.hostinger.com/cloud-hosting"
+   },
+   {
+    "title": "Hostinger VPS hosting (full root access and web terminal)",
+    "url": "https://www.hostinger.com/vps-hosting"
+   },
+   {
+    "title": "How to enable SSH Access in Hostinger",
+    "url": "https://www.hostinger.com/support/1583645-how-to-enable-ssh-access-in-hostinger/"
+   },
+   {
+    "title": "How to create a WordPress staging environment at Hostinger",
+    "url": "https://www.hostinger.com/support/5720286-how-to-create-a-wordpress-staging-environment-in-hostinger/"
+   },
+   {
+    "title": "How many cron jobs can you set up in Hostinger",
+    "url": "https://www.hostinger.com/support/1583765-how-many-cron-jobs-can-you-set-up-in-hostinger/"
+   },
+   {
+    "title": "How to set up a cron job at Hostinger",
+    "url": "https://www.hostinger.com/support/1583465-how-to-set-up-a-cron-job-at-hostinger/"
+   },
+   {
+    "title": "How to deploy a Git repository in Hostinger",
+    "url": "https://www.hostinger.com/support/1583302-how-to-deploy-a-git-repository-in-hostinger/"
+   },
+   {
+    "title": "How to change the PHP version of your Hostinger hosting plan",
+    "url": "https://www.hostinger.com/support/1575755-how-to-change-the-php-version-of-your-hostinger-hosting-plan/"
+   },
+   {
+    "title": "Node.js hosting options at Hostinger",
+    "url": "https://www.hostinger.com/support/node-js-hosting-options-at-hostinger/"
+   }
+  ]
  }
 ]
