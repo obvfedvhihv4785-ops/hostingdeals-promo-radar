@@ -1010,5 +1010,95 @@
     "url": "https://www.hostinger.com/support/node-js-hosting-options-at-hostinger/"
    }
   ]
+ },
+ {
+  "gap_id": "bundled-mailbox-quota-boundary",
+  "status": "published",
+  "slug": "cloud-hosting-deals-bundled-mailbox-storage-and-sending-limits",
+  "title": "Cloud hosting deals bundle a mailbox free for a year. The provider's own table caps it at 1 GB",
+  "description": "Plan cards print 2, 10 or unlimited mailboxes per website, free for 1 year, and no storage figure or sending rate. The provider's own email limits table gives the bundled 1-year mailbox 1 GB of storage and 100 messages a day, against 5 GB and 1,000 a day on the cheapest paid mailbox.",
+  "answer": "The plan cards on the two pages this site tracks print a mailbox count and a clock - 2 mailboxes per website on Premium, unlimited on Unlimited and Cloud Startup, 10 on Agency Startup, each labelled free for 1 year - and no storage figure and no sending rate. The provider's own email limits table supplies both: the mailbox included free for a year is a Business Starter trial with a 1 GB storage limit per mailbox and a daily message rate of 100 inbound and 100 outbound. The cheapest paid mailbox, Business Starter at $0.39 per mailbox per month on a 48-month term, is printed at 5 GB and 1,000 a day. That makes the bundled mailbox one fifth of the paid one's storage and one tenth of its daily rate, and the bundled free mailbox cannot buy the 30 GB or 50 GB storage add-on that paid mailboxes can - the only published route to more space is upgrading every mailbox to a paid plan. All limits in that table are per mailbox, and its daily rates run over a rolling 24 hours. Every figure above is copied from a provider page; the ratios between them are arithmetic on those printed numbers and are labelled as derived below.",
+  "unique_note": "This page quotes figures printed on the provider's own pages and links to each one. The 1 GB storage limit, the 100 messages a day, the 5 GB and 1,000 a day on Business Starter, the 30-day trial's 10 GB, the 10 per minute and 100 per day on unauthenticated PHP mail, the 50 MB, 35 MB and 25 MB message size caps, the 30 GB and 50 GB add-on packages and the 48-month totals are all quoted as printed. Everything labelled derived is arithmetic on those printed figures: the one-fifth and one-tenth ratios, the messages-per-hour conversions, the number of maximum-size messages a 1 GB mailbox holds, the share of the 48-month term the 1-year entitlement covers, and the newsletter comparison. No storage figure, sending rate, mailbox count, price or duration has been estimated, and cells the provider does not publish are reported as unstated.",
+  "published_at": "2026-10-05T00:10:00Z",
+  "sections": [
+   {
+    "heading": "What the plan cards print, and what they leave out",
+    "body": "The pricing page prints a mailbox line on every plan card, in the same block, under the same two-word label. Premium, at $2.99 a month on a 48-month term, prints 2 mailboxes per website - free for 1 year. Unlimited, at $3.99, prints unlimited mailboxes per website - free for 1 year. Cloud Startup, at $7.99, prints unlimited mailboxes per website - free for 1 year. Agency Startup, at $29 a month on a 24-month term, prints 10 mailboxes per website - free for 1 year.\\n\\nThe cloud hosting page repeats the same construction on the plan this site tracks - unlimited mailboxes per website - free for 1 year - and its FAQ summarises the bundle as a free domain, free ssl certificates, free domain-based emails, and 24/7 priority support. So the card answers two questions: how many mailboxes, and for how long. It never answers the third: how much mail one of those mailboxes holds, or how much it may send.\\n\\nThat absence is measurable rather than rhetorical. The word mailbox appears 11 times on the pricing page and once on the cloud hosting page, and the word email 20 and 9 times respectively. The GB values that do appear on the pricing page sit beside hosting storage, RAM and VPS resource lines - 20 GB SSD, 50 GB NVMe, 100 GB NVMe, 12 GB of RAM, 300 GB NVMe - and not beside the mailbox line. Neither deal page prints a per-mailbox gigabyte."
+   },
+   {
+    "heading": "The provider's own limits table is where the number lives",
+    "body": "The provider publishes a separate article titled Parameters and limits of Hostinger Mail. It splits email into three things the deal page treats as one: Business Email plans, which it calls standalone, professional email services; a Business Email Free Trial, described as a trial period of professional email included with select hosting or domain purchases; and Free Business Email, described as legacy email versions bundled with specific web hosting plans and marked as no longer offered since April 2025.\\n\\nThe card's free for 1 year matches the second of those. The article states that the 1-year trial is included with specific hosting plans, and that the mailboxes per domain vary per hosting plan - which is why plan cards can print different counts for what is nominally the same product. It then publishes the trial's own row: a storage limit of 1 GB, a daily message rate of 100 inbound and 100 outbound, and 10 AI credits in total. Everything else, it says, matches the full Business Starter plan.\\n\\nThe same table gives the 30-day trial - the one available through selected domain purchases, which includes 1 mailbox - a storage limit of 10 GB. Both trials share the same 100-a-day message rate. So the trial attached to a domain purchase holds ten times what the trial attached to a hosting plan holds.\\nDerived from the printed figures: 10 GB divided by 1 GB is 10."
+   },
+   {
+    "heading": "The paid mailbox the table prices the upgrade against",
+    "body": "The same table prices the three standalone plans the product page sells. Business Starter is 5 GB of storage and 1,000 messages a day. Business Standard is 20 GB and 3,000 a day. Business Premium is 50 GB and 3,000 a day. All three print unlimited mailboxes per domain, advanced spam and antivirus protection, custom DKIM, and a 100-recipient cap per message.\\n\\nThe email product page prints the prices per mailbox: $0.39, $0.99 and $1.99 a month on a 48-month term, renewing at $1.59, $2.79 and $3.99. Each card says Price per mailbox, for 48-month term, and each includes 1 mailbox.\\n\\nSet the bundled free mailbox beside the cheapest paid one and the gap is arithmetic. Derived from the printed figures: 1 GB against 5 GB is one fifth, and 100 messages a day against 1,000 is one tenth. The free mailbox holds a fifth of the storage and may send a tenth of the messages of a mailbox costing $0.39 a month on the same 48-month term.\\n\\nThe message limit row sharpens the point. Paid plans print 100,000, 200,000 and 300,000 message units. The bundled trial's message limit is not published at all, so the table leaves that cell blank for the mailbox the deal gives away."
+   },
+   {
+    "heading": "The free mailbox cannot buy its way out of 1 GB",
+    "body": "Paid mailboxes have a published escape hatch. The provider sells a Flexible Storage Add-on in 30 GB or 50 GB packages. It can be purchased once per domain, follows the same renewal cycle as the email plan, is paid upfront, and the extra space can be split across mailboxes in 1 GB steps. A single mailbox cannot be pushed above 100 GB in total, the storage can only be allocated within the domain where it was bought, and the article states that additional storage is non-refundable.\\n\\nThe bundled free mailbox is excluded from all of it. The add-on article states plainly that the Flexible Storage Add-on is not available for Free Email plans, and that to increase storage for Free Email you need to upgrade all mailboxes to a Business Email plan. The limits table lists the add-on as available for all three paid plans.\\n\\nTwo more rules close the door on mixing the two. Creating a mailbox requires either an active hosting plan eligible for a free email trial or a standalone mail plan, and the mailbox article notes that if you purchase a paid email plan during setup, the free trial becomes unavailable for that domain, because only one email order type can be active per domain. The limits article states the same constraint from the other side: it is not possible to combine or setup a free email or free trial with a domain that is already using a paid plan.\\n\\nDerived from the printed figures: the smallest add-on package, 30 GB, is 30 times the entire storage of the bundled 1 GB mailbox - and that is the one mailbox that cannot buy it."
+   },
+   {
+    "heading": "At 1 GB the ceiling stops inbound mail, not just outbound",
+    "body": "The storage article describes what happens as a mailbox fills. Webmail shows a warning banner at 90 per cent full, a more prominent one at 94, and an urgent one at 98. At 100 per cent the banner becomes permanent and cannot be dismissed, and at that point you cannot receive new emails until storage space is freed up or expanded.\\n\\nTrash does not accumulate indefinitely: messages in Trash are automatically deleted after 30 days. Two housekeeping routes are offered - delete old mail and empty the spam folder, or upgrade the plan and buy more storage. On the bundled free mailbox the second route is closed, which leaves the first.\\n\\nThree size caps apply to every version of the service, free or paid. An inbound email including attachments may not exceed 50 MB, an outbound email including attachments may not exceed 35 MB, and an outbound attachment may not exceed 25 MB.\\n\\nDerived from the printed figures: at 1 GB, a single maximum-size inbound message at 50 MB is about 5 per cent of the whole mailbox, so 20 of them would fill it. Twenty-nine maximum-size outbound messages at 35 MB would do the same. A mailbox advertised as free for 1 year is a mailbox that 20 large messages can fill."
+   },
+   {
+    "heading": "The sending rate has two published numbers, and they measure different things",
+    "body": "The limits table gives the bundled 1-year mailbox a daily message rate of 100 inbound and 100 outbound. It states that all limits in the article apply per individual mailbox rather than per domain or per plan, that each mailbox gets its own full allowance, and that daily rates are calculated over a rolling 24-hour period. It spells out the split: a limit of 100 allows for 100 sent messages and 100 received messages in a 24-hour period.\\n\\nA separate article on PHP mail publishes a different pair of numbers for a different thing. Sending through unauthenticated functions such as php mail() is capped at 10 emails per minute and 100 emails per day, and the article says that with a Business Starter or Business Premium email you get at least a 10-times higher limit of daily outgoing messages. The provider also ships a rate limit log to the hosting account, updated hourly, recording which mailboxes exceed the limit.\\n\\nThe two pages reconcile. The bundled mailbox's published daily rate of 100 matches the unauthenticated limit of 100 a day, and the paid plan's 1,000 a day in the limits table is exactly the 10-times-higher figure the PHP article describes. Two provider pages, one ratio, and no absolute number published for the free tier beyond 100.\\n\\nDerived from the printed figures: 100 messages a day is about 4.2 an hour, and 1,000 a day is about 41.7 an hour. A single newsletter to 1,000 opted-in subscribers is ten times the bundled mailbox's entire daily outbound allowance - which is why the plan card carries a separate line for AI email marketing beside the mailbox line rather than folding campaigns into it."
+   },
+   {
+    "heading": "A suspended mailbox loses the dashboard as well as the outbox",
+    "body": "The suspension article describes an automated action rather than a manual one. If a mailbox is automatically disabled or shows a Suspended status, it typically means the system has detected suspicious activity or spam originating from the email order, and the suspension applies to one or more mailboxes associated with the domain. While it is in place, you cannot send emails or manage your mailboxes.\\n\\nReactivating it is conditional. Before the service can be resumed you must update the passwords for all mailboxes under the affected domain, check the website for malware and protect the contact forms, scan your own devices for malware that might be sending mail through a mail client, and review your sending habits. Only then does the dashboard expose the switch - Emails, then Mailboxes, then the options menu, then Settings, then the Suspend receiving toggle - and the article asks you to wait at least two hours before resuming, so the mail servers can synchronise. If the underlying cause is not fixed, it warns, the email service will get suspended again after you reactivate it.\\n\\nPutting the two printed statements together: because management access is withdrawn along with sending, a suspension on a 1 GB mailbox is not only an outbound outage - it also removes the dashboard route a customer would use to delete mail and free the space."
+   },
+   {
+    "heading": "The mailbox clock is a quarter of the term you buy",
+    "body": "Every card prints free for 1 year. The term being sold on the same page is 48 months: the pricing page prints 48-month totals of $143.52 on Premium, $191.52 on Unlimited and $383.52 on Cloud Startup, and states that all plans are paid upfront and that the monthly rate reflects the total plan price divided by the number of months in the plan.\\n\\nDerived from the printed figures: 12 months of email entitlement inside a 48-month term covers 25 per cent of the term. The remaining 36 months carry no stated email entitlement on either deal page.\\n\\nThe limits article adds two conditions that decide whether the year even runs its course. If you cancel a Business Email free trial, it cannot be activated again. And if the hosting plan expires before 1 year, the email trial is canceled. Trial limits, it adds, are automatically lifted upon upgrading to a paid plan, and the number of free trials you can claim depends on how many websites your hosting plan supports.\\n\\nThe mailbox article describes how the clock starts. A free email is claimed rather than granted: the customer opens the dashboard, clicks Start Free or Claim free email, picks the domain and confirms. It also notes that a free email can be claimed for any domain you own, even if there is no active website under it, and that hosting plan email limits still apply.\\n\\nOne unit mismatch is left standing. The plan cards count mailboxes per website. The limits article counts mailboxes per domain. Both are printed, neither page reconciles them, and no page states whether a second website on the same plan draws on the same mailbox allowance."
+   },
+   {
+    "heading": "What is still unstated",
+    "body": "Several cells the table fills for paid plans are blank for the bundled mailbox. Its message limit in units is not published, while paid plans print 100,000, 200,000 and 300,000. Its storage figure does not appear on either deal page. And no page states what happens to the contents of a mailbox when the 1-year entitlement ends inside a 48-month hosting term - whether mail is retained, frozen or removed.\\n\\nThe mailbox rules themselves are published. A name runs from 1 to 50 characters, may contain letters, numbers and periods, may not contain special characters such as the ampersand, equals sign, underscore, apostrophe, hyphen, plus sign, comma, or angle brackets, and may not contain multiple consecutive periods. A deleted mailbox can be restored within 30 days before permanent deletion.\\n\\nOne further choice is made in the dashboard rather than on the deal page. A web or cloud hosting plan can include Hostinger Email or Titan Email, but not both, and new free email claims through the dashboard only offer Hostinger Email; Titan Email applies only to hosting plans that already had it before November 2025. Which of the two a given plan ships is visible under the plan name in the dashboard, not on the page that sells the plan.\\n\\nNone of this makes the bundled mailbox worthless. It is a real mailbox on the customer's own domain, with its own password and its own storage allotment, reachable through webmail or linkable to an external email client. The point is narrower than that. The card sells a count and a clock, the provider's own table publishes a ceiling of 1 GB and 100 messages a day, and the page that sells the deal prints neither."
+   }
+  ],
+  "sources": [
+   {
+    "title": "Hostinger pricing - plan cards, mailbox lines and 48-month totals",
+    "url": "https://www.hostinger.com/pricing"
+   },
+   {
+    "title": "Hostinger cloud hosting - Cloud Startup card and bundle FAQ",
+    "url": "https://www.hostinger.com/cloud-hosting"
+   },
+   {
+    "title": "Hostinger Mail - business email plans, per-mailbox prices and storage",
+    "url": "https://www.hostinger.com/business-email"
+   },
+   {
+    "title": "Parameters and limits of Hostinger Mail",
+    "url": "https://www.hostinger.com/support/4625828-parameters-and-limits-of-hostinger-email/"
+   },
+   {
+    "title": "How to check the email service included in your hosting plan at Hostinger",
+    "url": "https://www.hostinger.com/support/5832752-how-to-check-the-email-service-included-in-your-hosting-plan-at-hostinger/"
+   },
+   {
+    "title": "How to create and manage mailboxes for Hostinger Email",
+    "url": "https://www.hostinger.com/support/1583217-how-to-create-and-manage-mailboxes-for-hostinger-email/"
+   },
+   {
+    "title": "How to manage your email storage with Hostinger Email",
+    "url": "https://www.hostinger.com/support/10627479-how-to-manage-your-email-storage-with-hostinger-email/"
+   },
+   {
+    "title": "How to increase your mailbox storage with the Hostinger Email Storage Add-on",
+    "url": "https://www.hostinger.com/support/10627422-how-to-increase-your-mailbox-storage-with-hostinger-email-storage-add-on/"
+   },
+   {
+    "title": "PHP Mail limitation explained: how to improve email delivery with SMTP",
+    "url": "https://www.hostinger.com/support/11393648-php-mail-limitation-explained-how-to-improve-email-delivery-with-smtp/"
+   },
+   {
+    "title": "What to do if your Hostinger Email mailbox is suspended",
+    "url": "https://www.hostinger.com/support/1583452-what-to-do-if-your-hostinger-email-account-is-suspended/"
+   }
+  ]
  }
 ]
