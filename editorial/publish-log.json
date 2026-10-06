@@ -88,5 +88,11 @@
   "title": "Cloud hosting deals bundle a mailbox free for a year. The provider's own table caps it at 1 GB",
   "url": "https://cloudhostdeals.com/articles/cloud-hosting-deals-bundled-mailbox-storage-and-sending-limits",
   "gap_id": "bundled-mailbox-quota-boundary"
+ },
+ {
+  "date": "2026-10-06",
+  "title": "A hosting deal's free domain renews itself 27 days early, at a price the plan card never prints",
+  "url": "https://cloudhostdeals.com/articles/cloud-hosting-deals-included-domain-renewal-and-transfer",
+  "gap_id": "included-domain-lifecycle-boundary"
  }
 ]
