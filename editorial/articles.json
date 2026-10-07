@@ -1190,5 +1190,99 @@
     "url": "https://www.hostinger.com/support/1583419-whois-privacy-protection-at-hostinger/"
    }
   ]
+ },
+ {
+  "gap_id": "security-badge-product-scope-boundary",
+  "status": "published",
+  "slug": "cloud-hosting-deals-free-ssl-lifetime-scope",
+  "title": "A hosting deal's free SSL is a Lifetime SSL on two product lines, and the certificate file cannot leave the provider",
+  "description": "Five plan pages print a free SSL line and none of them names the certificate. The provider's help centre names it: a Domain Validation certificate called Lifetime SSL, scoped to Web and Cloud hosting plans, and explicitly not downloadable or installable elsewhere. The same help centre scopes the free Malware Scanner to those two plan families, says it never scans the database, and prices professional cleanup at $95. The pricing page that lists every plan prints DDoS, firewall, WAF and security level zero times each.",
+  "answer": "Five pages that sell hosting print an SSL promise, and not one of them names the certificate. The provider's help centre does. The free certificate is a Domain Validation certificate the help centre calls Lifetime SSL, and the same document scopes it to Web and Cloud hosting plans only. A second help centre article adds the condition that no plan page carries: Lifetime SSL is supported only for websites hosted there, and the certificate files cannot be downloaded or installed elsewhere, so the free padlock is not portable. Two more words on the same cards are equally thin. Free malware scanning is printed in a generic feature block on the pricing page with no plan named beside it, while the help centre scopes the Malware Scanner to Web and Cloud plans, states that it scans and cleans website files only and that the database is not scanned or cleaned, and prices the assisted cleanup at $95 for WordPress sites whose domain points to the provider. The firewall, DDoS and WAF strings appear on the VPS and WordPress pages; the pricing page that prices every plan prints DDoS, firewall, WAF and security level zero times each. The CDN security levels, including the I am Under Attack mode, are published as available from a Web Hosting Business plan or higher and as unavailable on Agency plans.",
+  "unique_note": "Every product name, plan scope, limitation and price quoted on this page is printed on a provider-owned page, and each source is linked. The Domain Validation certificate type, the Lifetime SSL product name, the Web-and-Cloud scope, the VPS-only wildcard scope, the no-export rule, the Malware Scanner's Web-and-Cloud scope, its files-only limitation, the unscanned database, the shared-file-system warning, the 30-day malware timeline, the $95 cleanup price and its two conditions, the five CDN security levels, the Medium default, the Business-or-higher gate and the Agency exclusion are all copied as printed. Everything labelled derived is a term count or an arithmetic reading of those printed figures: the per-page occurrence counts for DDoS, firewall, WAF, security level, Lifetime SSL, Domain Validation and wildcard, and the observation that the certificate a free SSL line delivers is a different product from the wildcard certificate the same help centre documents for VPS. Nothing on this page reports traffic, rankings, index counts, clicks or performance, and no price, discount or term is estimated.",
+  "published_at": "2026-10-07T00:10:00Z",
+  "sections": [
+   {
+    "heading": "What the five plan pages print, and what they leave to the help centre",
+    "body": "Five provider pages sell hosting on this site's coverage list: the pricing page, the cloud hosting page, the VPS page, the shared hosting page and the WordPress page. All five print an SSL promise, and the strings differ. The pricing page's plan comparison carries a row reading Unlimited free SSL, and its agency card reads Unlimited CDN & SSL FREE. The cloud page's plan card reads Unlimited SSL FREE, and the cloud FAQ says every cloud hosting package includes a free domain, free SSL certificates, free domain-based emails, and 24/7 priority support. The shared hosting page prints Free domain, email, and SSL included in its hero and Free SSL certificate - Installed automatically to help keep visitor data safe in its feature list. The WordPress page prints unlimited SSL certificates on the plan summary and unlimited free SSL certificates for its managed WooCommerce plans. The VPS page prints no SSL feature line on its plan cards at all.\\n\\nWhat none of the five prints is the certificate. Across all five pages the phrase Domain Validation occurs zero times, the abbreviation DV zero times, Lifetime SSL zero times, wildcard zero times, multi-domain zero times and Let's Encrypt zero times. The plan pages say a certificate is included and stop there. The product name, the certificate type and the product scope all live in the provider's help centre, one click away and not linked from the promise.\\n\\nThat is the shape of the gap this article fills. It is not that the provider hides anything, because every fact below is published on a provider-owned page. It is that the page asking for the money and the page defining the product are different pages, and only the second one answers the question a buyer is actually asking."
+   },
+   {
+    "heading": "The certificate has a type, a name and a scope that no plan page prints",
+    "body": "The help centre's introduction to SSL states the type plainly: at Hostinger, we provide free SSL certificates of the Domain Validation (DV) type for all your websites hosted with us on any of our Web and Cloud hosting plans. The free certificate is therefore a DV certificate, the entry tier of certificate validation, which proves control of a domain and nothing about the organisation behind it.\\n\\nThe same page gives the certificate a product name: Domain Validation (DV) certificates, like Lifetime SSL, are an excellent choice for securing one domain or subdomain at a time, and our Web and Cloud hosting plans include them for free for all your websites. The certificate a customer receives from a free SSL line is therefore a Lifetime SSL, a named product with a named scope, and that scope is Web and Cloud hosting plans.\\n\\nThe scope matters because the coverage list on this site is not only Web and Cloud. A reader comparing a VPS plan against a cloud plan is comparing a product line the help centre includes in the free certificate scope against a product line it describes differently. The VPS page's own FAQ points at a manual route instead: if you use VPS hosting, you can manually install SSL certificates for free, according to the specific instructions of your operating system."
+   },
+   {
+    "heading": "Two SSL products, one product line each",
+    "body": "The help centre documents a second certificate that none of the plan pages mentions, the wildcard certificate. Wildcard SSL certificates can secure a domain and all its associated subdomains under one certificate, it says, and then draws the boundary: this type of certificate is supported only on our VPS hosting plans.\\n\\nRead the two statements together and each certificate's product line is exact. A Lifetime SSL is a DV certificate covering one domain or subdomain at a time, included free on Web and Cloud hosting plans. A wildcard certificate covers a domain and all its subdomains, and is supported only on VPS hosting plans.\\n\\nA buyer reading only the plan cards would not learn that a wildcard certificate exists, that it is the certificate type covering subdomains, or that it is the VPS product line where that type is supported. The WordPress page comes closest to the subject by printing unlimited SSL certificates on the plan summary, but unlimited certificates for one domain at a time is a different offer from one certificate covering every subdomain, and no plan page makes that distinction."
+   },
+   {
+    "heading": "The export rule: the certificate cannot leave",
+    "body": "The help centre article on claiming the free SSL adds a condition that appears on none of the five plan pages. After describing the manual installation route it states, as a capitalised note, that Lifetime SSL is supported only for websites hosted at Hostinger, and that the certificate files cannot be downloaded or installed elsewhere.\\n\\nThat is a portability boundary. The free certificate is not a certificate the customer owns and carries with them; it is a certificate that exists while the site is hosted on the plan families the help centre scopes it to.\\n\\nThe plan cards describe the same benefit in the language of possession, using words such as included, FREE and unlimited, and none of them carries the condition. A buyer who later moves the site, or who wants the same certificate on a server elsewhere, has no way to learn the limit from the page that sold the benefit."
+   },
+   {
+    "heading": "Free malware scanning, and the plan scope behind the words",
+    "body": "The pricing page prints Free malware scanning inside the generic feature block headed Every plan has everything you need and more, the same block this site has already documented as naming no plan tier beside any of its items. The cloud page prints a malware scanner among the extras in its protection paragraph: Free SSL, WHOIS privacy, a malware scanner, and Cloudflare-protected nameservers, without extra plugins to babysit.\\n\\nThe help centre scopes the same-named tool. The Malware Scanner article opens by stating that the Hostinger Malware Scanner automatically scans your website files for malicious code on Web Hosting and Cloud Hosting plans, and shows which files are affected so they can be reviewed and cleaned from the dashboard. The scope is Web Hosting and Cloud Hosting plans.\\n\\nA third page makes a broader claim about a scanner on a product line outside that scope. The VPS page's FAQ says that every KVM VPS client will get a malware scanner that can automatically detect and remove any malicious files. The help centre article read for this piece scopes the tool it names to Web and Cloud plans, the VPS page prints its own scanner claim, and no page reconciles the two statements. The gap is not that either page is wrong, it is that a reader cannot tell from either one which tool they are buying, or on which product lines the named Malware Scanner runs."
+   },
+   {
+    "heading": "What the malware scanner does not cover",
+    "body": "Four limitations are published, and none of them appears beside the free malware scanning badge.\\n\\nThe first is scope: the Malware Scanner scans and cleans website files only. The second is the database: the database is not scanned or cleaned, a clean scan result does not rule out a database-level infection, and malware injected into database tables such as wp_options, wp_posts or wp_users will not be detected.\\n\\nThe third is account-wide exposure: on Web Hosting and Cloud Hosting plans, all websites under the same account share the same file system, so if one site is infected malware can spread to all others on the account, and the help centre instructs owners to scan every website on the account rather than only the one showing symptoms. The fourth concerns the record itself: the dashboard's Malware timeline is described as a record of all malware detections from the past 30 days.\\n\\nThe help centre also notes that Agency Hosting plans use isolated environments per client site, which significantly reduces the risk of cross-site contamination. That is the one product line where the shared-file-system warning does not apply. A buyer on a Web or Cloud plan reading only the badge would not know that the database sits outside the scanner, that a clean result does not mean a clean site, or that one infected site on the account puts the others at risk."
+   },
+   {
+    "heading": "The $95 cleanup, and the two conditions attached to it",
+    "body": "Removing malware beyond what the scanner's built-in cleanup handles is a paid service with a published price and a published eligibility rule. The help centre describes the Site cleanup service as WordPress only, and states that if the website is built on WordPress and the domain is pointed to Hostinger, the provider can assist with professional cleanup for $95.\\n\\nThe listed contents of that service are removal of all detected malware files, MySQL injection cleanup, stopping any malicious scripts running on the website, and a comprehensive site security review.\\n\\nTwo conditions are printed and neither appears on a plan page: the site must be built on WordPress, and the domain must be pointed to the provider. The price is printed as a flat $95 with no term, tier or plan qualification beside it. A reader on the VPS or shared hosting page, where a scanner badge also appears, would not learn from that page that the assisted route out of an infection is WordPress-only and priced."
+   },
+   {
+    "heading": "Firewall, DDoS and WAF: the words the pricing page never prints",
+    "body": "Count the words on the page that prices every plan. The pricing page prints DDoS zero times, firewall zero times, WAF zero times and security level zero times. The shared hosting page prints DDoS zero times, firewall zero times, WAF zero times and security level zero times as well. Both pages still make a protection claim. The shared hosting FAQ answers the question of whether shared hosting is secure with the statement that every plan includes a free SSL certificate to encrypt visitors' data, along with built-in protections that keep the site safe. Built-in protections is the whole of the specification.\\n\\nThe named protections sit on other product pages. The cloud page prints DDoS protection once, in a stability paragraph. The VPS page prints Firewall management in each plan's feature strip and describes a managed firewall and DDoS protection in its management section, naming Wanguard DDoS filtering as the mechanism. The WordPress page is the most specific of the five, printing advanced firewall protection described as a web application firewall (WAF) that blocks threats before they reach the site, DDoS mitigation described as filtering out malicious traffic to stop large-scale attacks, and automatic malware removal described as continuous scanning that removes malicious files before they can cause harm.\\n\\nThe WordPress page also prints the only tier gate to be found on a plan page: choosing a Business or Cloud Startup plan adds extra security features, including enhanced DDoS protection to shield the DNS structure from cyberattacks. The enhanced tier of DDoS protection is therefore tied to two named plans on the page that sells them, while the page that lists every plan's features carries none of these words at all."
+   },
+   {
+    "heading": "The CDN security levels are gated, and one mode is a last resort",
+    "body": "A CDN is printed on four of the five plan pages, but the word security never appears beside it on any of them: security level occurs zero times on all five. The help centre article on CDN security levels supplies the gate in its first paragraph, stating that the CDN advanced security levels are accessible to a Web Hosting Business plan or higher, and inviting the reader to consider upgrading to a higher plan to unlock them.\\n\\nFive levels are published. Essentially off only challenges IP addresses with the worst reputation. Low challenges only threatening visitors. Medium challenges both threatening and moderately threatening visitors and is the default. High challenges all visitors that exhibited threatening behavior within the last 14 days. I am Under Attack is described as only for use if the website is currently under a DDoS attack.\\n\\nTwo further conditions are printed. The emergency mode carries its own warning that it might interfere with certain functions on the website, such as API traffic, and the article states plainly that changing the security level is not available on Agency Hosting plans. The top of the security ladder is a plan-gated feature, the default is the middle rung, and the emergency mode is documented as carrying a functional cost."
+   },
+   {
+    "heading": "What is still unstated",
+    "body": "Three things a buyer might reasonably want are not published on any page read for this article.\\n\\nFirst, the certificate's validity period. Neither the SSL introduction nor the free SSL claim article states how long a Lifetime SSL is valid for, or whether it is reissued automatically. The word expire does not appear in either document. The product name implies permanence, and no page prints a term.\\n\\nSecond, the Malware Scanner's scan cadence. The help centre says the scanner runs automatically and says a clean scan does not rule out a database-level infection, but no interval, frequency or per-scan quota is printed on any of the pages read.\\n\\nThird, a numeric definition for the shared hosting page's built-in protections, and for the generic firewall protection described in the provider's own security-measures article, which lists mod_security, Suhosin PHP hardening and PHP open_basedir protection without a plan scope, a rule count or a tier beside any of them. Those cells are reported here as unstated rather than estimated."
+   }
+  ],
+  "sources": [
+   {
+    "title": "Hostinger pricing",
+    "url": "https://www.hostinger.com/pricing"
+   },
+   {
+    "title": "Managed cloud hosting",
+    "url": "https://www.hostinger.com/cloud-hosting"
+   },
+   {
+    "title": "VPS hosting",
+    "url": "https://www.hostinger.com/vps-hosting"
+   },
+   {
+    "title": "Shared hosting",
+    "url": "https://www.hostinger.com/shared-hosting"
+   },
+   {
+    "title": "Managed hosting for WordPress",
+    "url": "https://www.hostinger.com/wordpress-hosting"
+   },
+   {
+    "title": "How to claim a free SSL that comes with a Hostinger hosting plan",
+    "url": "https://www.hostinger.com/support/1575761-how-to-claim-a-free-ssl-that-comes-with-a-hostinger-hosting-plan/"
+   },
+   {
+    "title": "Introduction to SSL at Hostinger",
+    "url": "https://www.hostinger.com/support/1583278-introduction-to-ssl-at-hostinger/"
+   },
+   {
+    "title": "How to use the Malware Scanner at Hostinger",
+    "url": "https://www.hostinger.com/support/6197555-how-to-use-the-malware-scanner-at-hostinger/"
+   },
+   {
+    "title": "What security measures Hostinger uses",
+    "url": "https://www.hostinger.com/support/1583287-what-security-measures-does-hostinger-use/"
+   },
+   {
+    "title": "Hostinger CDN: Security levels",
+    "url": "https://www.hostinger.com/support/10695636-hostinger-cdn-security-levels/"
+   }
+  ]
  }
 ]

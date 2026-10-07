@@ -94,5 +94,11 @@
   "title": "A hosting deal's free domain renews itself 27 days early, at a price the plan card never prints",
   "url": "https://cloudhostdeals.com/articles/cloud-hosting-deals-included-domain-renewal-and-transfer",
   "gap_id": "included-domain-lifecycle-boundary"
+ },
+ {
+  "date": "2026-10-07",
+  "title": "A hosting deal's free SSL is a Lifetime SSL on two product lines, and the certificate file cannot leave the provider",
+  "url": "https://cloudhostdeals.com/articles/cloud-hosting-deals-free-ssl-lifetime-scope",
+  "gap_id": "security-badge-product-scope-boundary"
  }
 ]
