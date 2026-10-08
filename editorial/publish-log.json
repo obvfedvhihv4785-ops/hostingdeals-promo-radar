@@ -100,5 +100,11 @@
   "title": "A hosting deal's free SSL is a Lifetime SSL on two product lines, and the certificate file cannot leave the provider",
   "url": "https://cloudhostdeals.com/articles/cloud-hosting-deals-free-ssl-lifetime-scope",
   "gap_id": "security-badge-product-scope-boundary"
+ },
+ {
+  "date": "2026-10-08",
+  "title": "Cloud hosting deals print four speed numbers. The provider's own CDN page explains what none of them measures",
+  "url": "https://cloudhostdeals.com/articles/cloud-hosting-deals-speed-numbers-and-cache-rules",
+  "gap_id": "performance-stack-and-cache-boundary"
  }
 ]
