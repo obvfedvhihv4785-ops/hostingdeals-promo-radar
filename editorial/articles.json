@@ -1378,5 +1378,99 @@
     "url": "https://www.hostinger.com/support/6099689-how-to-manage-object-cache-for-wordpress-websites-at-hostinger/"
    }
   ]
+ },
+ {
+  "gap_id": "dns-zone-and-nameserver-boundary",
+  "status": "published",
+  "slug": "cloud-hosting-deals-dns-zone-and-nameserver-rules",
+  "title": "A hosting deal's Cloudflare nameservers come with four rules the plan page never prints",
+  "description": "Cloud hosting deals sell DNS as a feature and print none of its limits. The provider's own DNS pages set the record types, the account lock on the zone editor, a DNSSEC exclusion and three different propagation times.",
+  "answer": "Four provider-published DNS rules sit behind a hosting deal's Cloudflare nameserver badge, and none of them is on the page that sells it. On the pages checked, the pricing page - the one carrying the plan cards and the comparison table - prints DNS, nameserver, DNSSEC, propagation, TTL, zone editor and subdomain zero times each. The cloud hosting page prints Cloudflare-protected nameservers once, inside a security feature line shared with free SSL, WHOIS privacy and a malware scanner. The domains page prints runs on Cloudflare nameservers once, and its transfer banner prints Your settings, your DNS, your email. All moved over with no downtime. The provider's own DNS knowledge base then supplies the rules: the nameserver values are published nowhere and must be read from the dashboard, the DNS zone editor is locked unless the domain and the hosting sit in the same account, DNSSEC is explicitly not supported while the domain points to Hostinger nameservers, and DNS propagation is quoted three different ways - typically within a few hours, up to 24 hours as the standard ceiling, and up to 72 hours in rare cases.",
+  "unique_note": "Every figure and quotation in this article is taken from pages published by the hosting provider named in the sources: its pricing, cloud, domain and VPS product pages, and its own knowledge-base articles on finding nameservers, managing DNS records, changing nameservers, DNS propagation, DNSSEC and a missing DNS zone editor. The occurrence counts are counts of those exact strings on the extracted text of those pages, and every limit, duration and restriction quoted here is attributed to the page that states it. The arithmetic in this article is limited to two derived statements, both labelled as derived: the 3x spread between the provider's two explicit propagation ceilings of 24 and 72 hours, and the observation that the provider's typical figure sits below both. No number here is estimated, and no cell the provider leaves blank has been filled in - the per-zone record limit, the default TTL, any propagation guarantee and the list of DNSSEC-capable extensions are reported as unstated because the provider does not state them.",
+  "published_at": "2026-10-09T00:10:00Z",
+  "sections": [
+   {
+    "heading": "What the deal pages actually print about DNS",
+    "body": "Before quoting any DNS rule, it is worth counting what the pages that sell the deal actually say about DNS. The pricing page, which carries the plan cards and the comparison table, prints the strings DNS, nameserver, DNSSEC, propagation, TTL, zone editor, DNS zone, subdomain, MX record and CNAME zero times each.\\n\\nThe cloud hosting page prints DNS twice, but only once in a DNS sense: one occurrence is inside the letters of CDNs in a data-centre block, and the other is in the migration FAQ, where the provider promises to help customers prepare for DNS propagation to minimise downtime. It prints Cloudflare-protected nameservers once, inside a security feature line that also carries free SSL, WHOIS privacy and a malware scanner. It prints DNSSEC, TTL, zone editor, subdomain, MX record and CNAME zero times each.\\n\\nThe domains page prints runs on Cloudflare nameservers once, in a speed block, and the transfer banner prints Your settings, your DNS, your email. All moved over with no downtime. The VPS page mentions reverse DNS once, in a security block. Across all four pages there is no nameserver hostname, no record-type list, no record-count limit, no TTL value, no propagation duration and no statement about DNSSEC."
+   },
+   {
+    "heading": "The nameservers are a dashboard value, not a published one",
+    "body": "Each hosting family reaches its nameservers by a different route, and the provider says the values cannot be assumed. For web, cloud and Agency hosting they sit on the Plan Details page, in a Nameservers card. For VPS they are shown in the DNS Manager, in the domain list. For legacy cPanel plans they sit on the cPanel hosting dashboard, in a Nameservers and IP address section.\\n\\nThe page is explicit that the values are per-domain: nameservers may vary by domain, and customers are told to always use the exact values shown in the dashboard. Temporary domains are the exception in the other direction - their nameservers are not displayed at all, because their DNS records cannot be managed directly.\\n\\nSo the badge names a product, Cloudflare, and the deal page publishes no hostname to check it against. The value a buyer needs in order to point an external domain at the plan is obtainable only after the plan exists, from inside the account."
+   },
+   {
+    "heading": "The DNS zone editor is locked unless both orders share one account",
+    "body": "The provider's own troubleshooting page describes a state in which the DNS zone editor is simply absent from the dashboard. The stated cause is that the domain and the hosting sit in two different accounts - including two different emails, or the same email on two different brands, which the page illustrates with hostinger.com and hostinger.in.\\n\\nThe page says a security update now requires a domain that is both registered and hosted at the provider to belong to the same account as the hosting order before its DNS zone can be managed. The fix is to move the domain between accounts, which the page says is free of charge, and the closing note limits the rule to domains that are registered and hosted at the provider.\\n\\nThe practical consequence for a deal buyer is that the free domain and the hosting plan have to land in the same account. Split them - a plausible accident when a second brand or a second email address is used - and the DNS controls are not merely restricted. They are gone until the domain is moved."
+   },
+   {
+    "heading": "DNSSEC is not supported on the nameservers the deal hands you",
+    "body": "This is the rule with the largest gap between the deal page and the documentation. The DNSSEC article states that if a domain is registered at the provider or anywhere else and is pointing to the provider's nameservers, the provider has built-in features to protect the records, and therefore DNSSEC is not supported.\\n\\nThe DNSSEC tab still exists, but the article scopes it to a different configuration: a domain registered at the provider that is pointing elsewhere by nameservers. In that case, and only if the domain's extension supports DNSSEC, a record can be added with a key tag, an algorithm, a digest type and a digest value - and those values must be generated by whichever provider the domain is pointing to.\\n\\nAvailability is a third variable. The DNS records article warns that child nameservers and DNSSEC settings may vary depending on the domain's extension, and the DNSSEC article repeats it: if the option is missing or disabled, the TLD does not support DNSSEC. The bundled free domain arrives pointed at the provider's own nameservers, which is exactly the configuration the same article says DNSSEC is not supported on."
+   },
+   {
+    "heading": "The record types, and the one thing a subdomain cannot do",
+    "body": "The DNS records article lists the record types the zone editor accepts: NS, A, AAAA, ALIAS, CAA, CNAME, MX, SPF, SRV and TXT, with TXT covering DKIM and DMARC records. Each type has its own guide, and the editor adds bulk creation, in-dropdown explanations of each record type, and field-level helper text.\\n\\nOne restriction is stated plainly: the provider's domains do not allow custom nameservers, meaning NS records, for subdomains - only for the main domain. A subdomain that needs to point somewhere else has to use an A, CNAME or TXT record instead.\\n\\nSubdomains also split into two management modes. A subdomain added as a separate website gets its own DNS section, separate from the main domain's records; a regular subdomain, or one created through the domain's own DNS, is managed under the main domain's DNS records. The page adds that a Create subdomain button appears when the main domain has hosting connected - the subdomain feature is tied to the hosting, not to the domain alone."
+   },
+   {
+    "heading": "Three published propagation times, not one",
+    "body": "The provider publishes three different DNS propagation figures, on three pages, without reconciling them. The nameserver change article says to allow up to 24 hours for propagation, and adds that changes typically take effect within a few hours. The DNS records article says to wait up to 24 hours for records to propagate. The propagation article sets the same 24-hour standard, then widens it: in rare cases, a certain record might take up to 72 hours.\\n\\nThe two explicit ceilings differ by 3x - a derived comparison, since the provider prints both numbers but never puts them side by side. The typical figure the provider offers is lower than both, and the propagation article adds that the time can differ depending on the record type, giving NS and A records as examples of records that may move in less than 24 hours.\\n\\nThe nameserver change article attaches a cost to the window that the other two do not: during propagation, the website and domain management may be temporarily unavailable. The propagation article also says a record still showing no progress after 24 hours can indicate a configuration problem rather than normal delay, and names incorrect records and active DNSSEC among the common causes."
+   },
+   {
+    "heading": "Changing nameservers moves DNS zone management off the provider",
+    "body": "The nameserver change article offers two paths. One keeps the domain on the provider's nameservers, which the page recommends, and keeps DNS records manageable in the provider's dashboard. The other points the domain elsewhere and accepts the values of up to four nameservers.\\n\\nThe consequence is stated in the same paragraph: changing nameservers transfers DNS zone management to the new service provider, and any further DNS changes should be done there. A related note covers the hosting-only case - if a domain is added to a hosting plan or a VPS but does not point to the provider's nameservers, the DNS zone will not be managed from the provider.\\n\\nFor a buyer comparing deals, this means the DNS controls are a function of where the nameservers point, not of which plan was bought. Pointing the domain at the hosting provider is what buys the zone editor; pointing it at a third party keeps the plan and gives up the zone."
+   },
+   {
+    "heading": "The nameserver switch also rewrites the email records",
+    "body": "One line in the nameserver change article matters to anyone who already has email somewhere else: pointing a domain to the provider's nameservers sets the email-related records for the provider's own email service. The same note tells those customers to update the MX records with their existing email provider's values, and to do it after the nameserver change has fully propagated.\\n\\nThe DNS records article adds the reciprocal case. For a domain pointing elsewhere by nameservers, the provider's own DNS management tools are not the ones to use; the platform the domain points to supplies them. A separate line softens this: even when the nameservers point to an external provider, records can still be prepared in the provider's dashboard and will be ready to take effect as soon as the nameservers are switched back.\\n\\nRead together, the nameserver switch is not neutral plumbing. It rewrites the records that carry mail unless the customer re-enters the existing mail provider's MX values during the propagation window."
+   },
+   {
+    "heading": "One import mode erases the zone it is imported into",
+    "body": "The zone editor can export the whole DNS zone as a text file in BIND zone file format, RFC 1035, which the provider recommends as a portable backup before bulk changes. It can import the same format, and the import has two modes. Append adds the imported records alongside the existing ones. Replace removes all existing DNS records and substitutes the imported set.\\n\\nThe page states the risk without hedging: choosing Replace will permanently delete all current DNS records, including those for the website and email, and customers are told to use it only when certain and to prefer Append when in doubt. The rollback path is the DNS history tab, where a snapshot can be restored to fully replace the current values - after a confirmation checkbox accepting that the restore may affect the current website and needs time to apply.\\n\\nNothing on either deal page mentions an export, an import, a history snapshot or a rollback. The only documented recovery route for a zone mistake is a support article."
+   },
+   {
+    "heading": "What the provider still does not state",
+    "body": "Several DNS parameters a buyer might reasonably look for are absent from all ten pages read. No page prints a maximum number of DNS records per zone. No page prints a default TTL, or a range of permitted TTL values, even though TTL is one of the fields the record form asks for. No page publishes an uptime or completion guarantee for propagation - only the three durations, the widest of which is described as rare.\\n\\nDNSSEC support is left to be discovered per extension, with no published list of which TLDs support it; the instruction is to look at whether the option is present or disabled. The nameserver values themselves are never published, only described as varying by domain and hosting type.\\n\\nAnd no page attaches a price to any DNS feature, because DNS is bundled rather than sold. That is also why the pricing page - the page that carries the plan cards a buyer actually compares - names DNS zero times."
+   }
+  ],
+  "sources": [
+   {
+    "title": "Hostinger pricing",
+    "url": "https://www.hostinger.com/pricing"
+   },
+   {
+    "title": "Hostinger cloud hosting",
+    "url": "https://www.hostinger.com/cloud-hosting"
+   },
+   {
+    "title": "Hostinger domains",
+    "url": "https://www.hostinger.com/domains"
+   },
+   {
+    "title": "Hostinger VPS hosting",
+    "url": "https://www.hostinger.com/vps-hosting"
+   },
+   {
+    "title": "Where to find your Hostinger nameservers",
+    "url": "https://www.hostinger.com/support/1583247-where-to-find-hostinger-nameservers/"
+   },
+   {
+    "title": "How to manage DNS records at Hostinger",
+    "url": "https://www.hostinger.com/support/1583249-how-to-manage-dns-records-at-hostinger/"
+   },
+   {
+    "title": "How to change nameservers at Hostinger",
+    "url": "https://www.hostinger.com/support/1696789-how-to-change-nameservers-at-hostinger/"
+   },
+   {
+    "title": "What is DNS propagation at Hostinger",
+    "url": "https://www.hostinger.com/support/4146975-what-is-dns-propagation-at-hostinger/"
+   },
+   {
+    "title": "How to use DNSSEC records at Hostinger",
+    "url": "https://www.hostinger.com/support/3667267-how-to-use-dnssec-records-at-hostinger/"
+   },
+   {
+    "title": "What to do if the DNS zone editor is missing or not working",
+    "url": "https://www.hostinger.com/support/4067857-what-to-do-if-the-dns-zone-editor-is-missing-or-not-working/"
+   }
+  ]
  }
 ]

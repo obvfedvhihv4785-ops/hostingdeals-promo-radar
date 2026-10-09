@@ -106,5 +106,11 @@
   "title": "Cloud hosting deals print four speed numbers. The provider's own CDN page explains what none of them measures",
   "url": "https://cloudhostdeals.com/articles/cloud-hosting-deals-speed-numbers-and-cache-rules",
   "gap_id": "performance-stack-and-cache-boundary"
+ },
+ {
+  "date": "2026-10-09",
+  "title": "A hosting deal's Cloudflare nameservers come with four rules the plan page never prints",
+  "url": "https://cloudhostdeals.com/articles/cloud-hosting-deals-dns-zone-and-nameserver-rules",
+  "gap_id": "dns-zone-and-nameserver-boundary"
  }
 ]
