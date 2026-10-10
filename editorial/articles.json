@@ -1472,5 +1472,95 @@
     "url": "https://www.hostinger.com/support/4067857-what-to-do-if-the-dns-zone-editor-is-missing-or-not-working/"
    }
   ]
+ },
+ {
+  "gap_id": "plan-limit-enforcement-boundary",
+  "status": "published",
+  "slug": "cloud-hosting-deals-what-happens-when-limits-are-reached",
+  "title": "Cloud hosting deals sell unlimited and print no consequence. The provider's own rules are 10 Mbps, 503 and an inode wall",
+  "description": "Deal pages use unlimited 27 times and never say what happens at the limit. The provider's help centre publishes the enforcement: a 10 Mbps VPS throttle, a 503 error, an inode wall, and three different limit sets for one plan name.",
+  "answer": "Cloud hosting deal pages sell unlimited and print nothing about what happens when a limit is reached. On the five deal pages checked on 10 October 2026, the words throttle, suspend, exceed, quota, overage, 503, throughput and max process each appear zero times, and the only boundary sentence anywhere on them is one disclaimer - unlimited features are subject to our fair usage policy - which appears once on the pricing, shared-hosting and WordPress pages and zero times on the cloud-hosting and VPS pages. The provider's own help centre publishes the enforcement rules the deal pages omit: hitting the inode limit blocks new files even while disk space is still free, hitting the RAM or process limit shows visitors a 503 Service Unavailable error, and on VPS a monthly bandwidth overage throttles the connection to 10 Mbps for the rest of the month. The same plan name also carries three different limit sets depending on the date it was bought - web hosting Premium sold 100 websites before 24 April 2025, 25 after it, and 3 from 17 December 2025.",
+  "unique_note": "Every count in this article is an occurrence count taken on 10 October 2026 from the five provider pages listed under Sources, lowercased and whitespace-flattened. Every limit, threshold, error code, throttle rate and enforcement rule quoted is the provider's own published wording from its help centre, and each quotation is attributed to the page it came from. The version-to-version ratios and the derived monthly ceiling of about 3.24 TB at 10 Mbps are arithmetic performed on the provider's printed numbers and are labelled as derived wherever they appear; the provider publishes neither the ratios nor that ceiling. No price, discount, traffic figure, ranking or performance number is invented, no unavailable cell is estimated, and no benchmark or third-party site was read for this article.",
+  "published_at": "2026-10-10T00:10:00Z",
+  "sections": [
+   {
+    "heading": "What the deal pages print, and the eight words they never use",
+    "body": "The pricing page prints the word unlimited 27 times. The WordPress page prints it 16 times, the shared-hosting page 13 times and the cloud-hosting page 3 times. The VPS page prints it zero times and prints bandwidth allowances in terabytes instead.\\n\\nAcross all five pages, the vocabulary of enforcement is absent. Throttle, throttling, suspend, exceed, quota, overage, 503, throughput and max process each appear zero times on each of the five pages. So does the phrase slower performance, which is the exact wording of the warning the provider's own dashboard shows when a plan is straining.\\n\\nThe single exception is one sentence: unlimited features are subject to our fair usage policy. It appears once on the pricing page, once on the shared-hosting page and once on the WordPress page, and zero times on the cloud-hosting and VPS pages. That sentence is the entire boundary disclosure a buyer gets at the point of sale. The policy it names is not linked from that line and its numeric thresholds are not published on any of the ten pages read for this article."
+   },
+   {
+    "heading": "The same plan name carries three different limit sets, decided by purchase date",
+    "body": "The provider's help centre splits its web and cloud hosting limits into three versions by purchase date: version 1 for plans bought until 23 April 2025, version 2 for plans bought from 24 April 2025 to 16 December 2025, and version 3 for plans bought from 17 December 2025 onwards. A deal page prints one set of numbers; which set a given buyer actually receives depends on the date on the order.\\n\\nWeb hosting Premium, by version:\\nwebsites - 100 (v1), 25 (v2), 3 (v3);\\nstorage - 100 GB, 25 GB, 20 GB;\\nmailboxes - 100, 2, 2;\\ndatabases - 300, 300, 10.\\n\\nCloud hosting Startup, by version:\\nstorage - 200 GB (v1), 100 GB (v2), 100 GB (v3);\\nmailboxes - 100, 10, 10;\\ndatabases - 800, 800, 300.\\n\\nRead as arithmetic, the same Premium plan name sold today carries 3 websites where the pre-April-2025 version carried 100 - a factor of roughly 33. The other rows move the same way: one fifth of the storage, one fiftieth of the mailboxes and one thirtieth of the databases. Those ratios are derived here from the provider's own tables; the provider prints the three tables but does not print the comparison."
+   },
+   {
+    "heading": "Unlimited is a policy word, and the provider says what it does not cover",
+    "body": "The help centre is explicit that the word is a naming and packaging decision rather than an absence of limits. Since July 2026, Unlimited replaces Business as the plan sold on most web hosting pages, and from 17 June 2026 Cloud Hosting plans also include unlimited websites and mailboxes.\\n\\nThe same page sets the boundary in three sentences. Unlimited applies to hosting your own websites, not to file storage or archiving, and the full policy sits in the hosting agreement. You cannot downgrade an Unlimited plan to another hosting tier. And every other limit stays where it was: all other limits, including storage, database count, memory, and CPU, stay the same as shown in the version 3 tables.\\n\\nThat is the closest the provider comes to publishing the boundary of its own headline word - and it lives in a help article, not on any of the five pages that sell the plan."
+   },
+   {
+    "heading": "What actually happens at the limit, resource by resource",
+    "body": "The provider publishes a different consequence for each resource, and the differences matter more than the limits themselves because some of them are silent.\\n\\nCPU: when you reach the maximum threshold for available CPU, your website becomes slower and starts scheduling requests from your visitors instead of serving them instantly. There will be no error messages, but the website will feel sluggish. A silent slowdown is the published outcome, which means the first symptom is a visitor's experience, not a log entry.\\n\\nDisk I/O: when you reach the maximum threshold for available I/O, your website will slow down, similar to when the CPU threshold is reached.\\n\\nRAM and processes: when your hosting plan reaches the limit of processes or RAM, your website visitors may encounter the 503 Service Unavailable error. The provider attaches a frequency rule to this one: if you reach the limit of processes or RAM 10-20 times within one month, it is a very strong indication that your website needs a larger pool of resources to handle the load.\\n\\nPHP workers: if your hosting plan has reached its PHP worker limit, users may experience delays or timeouts when accessing your site.\\n\\nAt the top of the range the answer is a different product rather than a bigger plan. If you reach the limit of resources within a Cloud Enterprise plan, the provider says it will offer the best VPS solution for the case. The cheapest published escape hatch for anyone below that tier is a temporary resource boost."
+   },
+   {
+    "heading": "Inodes: the limit that blocks new files while disk space is still free",
+    "body": "Inodes are the item the provider counts separately from bytes, and the failure mode is unusual: once the inode limit is reached, you cannot create new files or directories, even if you have available disk space. This can cause your websites to stop working properly or result in errors when using the File Manager.\\n\\nTwo published carve-outs shrink what that number actually covers. Websites created with the provider's AI Builder are not file-based; therefore, they do not consume inodes or count toward the inode limit. And emails, databases, and automated backups are stored independently and do not count toward the hosting disk or inode quota. A mailbox is therefore not a storage cost against the plan's headline figure.\\n\\nThe provider also publishes the warning point rather than only the wall: when an account reaches 80% or more of its inode or disk space limit, the Resource Usage page provides troubleshooting advice. The remedies it lists are deleting unused files and sites, clearing plugin-created backups, staging environments, caches and logs, a 24-hour boost feature to temporarily increase resources if the limit is already blocking the File Manager, and upgrading the plan."
+   },
+   {
+    "heading": "VPS bandwidth: 10 Mbps for the rest of the month",
+    "body": "On VPS the provider does publish the throttle - in a help article, not on the plan card. When a VPS reaches its monthly bandwidth limit, bandwidth throttling reduces the connection speed to 10 Mbps for the rest of the month, while the websites and services stay online. The limit resets at the beginning of the next month. Bandwidth here is defined as the amount of data transferred between the server and the internet, measured in terabytes per month.\\n\\nThe plan cards do print the allowance being throttled. The four KVM tiers on the VPS page print 4 TB, 8 TB, 16 TB and 32 TB of monthly bandwidth respectively.\\n\\nOne derived figure is worth doing, because it is not printed anywhere: 10 Mbps sustained for a full 30-day month moves about 3.24 TB in decimal units. The cheapest VPS card prints a 4 TB allowance, so once the throttle engages the connection can no longer deliver even that plan's own printed monthly allowance within the same month. That ceiling is arithmetic performed here on the provider's 10 Mbps and 4 TB figures; the provider states neither the ceiling nor the comparison."
+   },
+   {
+    "heading": "Where the usage is visible, and the number the dashboard will not split",
+    "body": "Every enforcement rule above is measured by a dashboard the deal pages never mention. On web and cloud hosting it sits under Websites, then Dashboard next to a website, then Hosting plan, then Resources Usage. On Agency hosting it is Websites, then Dashboard, then Resources Usage.\\n\\nThe important limit on that reading is scope: the data shown is aggregated for all the websites on the hosting plan, not per website. On Agency hosting the default is also per plan, with a Website toggle to split it. A buyer comparing plans by the number of websites they may host should note that the resource reading does not follow that split by default on the cheaper products.\\n\\nThe page reports disk usage and the number of files and directories, plus graphs for CPU, memory, throughput (input/output), PHP workers, storage performance (IOPS) and max processes. The red line on the graphs shows the limit set for the plan, and red shading means the limits were hit briefly during that period while the total average was still within limits. History is available for the last 6 hours, 24 hours and 7 days; the graphs run on GMT+0, and the data is updated every 10-15 minutes."
+   },
+   {
+    "heading": "The 80% figure the provider publishes twice",
+    "body": "Two separate help articles land on the same number, which makes it the closest thing to a published operating threshold in the whole set. On CPU, the instruction is to find out the website's peak hours and ensure your CPU stays below 80% during the busiest times. On inodes and disk space, the troubleshooting advice appears once the account reaches 80% or more of its limit.\\n\\nThe provider's own recommended remedies at that point are operational rather than financial: revise the code, reduce the number of plugins, minimize the number of cron jobs, and enable caching, with the LiteSpeed Cache plugin named for WordPress. It also points at a diagnostic a plan buyer would not expect from a hosting page: if CPU usage is high, check analytics for loopback requests or signs of a potential DDoS attack, since those can cause CPU or RAM overages and performance degradation."
+   },
+   {
+    "heading": "What is still unstated",
+    "body": "The rules above are the published ones. Several things a buyer would want are not published on any of the ten pages read, and are recorded here as unstated rather than estimated.\\n\\nNo numeric threshold is published for the fair usage policy that the deal pages name in their only boundary sentence. No consequence is published for exceeding a bandwidth allowance on web or cloud hosting - the 10 Mbps throttle is a VPS rule, and the web and cloud cards print unlimited bandwidth without defining it. No size is published for what the 24-hour boost adds, only that it temporarily increases resources. No per-website split is offered by default on web and cloud hosting. And no published consequence exists for exceeding storage on web or cloud hosting beyond the 80% warning and the inode wall, which are different measurements."
+   }
+  ],
+  "sources": [
+   {
+    "title": "Hostinger pricing page (plan cards and comparison table)",
+    "url": "https://www.hostinger.com/pricing"
+   },
+   {
+    "title": "Hostinger cloud hosting",
+    "url": "https://www.hostinger.com/cloud-hosting"
+   },
+   {
+    "title": "Hostinger VPS hosting",
+    "url": "https://www.hostinger.com/vps-hosting"
+   },
+   {
+    "title": "Hostinger shared hosting",
+    "url": "https://www.hostinger.com/shared-hosting"
+   },
+   {
+    "title": "Hostinger WordPress hosting",
+    "url": "https://www.hostinger.com/wordpress-hosting"
+   },
+   {
+    "title": "New web and cloud hosting limits at Hostinger (help centre)",
+    "url": "https://www.hostinger.com/support/10717644-new-web-and-cloud-hosting-limits-at-hostinger/"
+   },
+   {
+    "title": "How to manage the inode limit of your Hostinger hosting plan (help centre)",
+    "url": "https://www.hostinger.com/support/1583210-what-is-the-inode-limit-and-what-happens-when-it-is-reached/"
+   },
+   {
+    "title": "What to do if your hosting plan limits are reached in Hostinger (help centre)",
+    "url": "https://www.hostinger.com/support/1583532-what-to-do-if-your-hosting-plan-limits-are-reached-in-hostinger/"
+   },
+   {
+    "title": "How to check resource usage in Hostinger (help centre)",
+    "url": "https://www.hostinger.com/support/2436138-how-to-check-resource-usage-in-hostinger/"
+   },
+   {
+    "title": "What happens if your VPS bandwidth resource limits are exceeded (help centre)",
+    "url": "https://www.hostinger.com/support/8789965-what-happens-if-your-vps-bandwidth-resource-limits-are-exceeded/"
+   }
+  ]
  }
 ]

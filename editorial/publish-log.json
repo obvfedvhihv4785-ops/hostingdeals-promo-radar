@@ -112,5 +112,11 @@
   "title": "A hosting deal's Cloudflare nameservers come with four rules the plan page never prints",
   "url": "https://cloudhostdeals.com/articles/cloud-hosting-deals-dns-zone-and-nameserver-rules",
   "gap_id": "dns-zone-and-nameserver-boundary"
+ },
+ {
+  "date": "2026-10-10",
+  "title": "Cloud hosting deals sell unlimited and print no consequence. The provider's own rules are 10 Mbps, 503 and an inode wall",
+  "url": "https://cloudhostdeals.com/articles/cloud-hosting-deals-what-happens-when-limits-are-reached",
+  "gap_id": "plan-limit-enforcement-boundary"
  }
 ]
