@@ -4,7 +4,7 @@
   "locale": "en-US",
   "language": "en",
   "currency": "USD",
-  "generated_at": "2026-11-04T13:26:50Z",
+  "generated_at": "2026-11-04T22:58:57Z",
   "fields": [
     "title",
     "price",
@@ -20,8 +20,8 @@
       "slug": "digitalocean",
       "homepage": "https://www.digitalocean.com",
       "affiliate": "",
-      "offer_count": 2,
-      "min_price": 3.0,
+      "offer_count": 1,
+      "min_price": 4.0,
       "max_price": 4.0,
       "currency": "USD"
     },
@@ -52,7 +52,7 @@
       "affiliate": "",
       "offer_count": 2,
       "min_price": 2.89,
-      "max_price": 5.99,
+      "max_price": 8.99,
       "currency": "USD"
     },
     {
@@ -74,33 +74,20 @@
       "summary": "Need a powerful cloud server without the hefty price tag? DigitalOcean has got you covered. Enjoy exceptional performance and flexibility at unbeatable prices.",
       "offer_url": "https://www.digitalocean.com/pricing",
       "source_url": "https://www.digitalocean.com/pricing",
-      "fetched_at": "2026-11-04T13:26:50Z",
+      "fetched_at": "2026-11-04T22:58:57Z",
       "price": 4.0,
       "currency": "USD",
       "price_period": "month",
       "has_price": true
     },
     {
-      "provider": "DigitalOcean",
-      "title": "App Platform Pricing",
-      "page_title": "App Platform Pricing",
-      "summary": "App Platform: Free tier for static sites. Web hosting from $5.00/month. Only pay for the components you need with transparent, modular pricing.",
-      "offer_url": "https://www.digitalocean.com/pricing/app-platform",
-      "source_url": "https://www.digitalocean.com/pricing/app-platform",
-      "fetched_at": "2026-11-04T13:26:50Z",
-      "price": 3.0,
-      "currency": "USD",
-      "price_period": "month",
-      "has_price": true
-    },
-    {
       "provider": "Cloudways",
-      "title": "Cloudways Promo Code 2026 - Get the Best Hosting Deals",
-      "page_title": "Cloudways Promo Code 2026 - Get the Best Hosting Deals",
-      "summary": "Avail Cloudways coupon code and enjoy 40% off on all the web hosting plans for 4 months. Don’t miss out on this exclusive discount offer, avail now!",
+      "title": "Cloudways Promo Code 2026 - Coupon for Black Friday Deal",
+      "page_title": "Cloudways Promo Code 2026 - Coupon for Black Friday Deal",
+      "summary": "Get 80% off hosting, AI Agents & add-ons for 2 months with the Cloudways web hosting deal. Use code BFCM802 when you sign up. Unlimited free migrations included.",
       "offer_url": "https://www.cloudways.com/en/promo-code.php",
       "source_url": "https://www.cloudways.com/en/promo-code.php",
-      "fetched_at": "2026-11-04T13:26:50Z",
+      "fetched_at": "2026-11-04T22:58:57Z",
       "price": 25.0,
       "currency": "USD",
       "price_period": "month",
@@ -115,7 +102,7 @@
       "summary": "Cloudways pricing starts at $11/month with affordable plans on DigitalOcean, Google Cloud, AWS, Linode & Vultr. Get 30% off on all plans & free migrations.",
       "offer_url": "https://www.cloudways.com/en/pricing.php",
       "source_url": "https://www.cloudways.com/en/pricing.php",
-      "fetched_at": "2026-11-04T13:26:50Z",
+      "fetched_at": "2026-11-04T22:58:57Z",
       "price": 9.99,
       "currency": "USD",
       "price_period": "month",
@@ -129,7 +116,7 @@
       "summary": "Save loads on hosting costs as our web hosting pricing calculator gives you a detailed comparison of the top hosting providers to help you pick the best one.",
       "offer_url": "https://www.cloudways.com/en/web-hosting-pricing-calculator.php",
       "source_url": "https://www.cloudways.com/en/web-hosting-pricing-calculator.php",
-      "fetched_at": "2026-11-04T13:26:50Z",
+      "fetched_at": "2026-11-04T22:58:57Z",
       "price": 11.0,
       "currency": "USD",
       "price_period": "month",
@@ -143,7 +130,7 @@
       "summary": "Discover fast, secure, and reliable hosting at DreamHost. Choose Shared, VPS, or DreamPress plans with 24/7 support, 100% uptime, and a money-back guarantee!",
       "offer_url": "https://www.dreamhost.com/hosting/",
       "source_url": "https://www.dreamhost.com/hosting/",
-      "fetched_at": "2026-11-04T13:26:50Z",
+      "fetched_at": "2026-11-04T22:58:57Z",
       "price": 2.89,
       "currency": "USD",
       "price_period": "month",
@@ -157,11 +144,11 @@
       "summary": "VPS hosting with full root access and unmetered bandwidth — no overage bills. Install any OS and run any app on AMD EPYC + NVMe servers you control.",
       "offer_url": "https://www.dreamhost.com/hosting/vps/",
       "source_url": "https://www.dreamhost.com/hosting/vps/",
-      "fetched_at": "2026-11-04T13:26:50Z",
-      "price": 5.99,
+      "fetched_at": "2026-11-04T22:58:57Z",
+      "price": 8.99,
       "currency": "USD",
       "price_period": "month",
-      "discount_pct": 62,
+      "discount_pct": 43,
       "has_price": true
     }
   ],
@@ -174,19 +161,24 @@
     },
     {
       "provider": "DigitalOcean",
+      "entry": "https://www.digitalocean.com/pricing/action-gateway",
+      "status": "no_price"
+    },
+    {
+      "provider": "DigitalOcean",
+      "entry": "https://www.digitalocean.com/pricing/additional-gpus",
+      "status": "no_price"
+    },
+    {
+      "provider": "DigitalOcean",
       "entry": "https://www.digitalocean.com/pricing/agent-droplets",
       "status": "no_price"
     },
     {
       "provider": "DigitalOcean",
-      "entry": "https://www.digitalocean.com/pricing/backups",
-      "status": "no_price"
-    },
-    {
-      "provider": "DigitalOcean",
       "entry": "https://www.digitalocean.com/sitemaps/pricing-0.xml.gz",
-      "status": "ok",
-      "count": 1
+      "status": "empty",
+      "count": 0
     },
     {
       "provider": "Cloudways",
